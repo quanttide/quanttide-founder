@@ -55,7 +55,12 @@ git push origin main
 
 #### 维护 .env.example
 
-当 `.env` 有变更时，同步更新 `.env.example`：
+当 `.env` 发生任何变更时，立即同步更新 `.env.example`：
+- 添加新环境变量
+- 修改现有变量值
+- 删除环境变量
+
+#### 操作流程
 
 1. **临时权限**：Agent 需要临时权限读取 `.env`
 2. **保持占位符**：`.env.example` 使用占位符，不包含真实值
