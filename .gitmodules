@@ -7,3 +7,12 @@
 [submodule "specification"]
 	path = specification
 	url = https://github.com/quanttide/quanttide-specification-of-founder.git
+[submodule "essay"]
+	path = essay
+	url = https://github.com/quanttide/quanttide-essay-of-founder.git
+[submodule "handbook"]
+	path = handbook
+	url = https://github.com/quanttide/quanttide-handbook-of-founder.git
+[submodule "journal"]
+	path = journal
+	url = https://github.com/quanttide/quanttide-journal-of-founder.git
