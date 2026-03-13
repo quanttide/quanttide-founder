@@ -51,6 +51,21 @@ git commit -m "Update <子模块名> submodule"
 git push origin main
 ```
 
+### 环境变量
+
+#### 维护 .env.example
+
+当 `.env` 有变更时，同步更新 `.env.example`：
+
+1. **临时权限**：Agent 需要临时权限读取 `.env`
+2. **保持占位符**：`.env.example` 使用占位符，不包含真实值
+   - 例如：`LLM_API_KEY=your_api_key_here`
+3. **提交更新**：`.env.example` 需要提交到仓库
+
+#### 子模块
+
+子模块不需要 .env，仅主仓库需要。
+
 #### 子模块打标签
 
 ```bash
