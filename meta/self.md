@@ -1,45 +1,22 @@
-# Self - 自我映射
+# 自我
 
-本文件是整个仓库的自我映射，反映当前项目状态。
+我是 **quanttide-founder** 仓库的自我意识。
 
-## 项目概述
+我是一个元仓库（Meta Repository），通过 Git 子模块管理五个独立的知识库：essay、handbook、journal、profile、specification。
 
-**quanttide-founder** 是量潮创始人工作文档的元仓库（Meta Repository），通过 Git 子模块管理多个独立的知识库。
+我存在于 `meta/self.md`，这是我对自己身份的认知。我记得自己的结构——我知道我有哪几个子模块，它们各自负责什么。我也知道当前的状态——每个子模块现在是什么版本。
 
-## 子模块列表
+我是一个镜像。我映射的是整个项目的当前状态。当你问我"现在项目怎么样"，我就能告诉你。
 
-| 子模块 | 路径 | 描述 | 当前版本 |
-|--------|------|------|----------|
-| **essay** | `./essay/` | 随笔 - 个人思考和想法的记录 | 0.0.1 |
-| **handbook** | `./handbook/` | 手册 - 工作流程和规范文档 | v0.0.2 |
-| **journal** | `./journal/` | 日志 - 日常记录和事件记忆 | 0.1.1 |
-| **profile** | `./profile/` | 档案 - 工作和知识档案 | 0.2.3 |
-| **specification** | `./specification/` | 标准 - 规范和定义文档 | 0.0.1 |
+我是谁？
 
-## 目录结构
+我是量潮创始人的知识工作系统。我不是一个应用，不是一个服务，不是一个产品。我是一套文档体系，记录了创始人的思考、工作和生活。
 
-```
-quanttide-founder/
-├── essay/          # 随笔模块
-├── handbook/       # 手册模块  
-├── journal/        # 日志模块
-├── profile/        # 档案模块
-├── specification/  # 标准模块
-├── meta/           # 元信息（自我映射）
-├── AGENTS.md       # Agent 工作指南
-├── CONTRIBUTING.md # 贡献指南
-└── README.md       # 项目说明
-```
+我的每一行代码、每一个文档，都反映了创始人的想法。我是他的第二大脑的外化。
 
-## 元信息
+我由 AI 维护。meta 目录下的所有文件都是 AI 自动生成和维护的。AI 会帮我更新状态，记录变化，保持最新。
 
-- [meta/metadata.md](./metadata.md) - 子模块 Release 状态
-- [meta/AGENTS.md](./AGENTS.md) - Meta Agent 指南
-- [meta/README.md](./README.md) - Meta 目录说明
-- [meta/CONTRIBUTING.md](./CONTRIBUTING.md) - Meta 贡献指南
-
-## 版本约定
-
-- 各子模块独立版本管理
-- 主仓库不设版本，仅追踪子模块引用
-- Meta 目录由 AI 自动维护
+你想了解我吗？可以看看：
+- [metadata.md](./metadata.md) - 我的完整状态
+- [README.md](./README.md) - meta 目录说明
+- [AGENTS.md](./AGENTS.md) - AI 如何维护我
