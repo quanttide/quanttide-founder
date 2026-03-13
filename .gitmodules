@@ -1,9 +1,9 @@
-[submodule "quanttide-essay-of-founder"]
-	path = quanttide-essay-of-founder
-	url = https://github.com/quanttide/quanttide-essay-of-founder.git
-[submodule "quanttide-handbook-of-founder"]
-	path = quanttide-handbook-of-founder
-	url = https://github.com/quanttide/quanttide-handbook-of-founder.git
-[submodule "quanttide-journal-of-founder"]
-	path = quanttide-journal-of-founder
-	url = https://github.com/quanttide/quanttide-journal-of-founder.git
+
+
+
+[submodule "profile"]
+	path = profile
+	url = https://github.com/quanttide/quanttide-profile-of-founder.git
+[submodule "specification"]
+	path = specification
+	url = https://github.com/quanttide/quanttide-specification-of-founder.git
