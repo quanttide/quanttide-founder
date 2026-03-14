@@ -16,3 +16,6 @@
 [submodule "journal"]
 	path = journal
 	url = https://github.com/quanttide/quanttide-journal-of-founder.git
+[submodule "report"]
+	path = report
+	url = https://github.com/quanttide/quanttide-report-of-founder.git
