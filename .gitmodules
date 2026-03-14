@@ -22,3 +22,6 @@
 [submodule "report"]
 	path = report
 	url = https://github.com/quanttide/quanttide-report-of-founder.git
+[submodule "usercase"]
+	path = usercase
+	url = https://github.com/quanttide/quanttide-usercase-of-founder.git
