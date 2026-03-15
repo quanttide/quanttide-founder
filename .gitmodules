@@ -25,3 +25,6 @@
 [submodule "usercase"]
 	path = usercase
 	url = https://github.com/quanttide/quanttide-usercase-of-founder.git
+[submodule "platform"]
+	path = platform
+	url = https://github.com/Guo-Zhang/thera.git
