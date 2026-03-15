@@ -49,3 +49,5 @@ _bookdown_files/
 # Jupyter
 .ipynb_checkpoints/
 .ipynb
+
+.ruff_cache/
