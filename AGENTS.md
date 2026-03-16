@@ -14,9 +14,30 @@
 
 | 文档 | 用途 | 对象 |
 |------|------|------|
-| [README](README.md) | 项目概述、子模块列表、构建命令 | 用户 |
+| [README](README.md) | 项目概述、子模块列表、核心框架 | 用户 |
 | [贡献指南](CONTRIBUTING.md) | 人机协作、子模块工作流、发布流程、环境变量 | 开发者 |
+| [元数据](meta/metadata.md) | 子模块版本状态、Release列表 | Agent |
 | [AGENTS.md](AGENTS.md) | 导航索引、使用指南、AI 工作规范 | AI Agent |
+
+---
+
+## 核心框架（事实源）
+
+记忆分类框架是本项目的元理论，定义了组织知识管理的认知基础。
+
+### 九宫格模型
+
+| | 事件类 | 语义类 | 自我类 |
+|------|--------|--------|--------|
+| **过去** | Archive | Tutorial | History |
+| **现在** | Journal | Report | Brochure |
+| **未来** | Profile | Essay | Roadmap |
+
+### 程序型记忆五层
+
+- Usecase（判例法）、Handbook（习惯法）、Paper（权威法理）、Specification（成文法）、Platform/Bylaws（宪法）
+
+**事实源**：`paper/meta/memory_classification.md`
 
 ---
 

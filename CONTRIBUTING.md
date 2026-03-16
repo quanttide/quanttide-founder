@@ -6,11 +6,21 @@
 
 本项目为 Git 子模块仓库，包含以下子模块：
 
-- `essay/` - 随笔板块
-- `handbook/` - 手册板块
-- `journal/` - 日志板块
-- `profile/` - 档案板块
-- `specification/` - 标准板块
+### 陈述型记忆
+
+- `archive/` - 过去-事件类：工作归档
+- `journal/` - 现在-事件类：工作日志
+- `report/` - 现在-语义类：工作报告
+- `profile/` - 未来-事件类：工作档案
+- `essay/` - 未来-语义类：工作札记
+
+### 程序型记忆
+
+- `usercase/` - 判例法：工作案例
+- `handbook/` - 习惯法：工作手册
+- `paper/` - 权威法理：工作论文
+- `specification/` - 成文法：工程标准
+- `platform/` - 宪法：技术平台
 
 ## 开发环境
 
