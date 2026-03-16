@@ -24,7 +24,7 @@
 | Specification | 成文法 | 对人机协作进行明确约束与规范 |
 | Bylaws | 宪法 | 规定基本原则与权责划分 |
 
-**事实源**：`paper/meta/memory_classfication.md`
+**事实源**：`paper/meta/memory.md`
 
 ## 项目概述
 

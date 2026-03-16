@@ -37,7 +37,7 @@
 
 - Usecase（判例法）、Handbook（习惯法）、Paper（权威法理）、Specification（成文法）、Platform/Bylaws（宪法）
 
-**事实源**：`paper/meta/memory_classification.md`
+**事实源**：`paper/meta/memory.md`
 
 ---
 
