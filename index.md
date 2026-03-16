@@ -19,9 +19,9 @@
 
 | | 事件类 | 语义类 | 自我类 |
 |------|--------|--------|--------|
-| **过去** | Archive（工作归档） | Handbook（工作手册） | Profile（个人档案） |
-| **现在** | Journal（工作日志） | Report（工作报告） | Essay（工作札记） |
-| **未来** | Specification（工程标准） | Platform（技术平台） | Roadmap（发展蓝图） |
+| **过去** | Archive（工作归档） | Tutorial（基础教程） | History（发展历程） |
+| **现在** | Journal（工作日志） | Report（工作报告） | Brochure（宣传册） |
+| **未来** | Profile（工作档案） | Essay（工作札记） | Roadmap（发展蓝图） |
 
 **三个类型维度**：
 
@@ -42,10 +42,10 @@
 | 层次 | 比喻 | 说明 |
 |------|------|------|
 | Usercase | 判例法 | 来源于具体实践案例的积累与复用 |
-| Handbook | 习惯法 | 来源于人与人协作时的经验总结 |
-| Essay | 学术论文 | 系统总结归纳基本原理与方法论 |
-| Specification | 成文法 | 对协作进行明确约束与规范 |
-| Platform | 宪法 | 规定基本原则与技术架构 |
+| Handbook | 习惯法 | 来源于人机交互或人与人协作时的经验总结 |
+| Paper | 权威法理 | 系统总结归纳基本原理与方法论 |
+| Specification | 成文法 | 对人机协作进行明确约束与规范 |
+| Bylaws | 宪法 | 规定基本原则与权责划分 |
 
 ## 子模块
 
@@ -55,24 +55,24 @@
 git submodule update --init --recursive
 ```
 
-### 陈述型记忆
+### 陈述型记忆（九宫格）
 
 | 子模块 | 定位 | 仓库 |
 |--------|------|------|
 | Archive | 过去的事件类——工作归档 | quanttide-archive-of-founder |
 | Journal | 现在的事件类——工作日志 | quanttide-journal-of-founder |
 | Report | 现在的语义类——工作报告 | quanttide-report-of-founder |
-| Profile | 过去的自我类——个人档案 | quanttide-profile-of-founder |
-| Essay | 现在的自我类——工作札记 | quanttide-essay-of-founder |
+| Profile | 未来的事件类——工作档案 | quanttide-profile-of-founder |
+| Essay | 未来的语义类——工作札记 | quanttide-essay-of-founder |
 
 ### 程序型记忆
 
 | 子模块 | 定位 | 仓库 |
 |--------|------|------|
-| Handbook | 过去的语义类——工作手册 | quanttide-handbook-of-founder |
-| Specification | 未来的语义类——工程标准 | quanttide-specification-of-founder |
-| Platform | 未来的语义类——技术平台 | quanttide-platform-of-founder |
-| Usecase | 程序型记忆——工作案例 | quanttide-usercase-of-founder |
+| Usecase | 程序型记忆——工作案例（判例法） | quanttide-usercase-of-founder |
+| Handbook | 程序型记忆——工作手册（习惯法） | quanttide-handbook-of-founder |
+| Specification | 程序型记忆——工程标准（成文法） | quanttide-specification-of-founder |
+| Platform | 程序型记忆——技术平台（宪法） | quanttide-platform-of-founder |
 
 ## 使用指南
 
