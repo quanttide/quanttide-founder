@@ -2,19 +2,48 @@
 
 本文件是 quanttide-founder 仓库的自我映射，包含项目状态和子模块信息。
 
+## 核心框架（事实源）
+
+**记忆分类框架**是本项目的元理论，定义了组织知识管理的认知基础。
+
+### 陈述型记忆 - 九宫格模型
+
+| | 事件类 | 语义类 | 自我类 |
+|------|--------|--------|--------|
+| **过去** | Archive（工作归档） | Tutorial（基础教程） | History（发展历程） |
+| **现在** | Journal（工作日志） | Report（工作报告） | Brochure（宣传册） |
+| **未来** | Profile（工作档案） | Essay（工作札记） | Roadmap（发展蓝图） |
+
+### 程序型记忆五层体系
+
+| 层次 | 比喻 | 说明 |
+|------|------|------|
+| Usercase | 判例法 | 来源于具体实践案例的积累与复用 |
+| Handbook | 习惯法 | 来源于人机交互或人与人协作时的经验总结 |
+| Paper | 权威法理 | 系统总结归纳基本原理与方法论 |
+| Specification | 成文法 | 对人机协作进行明确约束与规范 |
+| Bylaws | 宪法 | 规定基本原则与权责划分 |
+
+**事实源**：`paper/meta/memory_classfication.md`
+
 ## 项目概述
 
 **quanttide-founder** 是量潮创始人工作文档的元仓库（Meta Repository），通过 Git 子模块管理多个独立的知识库。
 
 ## 子模块列表
 
-| 子模块 | 路径 | 描述 | 当前版本 |
-|--------|------|------|----------|
-| **essay** | `./essay/` | 随笔 - 个人思考和想法的记录 | 0.0.1 |
-| **handbook** | `./handbook/` | 手册 - 工作流程和规范文档 | v0.0.2 |
-| **journal** | `./journal/` | 日志 - 日常记录和事件记忆 | 0.1.2 |
-| **profile** | `./profile/` | 档案 - 工作和知识档案 | 0.2.3 |
-| **specification** | `./specification/` | 标准 - 规范和定义文档 | 0.0.1 |
+| 子模块 | 路径 | 定位 | 描述 |
+|--------|------|------|------|
+| **archive** | `./archive/` | 过去-事件类 | 工作归档 |
+| **essay** | `./essay/` | 未来-语义类 | 工作札记 |
+| **handbook** | `./handbook/` | 程序型-习惯法 | 工作手册 |
+| **journal** | `./journal/` | 现在-事件类 | 工作日志 |
+| **paper** | `./paper/` | 程序型-权威法理 | 工作论文 |
+| **platform** | `./platform/` | 程序型-宪法 | 技术平台 |
+| **profile** | `./profile/` | 未来-事件类 | 工作档案 |
+| **report** | `./report/` | 现在-语义类 | 工作报告 |
+| **specification** | `./specification/` | 程序型-成文法 | 工程标准 |
+| **usercase** | `./usercase/` | 程序型-判例法 | 工作案例 |
 
 ## 子模块 Release 列表
 
@@ -30,11 +59,16 @@
 
 ```
 quanttide-founder/
-├── essay/          # 随笔模块
-├── handbook/       # 手册模块  
-├── journal/        # 日志模块
-├── profile/        # 档案模块
-├── specification/  # 标准模块
+├── archive/         # 过去-事件类：工作归档
+├── essay/          # 未来-语义类：工作札记
+├── handbook/       # 程序型-习惯法：工作手册
+├── journal/        # 现在-事件类：工作日志
+├── paper/          # 程序型-权威法理：工作论文
+├── platform/       # 程序型-宪法：技术平台
+├── profile/        # 未来-事件类：工作档案
+├── report/         # 现在-语义类：工作报告
+├── specification/  # 程序型-成文法：工程标准
+├── usercase/       # 程序型-判例法：工作案例
 ├── meta/           # 元信息（自我映射）
 ├── AGENTS.md       # Agent 工作指南
 ├── CONTRIBUTING.md # 贡献指南
@@ -48,6 +82,13 @@ quanttide-founder/
 - Meta 目录由 AI 自动维护
 
 ## 更新日志
+
+### 2026-03-16
+
+- 添加 paper 子模块（工作论文）
+- 更新元数据：添加核心框架（记忆分类框架）事实源
+- 更新子模块列表：按九宫格和程序型记忆分类
+- 更新目录结构
 
 ### 2026-03-15
 
