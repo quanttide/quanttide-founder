@@ -35,7 +35,13 @@
 
 ### 程序型记忆五层
 
-- Usecase（判例法）、Handbook（习惯法）、Paper（权威法理）、Specification（成文法）、Platform/Bylaws（宪法）
+| 层次 | 名称 | 法律隐喻 |
+|------|------|----------|
+| Paper | 工作论文 | 立法原理 |
+| Usecase | 工作案例 | 精选判例 |
+| Handbook | 工作手册 | 权威法理 |
+| Specification | 工程标准 | 程序性法律 |
+| Bylaws | 工作章程 | 宪法 |
 
 **事实源**：`paper/meta/memory.md`
 
