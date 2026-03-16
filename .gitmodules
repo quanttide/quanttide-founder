@@ -28,3 +28,6 @@
 [submodule "platform"]
 	path = platform
 	url = https://github.com/Guo-Zhang/thera.git
+[submodule "paper"]
+	path = paper
+	url = https://github.com/quanttide/quanttide-paper-of-founder.git
