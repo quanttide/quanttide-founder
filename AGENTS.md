@@ -123,3 +123,5 @@
 - **自我认知**：详见 [meta/AGENTS.md](meta/AGENTS.md)（AI 自维护）
 - **自我更新**：任务中发现新"自我"认知时，更新到 meta/SOUL.md
 - **记录变更**：重要更新记录到 `meta/report/YYYY-MM-DD.md`，按日期命名
+- **Release 标题规范**：GitHub Release 标题应使用 `v` 前缀（如 v0.1.2），保持一致性
+- **Release notes 规范**：Release notes 应该只包含对应版本的内容，不包含整个 CHANGELOG.md

@@ -123,13 +123,13 @@ git push origin main
 
 # 2. 创建 Release
 gh release create <version> \
-  --title "Release <version>" \
+  --title "v<version>" \
   --notes-file <子模块名>/CHANGELOG.md \
   --repo quanttide/<子模块仓库名>
 
 # 例如：journal 子模块
 gh release create 0.1.0 \
-  --title "Release 0.1.0" \
+  --title "v0.1.0" \
   --notes-file journal/CHANGELOG.md \
   --repo quanttide/quanttide-journal-of-founder
 ```
@@ -156,7 +156,7 @@ git push origin <version>
 
 # 4. 创建 Release（使用 --notes-file 引用整个文件）
 gh release create <version> \
-  --title "Release <version>" \
+  --title "v<version>" \
   --notes-file CHANGELOG.md \
   --repo quanttide/quanttide-founder
 ```
@@ -182,7 +182,7 @@ gh release create <version> \
 # 1. 提取对应版本内容到临时文件
 # 2. 使用临时文件创建 Release
 gh release create <version> \
-  --title "Release <version>" \
+  --title "v<version>" \
   --notes-file /tmp/<version>-release-notes.md \
   --repo quanttide/quanttide-founder
 ```
@@ -198,6 +198,7 @@ gh release create <version> \
 - 子模块是独立仓库，有自己的提交历史和标签
 - 主仓库仅记录子模块的引用（commit SHA）
 - 发布 Release 应在子模块仓库进行，而非主仓库
+- **Release 标题规范**：GitHub Release 标题必须使用 `v` 前缀（如 v0.1.2），保持一致性
 
 ## 人机协作
 
