@@ -1,4 +1,4 @@
-# Changelog
+# CHANGELOG
 
 本文件记录 quanttide-founder 仓库的所有重要变更。
 
