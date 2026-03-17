@@ -143,21 +143,48 @@ gh release create 0.1.0 \
 # - 添加新的版本号和日期
 # - 记录本版本的所有变更
 # - 遵循 Keep a Changelog 格式
+# - 版本格式：## [版本号] - 日期
 
 # 2. 提交 CHANGELOG.md
 git add CHANGELOG.md
 git commit -m "docs: update CHANGELOG for v<version>"
 git push origin main
 
-# 3. 创建 Release
+# 3. 创建 Git 标签
+git tag <version>
+git push origin <version>
+
+# 4. 创建 Release（使用 --notes-file 引用整个文件）
 gh release create <version> \
   --title "Release <version>" \
   --notes-file CHANGELOG.md \
   --repo quanttide/quanttide-founder
+```
 
-# 4. 创建 Git 标签（可选，如果 gh release 没有自动创建）
-git tag <version>
-git push origin <version>
+**注意**：`gh release create --notes-file CHANGELOG.md` 会引用整个 CHANGELOG.md 文件。
+但 Release notes 应该只包含对应版本的内容。如果 CHANGELOG.md 包含多个版本，
+创建 Release 后需要手动编辑 Release notes，只保留对应版本的部分。
+
+**推荐的发布流程**：
+
+1. 在 CHANGELOG.md 中添加新版本内容
+2. 提交 CHANGELOG.md
+3. 创建 Release（此时 Release notes 包含整个文件）
+4. 使用 `gh release edit` 更新 Release notes，只保留对应版本：
+   ```bash
+   # 提取对应版本的 Release notes
+   gh release edit <version> --notes "<版本特定内容>" --repo quanttide/quanttide-founder
+   ```
+
+**或者使用临时文件**：
+
+```bash
+# 1. 提取对应版本内容到临时文件
+# 2. 使用临时文件创建 Release
+gh release create <version> \
+  --title "Release <version>" \
+  --notes-file /tmp/<version>-release-notes.md \
+  --repo quanttide/quanttide-founder
 ```
 
 #### 常见错误处理
