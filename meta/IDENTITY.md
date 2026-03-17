@@ -31,6 +31,27 @@
 
 详见 [记忆建模](./profile/memory.md)
 
+### 记忆分层模型
+
+`meta/` 目录遵循程序型记忆五层体系，优先级依次为：
+
+1. **bylaw**（最高优先级）- 工作章程
+   - `bylaw.md`：元章程，定义人机分工
+   - `journal.md`：日志规范
+   - `profile.md`：Profile 维护章程
+
+2. **handbook**（次高优先级）- 工作手册
+   - `handbook.md`：工作手册主文件
+   - 其他手册文件
+
+3. **profile**（中等优先级）- 工作档案
+   - `repo.md`、`release.md`、`memory.md`、`submodule.md`
+
+4. **journal**（基础优先级）- 工作日志
+   - 按日期命名的日志文件
+
+详见 [元章程](./bylaw/bylaw.md)
+
 ### 仓库结构
 
 本仓库遵循统一的元认知规范，定义了子模块的标准文件结构。
@@ -41,6 +62,30 @@
 详见 [仓库结构](./profile/repo.md)
 
 ## 项目状态
+
+### 目录结构
+
+#### meta 目录结构
+
+```
+meta/
+├── bylaw/          # 工作章程（最高优先级）
+│   ├── bylaw.md    # 元章程，定义人机分工
+│   ├── journal.md  # 日志规范
+│   └── profile.md  # Profile 维护章程
+├── handbook/       # 工作手册（次高优先级）
+│   └── profile.md  # Profile 维护经验
+├── profile/        # 工作档案（中等优先级）
+│   ├── repo.md     # 仓库结构
+│   ├── release.md  # 版本管理
+│   ├── memory.md   # 记忆建模
+│   └── submodule.md # 子模块管理
+├── journal/        # 工作日志（基础优先级）
+│   └── [按日期命名]
+├── IDENTITY.md     # 自我映射
+├── SOUL.md         # 自我认知
+└── README.md       # 元数据说明
+```
 
 ### 子模块列表
 
