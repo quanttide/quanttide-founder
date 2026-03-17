@@ -26,6 +26,17 @@
 
 **事实源**：`paper/meta/memory.md`
 
+### 元认知规范（仓库级）
+
+**仓库级标准文件规范**：`handbook/asset/repo.md`
+
+定义了子模块的标准文件结构：
+- README.md - 项目概述
+- CONTRIBUTING.md - 贡献指南
+- AGENTS.md - Agent 导航
+- CHANGELOG.md - 版本历史
+- meta/ - 元数据目录（含 SOUL.md、IDENTITY.md）
+
 ## 项目概述
 
 **quanttide-founder** 是量潮创始人工作文档的元仓库（Meta Repository），通过 Git 子模块管理多个独立的知识库。
@@ -84,20 +95,8 @@ quanttide-founder/
 
 ## 更新日志
 
-### 2026-03-16
+详细更新记录见 [journal](./journal/) 目录，按日期命名。
 
-- 添加 paper 子模块（工作论文）
-- 更新元数据：添加核心框架（记忆分类框架）事实源
-- 更新子模块列表：按九宫格和程序型记忆分类
-- 更新目录结构
-
-### 2026-03-15
-
-- journal: 添加 knowledge/self UUID，episode 添加 date 字段
-- journal: 更新 execute 日志文件
-
-### 2026-03-14
-
-- essay: 创建 Release v0.0.1
-- journal: 删除 Draft Release 0.1.0
-- specification: 创建 Release 0.0.1
+- [2026-03-16](./journal/2026-03-16.md)
+- [2026-03-15](./journal/2026-03-15.md)
+- [2026-03-14](./journal/2026-03-14.md)
