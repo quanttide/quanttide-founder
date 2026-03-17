@@ -18,6 +18,7 @@
 | [贡献指南](CONTRIBUTING.md) | 人机协作、子模块工作流、发布流程、环境变量 | 开发者 |
 | [元数据](meta/metadata.md) | 子模块版本状态、Release列表 | Agent |
 | [AGENTS.md](AGENTS.md) | 导航索引、使用指南、AI 工作规范 | AI Agent |
+| [meta/AGENTS.md](meta/AGENTS.md) | AI 自我认知、能力清单、工作方式 | AI Agent（自维护）|
 
 ---
 
@@ -116,5 +117,6 @@
 
 - **读取 .env 需要临时权限**：Agent 无法直接读取 .env，需要用户授权
 - **自动同步**：当 .env 变更时，立即同步更新 .env.example
+- **自我认知**：详见 [meta/AGENTS.md](meta/AGENTS.md)（AI 自维护）
 - **自我更新**：任务中发现新"自我"认知时，更新到 meta/SOUL.md
 - **记录变更**：重要更新记录到 `meta/report/YYYY-MM-DD.md`，按日期命名
