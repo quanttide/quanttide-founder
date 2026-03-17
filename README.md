@@ -26,37 +26,31 @@
 
 **事实源**：`paper/meta/memory.md`
 
-## 子模块初始化
-
-```bash
-git submodule update --init --recursive
-```
-
-## 目录结构
+## 一级目录
 
 ```
 quanttide-founder/
 ├── archive/         # 过去-事件类：工作归档
-├── tutorial/        # 过去-语义类：基础教程
-├── journal/         # 现在-事件类：工作日志（原始事件记录）
-├── report/          # 现在-语义类：工作报告（日报总结）
-├── profile/         # 未来-事件类：工作档案
 ├── essay/           # 未来-语义类：工作札记
 ├── handbook/        # 程序型-习惯法：工作手册
-├── usercase/        # 程序型-判例法：工作案例
+├── journal/         # 现在-事件类：工作日志
 ├── paper/           # 程序型-权威法理：工作论文
-├── specification/   # 程序型-成文法：工程标准
 ├── platform/        # 程序型-宪法：技术平台
+├── profile/         # 未来-事件类：工作档案
+├── report/          # 现在-语义类：工作报告
+├── specification/   # 程序型-成文法：工程标准
+├── usercase/        # 程序型-判例法：工作案例
+├── tutorial/        # 过去-语义类：基础教程
 ├── meta/            # 元信息（自我映射）
-│   ├── bylaw/       # 工作章程
-│   ├── brochure/    # 宣传册
-│   ├── handbook/    # 工作手册
-│   ├── journal/     # 原始事件记录
-│   ├── profile/     # 工作档案
-│   └── report/      # 工作报告
 ├── AGENTS.md        # Agent 工作指南
 ├── CONTRIBUTING.md  # 贡献指南
 └── README.md        # 项目说明
+```
+
+## 子模块初始化
+
+```bash
+git submodule update --init --recursive
 ```
 
 ## 仓库信息
@@ -64,3 +58,9 @@ quanttide-founder/
 - **GitHub**: https://github.com/quanttide/quanttide-founder
 - **版本**: v0.1.1
 - **最新 Release**: [0.1.1](https://github.com/quanttide/quanttide-founder/releases/tag/0.1.1)
+
+## 更多信息
+
+- **元信息目录**：查看 `meta/README.md` 了解详细文件结构
+- **贡献指南**：查看 `CONTRIBUTING.md` 了解如何贡献
+- **Agent 工作指南**：查看 `AGENTS.md` 了解 AI 协作规范
