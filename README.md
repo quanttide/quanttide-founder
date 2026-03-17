@@ -1,4 +1,4 @@
-# QuantTide Founder
+# 量潮创始人第二大脑
 
 基于认知科学记忆分类框架的组织知识库。
 
@@ -11,7 +11,7 @@
 | | 事件类 | 语义类 | 自我类 |
 |------|--------|--------|--------|
 | **过去** | `archive/` Archive<br>工作归档 | `tutorial/` Tutorial<br>基础教程 | History<br>发展历程 |
-| **现在** | `journal/` Journal<br>工作日志<br>（原始事件记录） | `report/` Report<br>工作报告<br>（日报总结） | `meta/brochure/` Brochure<br>宣传册 |
+| **现在** | `journal/` Journal<br>工作日志<br>（原始事件记录） | `report/` Report<br>工作报告<br>（日报总结） |  Brochure<br>宣传册 |
 | **未来** | `profile/` Profile<br>工作档案 | `essay/` Essay<br>工作札记 | Roadmap<br>发展蓝图 |
 
 ### 程序型记忆五层体系
@@ -26,20 +26,20 @@
 
 **事实源**：`paper/meta/memory.md`
 
-## 一级目录
+## 目录
 
 ```
 quanttide-founder/
 ├── archive/         # 过去-事件类：工作归档
 ├── essay/           # 未来-语义类：工作札记
-├── handbook/        # 程序型-习惯法：工作手册
+├── handbook/        # 权威法理：工作手册
 ├── journal/         # 现在-事件类：工作日志
-├── paper/           # 程序型-权威法理：工作论文
-├── platform/        # 程序型-宪法：技术平台
+├── paper/           # 立法原理：工作论文
+├── platform/        # 技术平台
 ├── profile/         # 未来-事件类：工作档案
 ├── report/          # 现在-语义类：工作报告
-├── specification/   # 程序型-成文法：工程标准
-├── usercase/        # 程序型-判例法：工作案例
+├── specification/   # 程序性法律：工程标准
+├── usercase/        # 判例法：工作案例
 ├── tutorial/        # 过去-语义类：基础教程
 ├── meta/            # 元信息（自我映射）
 ├── AGENTS.md        # Agent 工作指南
@@ -47,20 +47,10 @@ quanttide-founder/
 └── README.md        # 项目说明
 ```
 
-## 子模块初始化
+## 常用命令
+
+### 子模块初始化
 
 ```bash
 git submodule update --init --recursive
 ```
-
-## 仓库信息
-
-- **GitHub**: https://github.com/quanttide/quanttide-founder
-- **版本**: v0.1.1
-- **最新 Release**: [0.1.1](https://github.com/quanttide/quanttide-founder/releases/tag/0.1.1)
-
-## 更多信息
-
-- **元信息目录**：查看 `meta/README.md` 了解详细文件结构
-- **贡献指南**：查看 `CONTRIBUTING.md` 了解如何贡献
-- **Agent 工作指南**：查看 `AGENTS.md` 了解 AI 协作规范
