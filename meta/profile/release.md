@@ -1,8 +1,14 @@
-# 子模块 Release 列表
+# Release 列表
 
-本文件记录 quanttide-founder 仓库中各子模块的最新 Release 信息。
+本文件记录 quanttide-founder 仓库及其子模块的最新 Release 信息。
 
-## Release 列表
+## 主仓库 Release
+
+| 仓库 | 最新 Release | Release 日期 |
+|------|-------------|-------------|
+| **quanttide-founder** | [0.1.0](https://github.com/quanttide/quanttide-founder/releases/tag/0.1.0) | 2026-03-17 |
+
+## 子模块 Release 列表
 
 | 子模块 | 仓库 | 最新 Release | Release 日期 |
 |--------|------|-------------|-------------|
@@ -16,5 +22,5 @@
 ## 版本约定
 
 - 各子模块独立版本管理
-- 主仓库不设版本，仅追踪子模块引用
+- 主仓库版本通过 Git 标签管理
 - Meta 目录由 AI 自动维护
