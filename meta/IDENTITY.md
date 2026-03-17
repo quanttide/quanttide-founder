@@ -49,7 +49,11 @@
 3. **profile**（中等优先级）- 工作档案
    - `repo.md`、`release.md`、`memory.md`、`submodule.md`
 
-4. **report**（基础优先级）- 工作报告
+4. **journal**（基础优先级）- 工作日志
+   - 按日期命名的日志文件
+   - 记录 meta 目录的日常变更和思考
+
+5. **report**（基础优先级）- 工作报告
    - 按日期命名的日报文件
 
 详见 [元章程](./bylaw/bylaw.md)
@@ -82,10 +86,19 @@ meta/
 │   ├── release.md  # 版本管理
 │   ├── memory.md   # 记忆建模
 │   └── submodule.md # 子模块管理
+├── journal/        # 工作日志（基础优先级）
+│   └── [按日期命名]
 ├── report/         # 工作报告（基础优先级）
 │   └── [按日期命名]
+├── brochure/       # 宣传册
+│   └── index.md    # 项目宣传册
+├── tutorial/       # 使用指南
+│   └── index.md    # 如何使用创始人的第二大脑
 ├── IDENTITY.md     # 自我映射
 ├── SOUL.md         # 自我认知
+├── AGENTS.md       # AI 自我认知
+├── TOOLS.md        # 工具清单
+├── USER.md         # 用户画像
 └── README.md       # 元数据说明
 ```
 
