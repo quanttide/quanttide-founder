@@ -52,30 +52,6 @@
 
 ---
 
-## [Unreleased]
-
-### Added
-
-- **meta/AGENTS.md**：AI 自我认知文档，由 AI 自维护
-- **meta/TOOLS.md**：工具清单，记录项目中使用的开发工具
-- **meta/journal/**：工作日志目录，记录 meta 目录的日常变更
-- **meta/tutorial/**：使用指南目录，包含教程和分类哲学
-- **meta/tutorial/category.md**：范畴论为基础的分类和命名哲学教程
-- **meta/tutorial/index.md**：如何使用创始人的第二大脑指南
-
-### Changed
-
-- **meta 目录重构**：
-  - 将 `meta/brochure/company.md` 移到 `meta/tutorial/index.md`
-  - 更新 `meta/IDENTITY.md` 目录结构
-  - 更新 `meta/README.md` 结构和说明
-
-### Removed
-
-- **meta/brochure/company.md**：已移到 `meta/tutorial/index.md`
-
----
-
 ## [0.1.0] - 2026-03-17
 
 ### Added
