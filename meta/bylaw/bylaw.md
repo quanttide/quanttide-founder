@@ -2,6 +2,60 @@
 
 本文件定义 quanttide-founder 仓库的人机协作分工规范。
 
+## 记忆分层模型
+
+### 分层优先级
+
+根据记忆分类框架的程序型记忆五层体系，`meta/bylaw/` 目录的文件优先级如下：
+
+| 层级 | 英文名称 | 中文名称 | 法律隐喻 | 优先级 | 文件 |
+|------|----------|----------|----------|--------|------|
+| L5 | Bylaw | 工作章程 | 宪法 | **最高** | `bylaw.md` |
+| L4 | Specification | 工程标准 | 程序性法律 | 高 | `journal.md`, `profile.md` |
+| L3 | Handbook | 工作手册 | 权威汇编 | 中 | `handbook.md`（待创建） |
+| L2 | Usecase | 工作案例 | 精选判例 | 低 | - |
+| L1 | Paper | 工作论文 | 立法原理 | 最低 | - |
+
+### 目录优先级顺序
+
+1. **bylaw**（最高优先级）
+   - `bylaw.md`：元章程，定义人机分工
+   - `journal.md`：日志规范
+   - `profile.md`：Profile 维护章程
+
+2. **handbook**（次高优先级）
+   - `handbook.md`：工作手册（待创建）
+   - 其他手册文件
+
+3. **profile**（中等优先级）
+   - `repo.md`：仓库结构
+   - `release.md`：版本管理
+   - `memory.md`：记忆建模
+   - `submodule.md`：子模块管理
+
+4. **journal**（基础优先级）
+   - 按日期命名的日志文件
+
+### bylaw 内部优先级
+
+**最高优先级**：`bylaw.md`
+- 定义元章程和人机分工
+- 其他 bylaw 文件应遵循此章程
+
+**次高优先级**：`journal.md` 和 `profile.md`
+- 具体规范和流程
+- 不得与 `bylaw.md` 冲突
+
+### handbook 内部优先级
+
+**最高优先级**：`handbook.md`（待创建）
+- 工作手册的主文件
+- 定义手册的整体结构和规范
+
+**次高优先级**：其他手册文件
+- 如 `profile.md` 等具体手册
+- 遵循 `handbook.md` 的规范
+
 ## 人机分工
 
 ### bylaw（工作章程）
