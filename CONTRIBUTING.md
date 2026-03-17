@@ -61,6 +61,24 @@ git commit -m "Update <子模块名> submodule"
 git push origin main
 ```
 
+#### 同步子模块远程更新
+
+当子模块在远程有新的提交或版本时，需要在主仓库中同步更新：
+
+```bash
+# 同步指定子模块到远程最新
+git submodule update --remote <子模块名>
+git add <子模块名>
+git commit -m "Update <子模块名> submodule"
+git push origin main
+
+# 或同步所有子模块到远程最新
+git submodule update --remote --merge
+git add .
+git commit -m "Update all submodules"
+git push origin main
+```
+
 ### 环境变量
 
 #### 维护 .env.example
