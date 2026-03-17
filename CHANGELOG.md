@@ -107,11 +107,3 @@
 ### Fixed
 
 - **CHANGELOG.md**：恢复并更新 Changelog 文件
-
----
-
-## [0.0.2] - 2026-03-13
-
-### Changed
-
-- Update: meta directory, journal workflow, submodule releases
