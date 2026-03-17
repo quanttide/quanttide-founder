@@ -16,6 +16,42 @@
 
 ---
 
+## [0.1.1] - 2026-03-17
+
+### Added
+
+- **meta/brochure/**：宣传册目录
+  - `meta/brochure/index.md`：项目宣传册（感性化介绍项目价值和愿景）
+  - `meta/brochure/company.md`：内部使用指南（量潮科技成员使用指南）
+- **meta/journal/**：工作日志目录
+  - `meta/journal/2026-03-17.md`：原始事件记录（按时间线）
+- **meta/report/**：工作报告目录
+  - 记日报/总结（按记忆分类：事件记忆、语义记忆、自我记忆）
+- **meta/bylaw/report.md`：元报告章程（定义报告规范）
+- **meta/bylaw/profile.md`：Profile 维护章程
+- **meta/bylaw/bylaw.md`：元章程和人机分工
+
+### Changed
+
+- **目录结构重构**：
+  - 分离原始事件记录和日报总结
+  - `meta/bylaw/journal.md` → `meta/bylaw/report.md`
+
+- **人机分工明确**：
+  - bylaw：人类主导制定，AI 总结
+  - handbook：AI 主导整理，人类验收
+  - profile/journal：AI 自动维护
+
+- **记忆分层模型**：
+  - bylaw（最高优先级）→ handbook → profile → report（基础优先级）
+
+### Removed
+
+- **CHANGELOG.md**：已删除（内容已分散到各文件，现已恢复）
+- **旧版本标签 v0.0.2**：已删除
+
+---
+
 ## [Unreleased]
 
 ### Added
