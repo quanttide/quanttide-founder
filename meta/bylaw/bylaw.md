@@ -11,7 +11,7 @@
 | 层级 | 英文名称 | 中文名称 | 法律隐喻 | 优先级 | 文件 |
 |------|----------|----------|----------|--------|------|
 | L5 | Bylaw | 工作章程 | 宪法 | **最高** | `bylaw.md` |
-| L4 | Specification | 工程标准 | 程序性法律 | 高 | `journal.md`, `profile.md` |
+| L4 | Specification | 工程标准 | 程序性法律 | 高 | `report.md`, `profile.md` |
 | L3 | Handbook | 工作手册 | 权威汇编 | 中 | `handbook.md`（待创建） |
 | L2 | Usecase | 工作案例 | 精选判例 | 低 | - |
 | L1 | Paper | 工作论文 | 立法原理 | 最低 | - |
@@ -20,7 +20,7 @@
 
 1. **bylaw**（最高优先级）
    - `bylaw.md`：元章程，定义人机分工
-   - `journal.md`：日志规范
+   - `report.md`：报告规范
    - `profile.md`：Profile 维护章程
 
 2. **handbook**（次高优先级）
@@ -33,8 +33,8 @@
    - `memory.md`：记忆建模
    - `submodule.md`：子模块管理
 
-4. **journal**（基础优先级）
-   - 按日期命名的日志文件
+4. **report**（基础优先级）
+   - 按日期命名的日报文件
 
 ### bylaw 内部优先级
 
@@ -42,7 +42,7 @@
 - 定义元章程和人机分工
 - 其他 bylaw 文件应遵循此章程
 
-**次高优先级**：`journal.md` 和 `profile.md`
+**次高优先级**：`report.md` 和 `profile.md`
 - 具体规范和流程
 - 不得与 `bylaw.md` 冲突
 
@@ -75,7 +75,7 @@
 4. 人类验收并确认
 
 **示例**：
-- `meta/bylaw/journal.md`：人类制定日志规范，AI 总结成文
+- `meta/bylaw/report.md`：人类制定日志规范，AI 总结成文
 - `meta/bylaw/profile.md`：人类制定维护流程，AI 总结成文
 
 ### handbook（工作手册）
@@ -97,7 +97,7 @@
 **示例**：
 - `meta/handbook/profile.md`：AI 收集维护经验，人类验收
 
-### journal（工作日志）
+### report（工作报告）
 
 **主要维护者**：AI
 
@@ -113,19 +113,19 @@
 4. 人类定期回顾
 
 **示例**：
-- `meta/journal/2026-03-17.md`：AI 自动维护
+- `meta/report/2026-03-17.md`：AI 自动维护
 
 ### profile（工作档案）
 
 **主要维护者**：AI
 
 **职责**：
-- AI 收集 journal 中的事件记忆
+- AI 收集 report 中的事件记忆
 - AI 分类整理到其他文件
 - AI 清理 default.md
 
 **流程**：
-1. AI 从 journal 收集事件记忆
+1. AI 从 report 收集事件记忆
 2. AI 分类整理到 repo.md、release.md 等
 3. AI 清理 default.md
 4. 人类定期检查
@@ -164,7 +164,7 @@
 - 人类验收确认
 - 形成可复用的经验
 
-### journal 目录
+### report 目录
 - 由 AI 自动维护
 - 人类定期回顾
 - 记录工作过程
@@ -186,7 +186,7 @@
 - **实用性**：可直接应用
 - **可维护性**：易于更新
 
-### journal 质量标准
+### report 质量标准
 - **及时性**：按时记录
 - **完整性**：覆盖所有重要事件
 - **可追溯性**：时间线清晰
@@ -208,7 +208,7 @@
 - AI 整理更新内容
 - 人类验收确认
 
-### journal 更新
+### report 更新
 - AI 自动记录
 - 人类定期回顾
 - 必要时人工补充
@@ -219,8 +219,9 @@
 - 必要时人工调整
 
 ## 参考文件
-- `meta/bylaw/journal.md`：日志规范
+- `meta/bylaw/report.md`：报告规范
 - `meta/bylaw/profile.md`：Profile 维护章程
 - `meta/handbook/profile.md`：Profile 维护经验
-- `meta/journal/`：工作日志
+- `meta/report/`：工作报告（日报）
+- `meta/journal/`：原始事件记录
 - `meta/profile/`：工作档案

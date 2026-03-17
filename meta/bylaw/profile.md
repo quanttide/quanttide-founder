@@ -6,10 +6,10 @@
 
 ### 步骤 1: 从 journal 收集事件记忆
 
-**目标**：从 `meta/journal/` 目录的日志文件中提取事件记忆，收集到 `meta/profile/default.md`
+**目标**：从 `meta/report/` 目录的日志文件中提取事件记忆，收集到 `meta/profile/default.md`
 
 **操作流程**：
-1. 遍历 `meta/journal/` 目录下的所有日志文件
+1. 遍历 `meta/report/` 目录下的所有日志文件
 2. 提取每个日志文件的"事件记忆"部分
 3. 将提取的内容追加到 `meta/profile/default.md`
 
@@ -121,7 +121,7 @@
 **处理**：保留在 default.md，标记为"待分类"
 
 ## 参考文件
-- `meta/bylaw/journal.md`：日志规范
+- `meta/bylaw/report.md`：日志规范
 - `meta/profile/repo.md`：仓库结构
 - `meta/profile/release.md`：版本管理
 - `meta/profile/memory.md`：记忆建模

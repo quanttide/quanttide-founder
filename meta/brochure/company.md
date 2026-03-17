@@ -117,7 +117,7 @@ meta/
 
 #### 场景 4：阅读工作日志
 
-**去哪里找**：`meta/journal/`
+**去哪里找**：`meta/report/`
 
 **包含内容**：
 - 按日期命名的日志文件
@@ -176,7 +176,7 @@ meta/
 
 定期查看：
 
-- `meta/journal/`：按日期查看最新日志
+- `meta/report/`：按日期查看最新日志
 - `meta/profile/release.md`：查看版本更新
 - GitHub Release：查看正式发布说明
 
@@ -187,7 +187,7 @@ meta/
 ### 场景 A：了解创始人最近在做什么
 
 **步骤**：
-1. 查看 `meta/journal/` 最新日志
+1. 查看 `meta/report/` 最新日志
 2. 阅读事件记忆部分
 3. 理解语义记忆提炼
 4. 关注自我记忆反思

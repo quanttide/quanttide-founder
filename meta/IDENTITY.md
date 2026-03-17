@@ -39,7 +39,7 @@
 
 1. **bylaw**（最高优先级）- 工作章程
    - `bylaw.md`：元章程，定义人机分工
-   - `journal.md`：日志规范
+   - `report.md`：报告规范
    - `profile.md`：Profile 维护章程
 
 2. **handbook**（次高优先级）- 工作手册
@@ -49,8 +49,8 @@
 3. **profile**（中等优先级）- 工作档案
    - `repo.md`、`release.md`、`memory.md`、`submodule.md`
 
-4. **journal**（基础优先级）- 工作日志
-   - 按日期命名的日志文件
+4. **report**（基础优先级）- 工作报告
+   - 按日期命名的日报文件
 
 详见 [元章程](./bylaw/bylaw.md)
 
@@ -82,7 +82,7 @@ meta/
 │   ├── release.md  # 版本管理
 │   ├── memory.md   # 记忆建模
 │   └── submodule.md # 子模块管理
-├── journal/        # 工作日志（基础优先级）
+├── report/         # 工作报告（基础优先级）
 │   └── [按日期命名]
 ├── IDENTITY.md     # 自我映射
 ├── SOUL.md         # 自我认知
@@ -98,7 +98,7 @@ meta/
 | **archive** | `./archive/` | 过去-事件类 | 工作归档 |
 | **essay** | `./essay/` | 未来-语义类 | 工作札记 |
 | **handbook** | `./handbook/` | 程序型-习惯法 | 工作手册 |
-| **journal** | `./journal/` | 现在-事件类 | 工作日志 |
+| **journal** | `./journal/` | 现在-事件类 | 工作日志（原始事件记录） |
 | **paper** | `./paper/` | 程序型-权威法理 | 工作论文 |
 | **platform** | `./platform/` | 程序型-宪法 | 技术平台 |
 | **profile** | `./profile/` | 未来-事件类 | 工作档案 |
@@ -138,8 +138,8 @@ meta/
 - 重构元数据结构，将详细信息移到 `meta/profile/` 目录
 - 更新子模块：archive v0.1.0, handbook v0.1.0, profile v0.2.4
 
-详细更新记录见 [journal](./journal/) 目录，按日期命名。
+详细更新记录见 [report](./report/) 目录，按日期命名。
 
-- [2026-03-16](./journal/2026-03-16.md)
-- [2026-03-15](./journal/2026-03-15.md)
-- [2026-03-14](./journal/2026-03-14.md)
+- [2026-03-16](./report/2026-03-16.md)
+- [2026-03-15](./report/2026-03-15.md)
+- [2026-03-14](./report/2026-03-14.md)
