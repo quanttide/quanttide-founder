@@ -31,3 +31,6 @@
 [submodule "paper"]
 	path = paper
 	url = https://github.com/quanttide/quanttide-paper-of-founder.git
+[submodule "tutorial"]
+	path = tutorial
+	url = https://github.com/quanttide/quanttide-tutorial-of-founder.git
