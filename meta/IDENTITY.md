@@ -44,6 +44,7 @@
 | **report** | `./report/` | 现在-语义类 | 工作报告 |
 | **specification** | `./specification/` | 程序型-成文法 | 工程标准 |
 | **usercase** | `./usercase/` | 程序型-判例法 | 工作案例 |
+| **tutorial** | `./tutorial/` | 过去-语义类 | 基础教程 |
 
 ## 子模块 Release 列表
 
