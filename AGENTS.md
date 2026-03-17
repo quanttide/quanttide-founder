@@ -102,7 +102,7 @@
 
 - **修改子模块** → CONTRIBUTING > 子模块工作流 > 提交推送
 - **同步子模块更新** → CONTRIBUTING > 子模块工作流
-- **发布 Release** → CONTRIBUTING > 子模块工作流 > 发布 Release
+- **发布 Release** → 更新 CHANGELOG.md → CONTRIBUTING > 子模块工作流 > 发布 Release
 - **处理错误** → CONTRIBUTING > 常见错误处理
 - **更新环境变量** → CONTRIBUTING > 环境变量
 

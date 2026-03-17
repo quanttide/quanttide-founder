@@ -134,6 +134,32 @@ gh release create 0.1.0 \
   --repo quanttide/quanttide-journal-of-founder
 ```
 
+#### 主仓库发布 Release
+
+**重要**：创建 Release 之前必须先更新 CHANGELOG.md
+
+```bash
+# 1. 更新 CHANGELOG.md
+# - 添加新的版本号和日期
+# - 记录本版本的所有变更
+# - 遵循 Keep a Changelog 格式
+
+# 2. 提交 CHANGELOG.md
+git add CHANGELOG.md
+git commit -m "docs: update CHANGELOG for v<version>"
+git push origin main
+
+# 3. 创建 Release
+gh release create <version> \
+  --title "Release <version>" \
+  --notes-file CHANGELOG.md \
+  --repo quanttide/quanttide-founder
+
+# 4. 创建 Git 标签（可选，如果 gh release 没有自动创建）
+git tag <version>
+git push origin <version>
+```
+
 #### 常见错误处理
 
 - **子模块标签已存在**：先删除远程标签 `git push origin :refs/tags/<version>`，再重新推送
