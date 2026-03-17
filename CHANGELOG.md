@@ -16,6 +16,58 @@
 
 ---
 
+## [0.1.2] - 2026-03-18
+
+### Added
+
+- **meta/AGENTS.md**：AI 自我认知文档，由 AI 自维护
+- **meta/TOOLS.md**：工具清单，记录项目中使用的开发工具
+- **meta/journal/**：工作日志目录，记录 meta 目录的日常变更
+  - `meta/journal/README.md`：日志说明和规范
+  - `meta/journal/2026-03-18.md`：工作日志
+- **meta/tutorial/**：使用指南目录，包含教程和分类哲学
+  - `meta/tutorial/index.md`：如何使用创始人的第二大脑指南
+  - `meta/tutorial/category.md`：范畴论为基础的分类和命名哲学教程
+- **范畴论教程**：从本体论到范畴论的分类哲学教程
+
+### Changed
+
+- **meta 目录重构**：
+  - 将 `meta/brochure/company.md` 移到 `meta/tutorial/index.md`
+  - 更新 `meta/IDENTITY.md` 目录结构
+  - 更新 `meta/README.md` 结构和说明
+  - 添加 `meta/journal/` 和 `meta/tutorial/` 到记忆分层模型
+
+- **CHANGELOG 工作流**：
+  - 恢复 CHANGELOG.md
+  - 标题改为大写（CHANGELOG）
+  - 更新 AGENTS.md 和 CONTRIBUTING.md 中的 CHANGELOG 工作流程
+  - 明确 Release notes 应该只包含对应版本的内容
+
+- **GitHub Release 清理**：
+  - 删除旧版本 Release（v0.0.2, v0.0.1）
+  - 更新 0.1.0 和 0.1.1 Release notes 为标准格式
+  - 只保留 0.1.0 和 0.1.1 两个 Release
+
+- **子模块更新**：
+  - archive: 提交 97cf161，新增 journal/code 和 journal/default
+  - journal: 提交 c24fca7，重构 code 目录，添加 code/README.md
+
+### Removed
+
+- **meta/brochure/company.md**：已移到 `meta/tutorial/index.md`
+
+### Fixed
+
+- **CHANGELOG.md**：恢复并更新 Changelog 文件
+- **GitHub Release**：修复 0.1.0 Release notes 包含整个 CHANGELOG.md 的问题
+
+---
+
+
+
+---
+
 ## [0.1.1] - 2026-03-17
 
 ### Added
