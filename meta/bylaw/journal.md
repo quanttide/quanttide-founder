@@ -1,4 +1,4 @@
-# 日志规范
+# 元日志章程
 
 本文件定义 quanttide-founder 仓库中日志（journal）的结构规范。
 
