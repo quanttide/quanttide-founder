@@ -6,6 +6,8 @@
 
 **quanttide-founder** 是量潮创始人工作文档的元仓库（Meta Repository），通过 Git 子模块管理多个独立的知识库。
 
+详见 [宣传册](./brochure/index.md)
+
 ### 仓库定位
 
 - **性质**：元仓库（Meta Repository）

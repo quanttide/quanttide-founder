@@ -8,6 +8,8 @@
 |------|-------------|-------------|
 | **quanttide-founder** | [0.1.0](https://github.com/quanttide/quanttide-founder/releases/tag/0.1.0) | 2026-03-17 |
 
+**宣传册**：[meta/brochure/index.md](../brochure/index.md) - 项目介绍和快速开始指南
+
 ## 子模块 Release 列表
 
 | 子模块 | 仓库 | 最新 Release | Release 日期 |
