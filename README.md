@@ -10,96 +10,27 @@
 
 | | 事件类 | 语义类 | 自我类 |
 |------|--------|--------|--------|
-| **过去** | Archive（工作归档） | Tutorial（基础教程） | History（发展历程） |
-| **现在** | Journal（工作日志） | Report（工作报告） | Brochure（宣传册） |
-| **未来** | Profile（工作档案） | Essay（工作札记） | Roadmap（发展蓝图） |
+| **过去** | `archive/` Archive<br>工作归档 | `tutorial/` Tutorial<br>基础教程 | History<br>发展历程 |
+| **现在** | `journal/` Journal<br>工作日志<br>（原始事件记录） | `report/` Report<br>工作报告<br>（日报总结） | `meta/brochure/` Brochure<br>宣传册 |
+| **未来** | `profile/` Profile<br>工作档案 | `essay/` Essay<br>工作札记 | Roadmap<br>发展蓝图 |
 
 ### 程序型记忆五层体系
 
-| 层次 | 英文名称 | 中文名称 | 法律隐喻 | 说明 |
-|------|----------|----------|----------|------|
-| L1 | Paper | 工作论文 | 立法原理 | 系统总结归纳基本原理与方法论，无直接约束力 |
-| L2 | Usecase | 工作案例 | 精选判例 | 来源于具体实践案例的积累与复用 |
-| L3 | Handbook | 工作手册 | 权威汇编 | 对实践和原理的系统化整理 |
-| L4 | Specification | 工程标准 | 程序性法律 | 系统性程序规范，具有约束力 |
-| L5 | Bylaw | 工作章程 | 宪法 | 规定基本原则与权责划分 |
+| 层次 | 英文名称 | 中文名称 | 法律隐喻 | 子模块 | 说明 |
+|------|----------|----------|----------|--------|------|
+| L1 | Paper | 工作论文 | 立法原理 | `paper/` | 系统总结归纳基本原理与方法论，无直接约束力 |
+| L2 | Usecase | 工作案例 | 精选判例 | `usercase/` | 来源于具体实践案例的积累与复用 |
+| L3 | Handbook | 工作手册 | 权威汇编 | `handbook/` | 对实践和原理的系统化整理 |
+| L4 | Specification | 工程标准 | 程序性法律 | `specification/` | 系统性程序规范，具有约束力 |
+| L5 | Bylaw | 工作章程 | 宪法 | `meta/bylaw/` | 规定基本原则与权责划分 |
 
 **事实源**：`paper/meta/memory.md`
 
-## 子模块
+## 子模块初始化
 
 ```bash
 git submodule update --init --recursive
 ```
-
-### 陈述型记忆 - 九宫格模型匹配
-
-#### 过去 - 事件类
-- **Archive** (`archive/`) - 工作归档
-  - 仓库：`quanttide-archive-of-founder`
-  - 定位：过去-事件类
-
-#### 过去 - 语义类  
-- **Tutorial** (`tutorial/`) - 基础教程
-  - 仓库：`quanttide-tutorial-of-founder`
-  - 定位：过去-语义类
-
-#### 现在 - 事件类
-- **Journal** (`journal/`) - 工作日志
-  - 仓库：`quanttide-journal-of-founder`
-  - 定位：现在-事件类
-  - 说明：原始事件记录，按时间顺序记录
-
-#### 现在 - 语义类
-- **Report** (`report/`) - 工作报告
-  - 仓库：`quanttide-report-of-founder`
-  - 定位：现在-语义类
-  - 说明：日报/总结，按记忆分类提炼
-
-#### 现在 - 自我类
-- **Brochure** (`meta/brochure/`) - 宣传册
-  - 说明：项目介绍和内部使用指南
-
-#### 未来 - 事件类
-- **Profile** (`profile/`) - 工作档案
-  - 仓库：`quanttide-profile-of-founder`
-  - 定位：未来-事件类
-
-#### 未来 - 语义类
-- **Essay** (`essay/`) - 工作札记
-  - 仓库：`quanttide-essay-of-founder`
-  - 定位：未来-语义类
-
-### 程序型记忆五层体系匹配
-
-#### L1 - Paper (工作论文)
-- **Paper** (`paper/`) - 工作论文
-  - 仓库：`quanttide-paper-of-founder`
-  - 法律隐喻：立法原理
-  - 说明：系统总结归纳基本原理与方法论
-
-#### L2 - Usecase (工作案例)
-- **Usercase** (`usercase/`) - 工作案例
-  - 仓库：`quanttide-usercase-of-founder`
-  - 法律隐喻：精选判例
-  - 说明：来源于具体实践案例的积累与复用
-
-#### L3 - Handbook (工作手册)
-- **Handbook** (`handbook/`) - 工作手册
-  - 仓库：`quanttide-handbook-of-founder`
-  - 法律隐喻：权威汇编
-  - 说明：对实践和原理的系统化整理
-
-#### L4 - Specification (工程标准)
-- **Specification** (`specification/`) - 工程标准
-  - 仓库：`quanttide-specification-of-founder`
-  - 法律隐喻：程序性法律
-  - 说明：系统性程序规范，具有约束力
-
-#### L5 - Bylaw (工作章程)
-- **Bylaw** (`meta/bylaw/`) - 工作章程
-  - 说明：规定基本原则与权责划分
-  - 包含：`bylaw.md`、`report.md`、`profile.md`
 
 ## 目录结构
 
@@ -127,3 +58,9 @@ quanttide-founder/
 ├── CONTRIBUTING.md  # 贡献指南
 └── README.md        # 项目说明
 ```
+
+## 仓库信息
+
+- **GitHub**: https://github.com/quanttide/quanttide-founder
+- **版本**: v0.1.1
+- **最新 Release**: [0.1.1](https://github.com/quanttide/quanttide-founder/releases/tag/0.1.1)
