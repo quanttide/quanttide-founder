@@ -11,8 +11,8 @@
 | | 事件类 | 语义类 | 自我类 |
 |------|--------|--------|--------|
 | **过去** | Archive（工作归档） | Tutorial（基础教程） | History（发展历程） |
-| **现在** | Journal（工作日志） | Report（工作报告） | Brochure（宣传册） |
-| **未来** | Profile（工作档案） | Essay（工作札记） | Roadmap（发展蓝图） |
+| **现在** | Journal（工作日志） | Profile（工作档案） | Brochure（宣传册） |
+| **未来** | Report（工作报告） | Essay（工作札记） | Roadmap（发展蓝图） |
 
 ### 程序型记忆五层体系
 

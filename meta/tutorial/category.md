@@ -86,8 +86,8 @@ Paper (原理) → Usecase (案例) → Handbook (手册) → Specification (标
 | | 事件类 | 语义类 | 自我类 |
 |------|--------|--------|--------|
 | **过去** | Archive | Tutorial | History |
-| **现在** | Journal | Report | Brochure |
-| **未来** | Profile | Essay | Roadmap |
+| **现在** | Journal | Profile | Brochure |
+| **未来** | Report | Essay | Roadmap |
 
 **函子映射**：九宫格到子模块
 
