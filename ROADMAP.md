@@ -11,8 +11,8 @@
 
 ## 探索类
 
-- **AI 探索 → thera → qtadmin → qtcloud**：脚本生命周期
-  1. AI 从 meta 元认知摸索需要的脚本
+- ** scripts → thera → qtadmin → qtcloud**：
+  1. AI 从 meta 元认知摸索需要的脚本到`scripts`
   2. 人类识别后写到 `src/thera`
   3. 识别功能和价值，分类到 `src/qtadmin`
-  4. 计划成熟后正式固定到 qtcloud 系列项目
+  4. 计划成熟后正式固定到 `src/qtcloud-*` 系列项目
