@@ -1,15 +1,6 @@
-
-
-
 [submodule "archive"]
 	path = docs/archive
 	url = https://github.com/quanttide/quanttide-archive-of-founder.git
-[submodule "profile"]
-	path = docs/profile
-	url = https://github.com/quanttide/quanttide-profile-of-founder.git
-[submodule "specification"]
-	path = docs/specification
-	url = https://github.com/quanttide/quanttide-specification-of-founder.git
 [submodule "essay"]
 	path = docs/essay
 	url = https://github.com/quanttide/quanttide-essay-of-founder.git
@@ -19,21 +10,27 @@
 [submodule "journal"]
 	path = docs/journal
 	url = https://github.com/quanttide/quanttide-journal-of-founder.git
-[submodule "report"]
-	path = docs/report
-	url = https://github.com/quanttide/quanttide-report-of-founder.git
-[submodule "usercase"]
-	path = docs/usercase
-	url = https://github.com/quanttide/quanttide-usercase-of-founder.git
-[submodule "platform"]
-	path = src/thera
-	url = https://github.com/Guo-Zhang/thera.git
 [submodule "paper"]
 	path = docs/paper
 	url = https://github.com/quanttide/quanttide-paper-of-founder.git
+[submodule "profile"]
+	path = docs/profile
+	url = https://github.com/quanttide/quanttide-profile-of-founder.git
+[submodule "qtadmin"]
+	path = src/qtadmin
+	url = https://github.com/quanttide/qtadmin.git
+[submodule "report"]
+	path = docs/report
+	url = https://github.com/quanttide/quanttide-report-of-founder.git
+[submodule "specification"]
+	path = docs/specification
+	url = https://github.com/quanttide/quanttide-specification-of-founder.git
+[submodule "thera"]
+	path = src/thera
+	url = https://github.com/Guo-Zhang/thera.git
 [submodule "tutorial"]
 	path = docs/tutorial
 	url = https://github.com/quanttide/quanttide-tutorial-of-founder.git
-[submodule "src/qtadmin"]
-	path = src/qtadmin
-	url = https://github.com/quanttide/qtadmin.git
+[submodule "usercase"]
+	path = docs/usercase
+	url = https://github.com/quanttide/quanttide-usercase-of-founder.git
