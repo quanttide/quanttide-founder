@@ -31,7 +31,9 @@
 ```
 quanttide-founder/
 ├── src/
-│   └── thera/       # 技术平台
+│   ├── thera/       # 技术平台
+│   └── qtadmin/     # 管理后台
+├── scripts/         # AI 工具脚本（给AI写代码用）
 ├── docs/            # 文档（给人类读）
 │   ├── archive/     # 过去-事件类：工作归档
 │   ├── essay/       # 未来-语义类：工作札记

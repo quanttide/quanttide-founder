@@ -114,6 +114,7 @@ meta/
 | **journal** | `docs/journal/` | 现在-事件类 | 工作日志（原始事件记录） |
 | **paper** | `docs/paper/` | 程序型-权威法理 | 工作论文 |
 | **platform** | `src/thera/` | 程序型-宪法 | 技术平台 |
+| **qtadmin** | `src/qtadmin/` | 程序型-宪法 | 管理后台 |
 | **profile** | `docs/profile/` | 未来-事件类 | 工作档案 |
 | **report** | `docs/report/` | 现在-语义类 | 工作报告 |
 | **specification** | `docs/specification/` | 程序型-成文法 | 工程标准 |
