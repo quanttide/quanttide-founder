@@ -2,83 +2,95 @@
 """
 文档一致性检查脚本
 
-检查主仓库中 .gitmodules 和文档中的路径引用是否一致。
+从 YAML 事实源读取子模块配置，检查与 .gitmodules 的一致性。
 """
 
-import os
 import re
 import sys
+import yaml
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).parent.parent
 
 
-def check_gitmodules():
-    """检查 .gitmodules 中的子模块路径是否存在"""
+def load_yaml_registry():
+    """从 YAML 事实源加载子模块注册表"""
+    yaml_path = REPO_ROOT / "meta" / "profile" / "submodules.yaml"
+    if not yaml_path.exists():
+        return None
+    
+    with open(yaml_path) as f:
+        data = yaml.safe_load(f)
+    return data.get("submodules", []) if data else []
+
+
+def check_gitmodules_vs_yaml():
+    """检查 .gitmodules 与 YAML 事实源的一致性"""
     gitmodules_path = REPO_ROOT / ".gitmodules"
     if not gitmodules_path.exists():
-        return False, "文件不存在"
+        return False, ".gitmodules 不存在"
     
-    modules = {}
     with open(gitmodules_path) as f:
-        content = f.read()
-        for match in re.finditer(r'path\s*=\s*(.+)', content):
-            path = match.group(1).strip()
-            modules[path] = (REPO_ROOT / path).exists()
+        git_content = f.read()
     
-    all_exist = all(modules.values())
-    details = f"{len(modules)} 个子模块"
-    missing = [p for p, e in modules.items() if not e]
-    if missing:
-        details += f", 缺失: {', '.join(missing)}"
+    git_modules = {}
+    current_name = None
+    for line in git_content.split("\n"):
+        name_match = re.match(r'\[submodule\s+"([^"]+)"\]', line)
+        if name_match:
+            current_name = name_match.group(1)
+        path_match = re.match(r'\s*path\s*=\s*(.+)', line)
+        if current_name and path_match:
+            git_modules[current_name] = path_match.group(1).strip()
+            current_name = None
+    
+    yaml_modules = load_yaml_registry()
+    if yaml_modules is None:
+        return False, "YAML 事实源不存在"
+    
+    yaml_paths = {m["name"]: m["path"] for m in yaml_modules}
+    
+    errors = []
+    
+    git_names = set(git_modules.keys())
+    yaml_names = set(yaml_paths.keys())
+    
+    missing_in_yaml = git_names - yaml_names
+    if missing_in_yaml:
+        errors.append(f"YAML 缺少: {', '.join(missing_in_yaml)}")
+    
+    missing_in_git = yaml_names - git_names
+    if missing_in_git:
+        errors.append(f".gitmodules 缺少: {', '.join(missing_in_git)}")
+    
+    path_mismatch = []
+    for name in git_names & yaml_names:
+        if git_modules[name] != yaml_paths[name]:
+            path_mismatch.append(f"{name}: {git_modules[name]} vs {yaml_paths[name]}")
+    if path_mismatch:
+        errors.append(f"路径不一致: {', '.join(path_mismatch)}")
+    
+    all_exist = len(errors) == 0
+    details = f"{len(yaml_paths)} 个子模块" if all_exist else "; ".join(errors)
+    
     return all_exist, details
 
 
-def check_readme_paths():
-    """检查 README.md 中的路径是否存在"""
-    readme_path = REPO_ROOT / "README.md"
-    if not readme_path.exists():
-        return False, "文件不存在"
+def check_yaml_paths():
+    """检查 YAML 中声明的路径是否存在"""
+    yaml_modules = load_yaml_registry()
+    if yaml_modules is None:
+        return False, "YAML 事实源不存在"
     
-    with open(readme_path) as f:
-        content = f.read()
-    
-    paths = re.findall(r'`([\w/.-]+)/`', content)
     missing = []
-    for path in paths:
-        full_path = REPO_ROOT / path
-        if not full_path.exists() and path not in ['AGENTS.md', 'CONTRIBUTING.md', 'README.md', 'CHANGELOG.md', 'ROADMAP.md']:
-            missing.append(path)
+    for m in yaml_modules:
+        path = REPO_ROOT / m["path"]
+        if not path.exists():
+            missing.append(m["path"])
     
     all_exist = len(missing) == 0
-    details = f"{len(paths)} 个路径" if all_exist else f"缺失: {', '.join(missing)}"
+    details = f"{len(yaml_modules)} 个路径" if all_exist else f"缺失: {', '.join(missing)}"
     return all_exist, details
-
-
-def check_submodule_list():
-    """检查 submodule.md 中的列表是否完整"""
-    submodule_md = REPO_ROOT / "meta" / "profile" / "submodule.md"
-    if not submodule_md.exists():
-        return False, "文件不存在"
-    
-    with open(submodule_md) as f:
-        content = f.read()
-    
-    listed_paths = set(re.findall(r'`([^`]+)/`', content))
-    
-    gitmodules_path = REPO_ROOT / ".gitmodules"
-    if gitmodules_path.exists():
-        with open(gitmodules_path) as f:
-            git_content = f.read()
-        git_paths = re.findall(r'path\s*=\s*(.+)', git_content)
-        git_modules = set(p.strip() for p in git_paths)
-        
-        missing = git_modules - listed_paths
-        all_match = len(missing) == 0
-        details = f"{len(listed_paths)} 个路径" if all_match else f"缺少: {', '.join(missing)}"
-        return all_match, details
-    
-    return False, "无法读取 .gitmodules"
 
 
 def main():
@@ -88,9 +100,8 @@ def main():
     print()
     
     checks = [
-        (".gitmodules", check_gitmodules),
-        ("README.md", check_readme_paths),
-        ("submodule.md", check_submodule_list),
+        ("YAML vs .gitmodules", check_gitmodules_vs_yaml),
+        ("YAML 路径存在性", check_yaml_paths),
     ]
     
     results = []
@@ -98,7 +109,7 @@ def main():
         status, details = check_func()
         symbol = "✅" if status else "⚠️"
         results.append((name, status, details))
-        print(f"{symbol} {name:20s} {details}")
+        print(f"{symbol} {name:25s} {details}")
     
     print()
     print("=" * 60)

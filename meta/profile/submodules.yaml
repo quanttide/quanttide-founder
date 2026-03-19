@@ -1,8 +1,3 @@
-# 子模块注册表
-
-本文档是子模块的事实源，YAML 数据同时供人类阅读和脚本读取。
-
-```{yaml}
 submodules:
   - name: thera
     path: src/thera
@@ -75,10 +70,3 @@ submodules:
     category: procedural
     type: case-law
     description: 程序型-判例法：工作案例
-```
-
-## 使用说明
-
-如需修改子模块配置，请编辑上方 YAML 数据块。
-
-脚本读取位置：`meta/profile/submodules.yaml`
