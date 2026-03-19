@@ -84,7 +84,7 @@ meta/
 | paper | 程序型-权威法理 | 工作论文 |
 | specification | 程序型-成文法 | 工程标准 |
 | platform | 程序型-宪法 | 技术平台 |
-| tutorial | 过去-语义类 | 基础教程 |
+| tutorial | 过去-语义类 | 工作教程 |
 
 ### 第二步：查找信息
 

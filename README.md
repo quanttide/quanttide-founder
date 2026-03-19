@@ -10,9 +10,9 @@
 
 | | 事件类 | 语义类 | 自我类 |
 |------|--------|--------|--------|
-| **过去** | `archive/` Archive<br>工作归档 | `tutorial/` Tutorial<br>基础教程 | History<br>发展历程 |
+| **过去** | `archive/` Archive<br>工作归档 | `tutorial/` Tutorial<br>工作教程 | History<br>工作历程 |
 | **现在** | `journal/` Journal<br>工作日志<br>（原始事件记录） | `profile/` Profile<br>工作档案 |  Brochure<br>宣传册 |
-| **未来** | `report/` Report<br>工作报告 | `essay/` Essay<br>工作札记 | Roadmap<br>发展蓝图 |
+| **未来** | `report/` Report<br>工作报告 | `essay/` Essay<br>工作札记 | Roadmap<br>工作蓝图 |
 
 ### 程序型记忆五层体系
 
@@ -40,7 +40,7 @@ quanttide-founder/
 ├── report/          # 现在-语义类：工作报告
 ├── specification/   # 程序性法律：工程标准
 ├── usercase/        # 判例法：工作案例
-├── tutorial/        # 过去-语义类：基础教程
+├── tutorial/        # 过去-语义类：工作教程
 ├── meta/            # 元信息（自我映射）
 ├── AGENTS.md        # Agent 工作指南
 ├── CONTRIBUTING.md  # 贡献指南
