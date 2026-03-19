@@ -16,6 +16,28 @@
 
 ---
 
+## [0.2.1] - 2026-03-20
+
+### Added
+
+- **数字资产治理工具**：doc_check.py, submodule_sync.py
+- **meta/roadmap/scripts/**：脚本摸索文档目录
+- **docs/handbook/scripts-to-thera.md**：Scripts 演进到 Thera 的判断标准
+
+### Changed
+
+- **子模块名重命名**：`[submodule "platform"]` → `[submodule "thera"]`
+- **README 更新**：添加 Thera 和 Qtadmin 到程序型记忆体系
+- **AGENTS 更新**：添加脚本使用规范
+- **submodule.md 改造**：改为 YAML 事实源
+
+### Removed
+
+- **src/thera/src/studio**：删除 Flutter 项目
+- **src/thera/scripts**：删除
+
+---
+
 ## [0.2.0] - 2026-03-20
 
 ### Changed
