@@ -11,7 +11,8 @@
 
 ## 探索类
 
-- **scripts → src**：AI 积累脚本形成平台
-  - 将分散的脚本收集到 `src/scripts`
-  - 逐步形成脚本管理平台
-  - AI 负责积累和整理
+- **AI 探索 → thera → qtadmin → qtcloud**：脚本生命周期
+  1. AI 从 meta 元认知摸索需要的脚本
+  2. 人类识别后写到 `src/thera`
+  3. 识别功能和价值，分类到 `src/qtadmin`
+  4. 计划成熟后正式固定到 qtcloud 系列项目
