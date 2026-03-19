@@ -54,3 +54,9 @@ quanttide-founder/
 ```bash
 git submodule update --init --recursive
 ```
+
+### 更新关联子模块
+
+```
+git submodule update --remote --merge
+```
