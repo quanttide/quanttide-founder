@@ -33,7 +33,9 @@ README.md      ✅     路径已更新
 submodule.md   ⚠️     缺少 1 个引用
 ```
 
-## 实现位置
+## 演进路径
 
-- **阶段一（摸索）**：`meta/roadmap/doc-check.md`
-- **阶段二（thera）**：`src/thera/scripts/doc-check.py`
+- **阶段一（摸索）**：在 `meta/roadmap/doc-check.md` 记录设想
+- **阶段二（thera）**：人类识别后写入 `src/thera/scripts/doc-check.py`
+- **阶段三（qtadmin）**：分类到 `src/qtadmin/scripts/`
+- **阶段四（qtcloud）**：成熟后成为独立项目
