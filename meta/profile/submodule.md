@@ -6,6 +6,8 @@
 
 | 子模块 | 路径 | 定位 | 描述 |
 |--------|------|------|------|
+| **platform** | `src/thera/` | 程序型-宪法 | 技术平台 |
+| **qtadmin** | `src/qtadmin/` | 程序型-宪法 | 管理后台 |
 | **archive** | `docs/archive/` | 过去-事件类 | 工作归档 |
 | **essay** | `docs/essay/` | 未来-语义类 | 工作札记 |
 | **handbook** | `docs/handbook/` | 程序型-习惯法 | 工作手册 |
