@@ -107,7 +107,7 @@ def main():
     results = []
     for name, check_func in checks:
         status, details = check_func()
-        symbol = "✅" if status else "⚠️"
+        symbol = "[OK]" if status else "[WARN]"
         results.append((name, status, details))
         print(f"{symbol} {name:25s} {details}")
     
@@ -115,9 +115,9 @@ def main():
     print("=" * 60)
     all_pass = all(r[1] for r in results)
     if all_pass:
-        print("✅ 所有检查通过")
+        print("[OK] 所有检查通过")
     else:
-        print("⚠️ 存在不一致，请检查")
+        print("[WARN] 存在不一致，请检查")
     print("=" * 60)
     
     return 0 if all_pass else 1

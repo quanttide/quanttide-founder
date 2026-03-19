@@ -19,12 +19,15 @@ def run_git(args, capture=True):
     result = subprocess.run(cmd, capture_output=capture, text=True)
     if capture:
         return result.stdout
-    return result.returncode == 0
+    else:
+        return result.returncode == 0
 
 
 def get_submodule_status():
     """获取子模块状态"""
     output = run_git(["submodule", "status"])
+    if not output:
+        return []
     submodules = []
     for line in output.strip().split("\n"):
         if not line:
@@ -45,12 +48,12 @@ def get_submodule_status():
 def sync_submodule(path, verbose=False):
     """同步指定子模块"""
     print(f"同步 {path}...")
-    result = run_git(["submodule", "update", "--remote", "--merge", path])
-    if result:
-        print(f"✅ {path} 同步成功")
+    success = run_git(["submodule", "update", "--remote", "--merge", path], capture=False)
+    if success:
+        print(f"[OK] {path} 同步成功")
     else:
-        print(f"⚠️ {path} 同步失败")
-    return result
+        print(f"[FAIL] {path} 同步失败")
+    return success
 
 
 def main():
@@ -70,9 +73,9 @@ def main():
             print("\n检测到以下子模块有更新：")
             for s in submodules:
                 if s["has_update"]:
-                    print(f"  ⬆️ {s['path']} ({s['local']})")
+                    print(f"  [UP] {s['path']} ({s['local']})")
         else:
-            print("✅ 所有子模块已是最新")
+            print("[OK] 所有子模块已是最新")
         return 0 if not has_updates else 1
     
     elif args.sync:
