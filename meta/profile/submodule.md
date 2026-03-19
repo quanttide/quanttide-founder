@@ -11,8 +11,6 @@
 | **handbook** | `docs/handbook/` | 程序型-习惯法 | 工作手册 |
 | **journal** | `docs/journal/` | 现在-事件类 | 工作日志 |
 | **paper** | `docs/paper/` | 程序型-权威法理 | 工作论文 |
-| **platform** | `src/thera/` | 程序型-宪法 | 技术平台 |
-| **qtadmin** | `src/qtadmin/` | 程序型-宪法 | 管理后台 |
 | **profile** | `docs/profile/` | 未来-事件类 | 工作档案 |
 | **report** | `docs/report/` | 现在-语义类 | 工作报告 |
 | **specification** | `docs/specification/` | 程序型-成文法 | 工程标准 |
@@ -24,8 +22,8 @@
 ```
 quanttide-founder/
 ├── src/
-│   ├── thera/       # 技术平台
-│   └── qtadmin/     # 管理后台
+│   ├── thera/       # 个人原型
+│   └── qtadmin/     # 公司原型
 ├── scripts/         # AI 工具脚本（给AI写代码用）
 ├── docs/            # 文档（给人类读）
 │   ├── archive/      # 过去-事件类：工作归档
