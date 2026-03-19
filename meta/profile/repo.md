@@ -4,7 +4,7 @@
 
 ## 元认知规范（仓库级）
 
-**仓库级标准文件规范**：`handbook/asset/repo.md`
+**仓库级标准文件规范**：`docs/handbook/asset/repo.md`
 
 定义了子模块的标准文件结构：
 - README.md - 项目概述

@@ -6,36 +6,39 @@
 
 | 子模块 | 路径 | 定位 | 描述 |
 |--------|------|------|------|
-| **archive** | `./archive/` | 过去-事件类 | 工作归档 |
-| **essay** | `./essay/` | 未来-语义类 | 工作札记 |
-| **handbook** | `./handbook/` | 程序型-习惯法 | 工作手册 |
-| **journal** | `./journal/` | 现在-事件类 | 工作日志 |
-| **paper** | `./paper/` | 程序型-权威法理 | 工作论文 |
-| **platform** | `./platform/` | 程序型-宪法 | 技术平台 |
-| **profile** | `./profile/` | 未来-事件类 | 工作档案 |
-| **report** | `./report/` | 现在-语义类 | 工作报告 |
-| **specification** | `./specification/` | 程序型-成文法 | 工程标准 |
-| **usercase** | `./usercase/` | 程序型-判例法 | 工作案例 |
-| **tutorial** | `./tutorial/` | 过去-语义类 | 工作教程 |
+| **archive** | `docs/archive/` | 过去-事件类 | 工作归档 |
+| **essay** | `docs/essay/` | 未来-语义类 | 工作札记 |
+| **handbook** | `docs/handbook/` | 程序型-习惯法 | 工作手册 |
+| **journal** | `docs/journal/` | 现在-事件类 | 工作日志 |
+| **paper** | `docs/paper/` | 程序型-权威法理 | 工作论文 |
+| **platform** | `src/thera/` | 程序型-宪法 | 技术平台 |
+| **profile** | `docs/profile/` | 未来-事件类 | 工作档案 |
+| **report** | `docs/report/` | 现在-语义类 | 工作报告 |
+| **specification** | `docs/specification/` | 程序型-成文法 | 工程标准 |
+| **usercase** | `docs/usercase/` | 程序型-判例法 | 工作案例 |
+| **tutorial** | `docs/tutorial/` | 过去-语义类 | 工作教程 |
 
 ## 目录结构
 
 ```
 quanttide-founder/
-├── archive/         # 过去-事件类：工作归档
-├── essay/          # 未来-语义类：工作札记
-├── handbook/       # 程序型-习惯法：工作手册
-├── journal/        # 现在-事件类：工作日志
-├── paper/          # 程序型-权威法理：工作论文
-├── platform/       # 程序型-宪法：技术平台
-├── profile/        # 未来-事件类：工作档案
-├── report/         # 现在-语义类：工作报告
-├── specification/  # 程序型-成文法：工程标准
-├── usercase/       # 程序型-判例法：工作案例
-├── meta/           # 元信息（自我映射）
-├── AGENTS.md       # Agent 工作指南
-├── CONTRIBUTING.md # 贡献指南
-└── README.md       # 项目说明
+├── src/
+│   └── thera/       # 技术平台
+├── docs/            # 文档（给人类读）
+│   ├── archive/      # 过去-事件类：工作归档
+│   ├── essay/        # 未来-语义类：工作札记
+│   ├── handbook/     # 程序型-习惯法：工作手册
+│   ├── journal/      # 现在-事件类：工作日志
+│   ├── paper/        # 程序型-权威法理：工作论文
+│   ├── profile/      # 未来-事件类：工作档案
+│   ├── report/       # 现在-语义类：工作报告
+│   ├── specification/ # 程序型-成文法：工程标准
+│   ├── tutorial/    # 过去-语义类：工作教程
+│   └── usercase/    # 程序型-判例法：工作案例
+├── meta/            # 元信息（给AI读）
+├── AGENTS.md        # Agent 工作指南
+├── CONTRIBUTING.md  # 贡献指南
+└── README.md        # 项目说明
 ```
 
 ## 版本约定

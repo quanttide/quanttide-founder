@@ -140,10 +140,10 @@
 | 目录 | 对象 | 说明 |
 |------|------|------|
 | `meta/` | AI 读 | 给 AI 的工作指南、认知文档 |
-| `tutorial/` (子模块) | 人读 | 给人类的教程文档 |
+| `docs/tutorial/` (子模块) | 人读 | 给人类的教程文档 |
 
 两者内容相同但用途不同：
 - `meta/tutorial/git.md` = AI 看的 Git 教程
-- `tutorial/code/git.md` = 人看的 Git 教程
+- `docs/tutorial/code/git.md` = 人看的 Git 教程
 
 更新时需同步两个位置。

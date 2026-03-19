@@ -24,7 +24,7 @@
 | L4 | Specification | 工程标准 | 程序性法律 | 系统性程序规范，具有约束力 |
 | L5 | Bylaw | 工作章程 | 宪法 | 规定基本原则与权责划分 |
 
-**事实源**：`paper/meta/memory.md`
+**事实源**：`docs/paper/meta/memory.md`
 
 ## 日志管理规范
 
@@ -41,7 +41,7 @@
 ## 元数据规范
 
 ### 事实源引用
-- **核心框架**：指向 `paper/meta/memory.md`
+- **核心框架**：指向 `docs/paper/meta/memory.md`
 - **结构化组织**：按记忆分类框架组织子模块
 
 ### 子模块管理

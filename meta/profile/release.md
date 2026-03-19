@@ -6,9 +6,9 @@
 
 | 仓库 | 最新 Release | Release 日期 |
 |------|-------------|-------------|
-| **quanttide-founder** | [0.1.0](https://github.com/quanttide/quanttide-founder/releases/tag/0.1.0) | 2026-03-17 |
+| **quanttide-founder** | [v0.1.3](https://github.com/quanttide/quanttide-founder/releases/tag/v0.1.3) | 2026-03-19 |
 
-**宣传册**：[meta/brochure/index.md](../brochure/index.md) - 项目介绍和快速开始指南
+**宣传册**：[meta/tutorial/index.md](../tutorial/index.md) - 项目介绍和快速开始指南
 
 ## 子模块 Release 列表
 

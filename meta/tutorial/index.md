@@ -77,17 +77,17 @@ meta/
 
 | 子模块 | 定位 | 用途 |
 |--------|------|------|
-| archive | 过去-事件类 | 工作归档 |
-| journal | 现在-事件类 | 工作日志 |
-| report | 现在-语义类 | 工作报告 |
-| profile | 未来-事件类 | 工作档案 |
-| essay | 未来-语义类 | 工作札记 |
-| handbook | 程序型-习惯法 | 工作手册 |
-| usercase | 程序型-判例法 | 工作案例 |
-| paper | 程序型-权威法理 | 工作论文 |
-| specification | 程序型-成文法 | 工程标准 |
-| platform | 程序型-宪法 | 技术平台 |
-| tutorial | 过去-语义类 | 工作教程 |
+| docs/archive | 过去-事件类 | 工作归档 |
+| docs/journal | 现在-事件类 | 工作日志 |
+| docs/report | 现在-语义类 | 工作报告 |
+| docs/profile | 未来-事件类 | 工作档案 |
+| docs/essay | 未来-语义类 | 工作札记 |
+| docs/handbook | 程序型-习惯法 | 工作手册 |
+| docs/usercase | 程序型-判例法 | 工作案例 |
+| docs/paper | 程序型-权威法理 | 工作论文 |
+| docs/specification | 程序型-成文法 | 工程标准 |
+| src/thera | 程序型-宪法 | 技术平台 |
+| docs/tutorial | 过去-语义类 | 工作教程 |
 
 ### 第二步：查找信息
 
