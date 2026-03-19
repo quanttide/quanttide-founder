@@ -16,6 +16,25 @@
 
 ---
 
+## [0.2.0] - 2026-03-20
+
+### Changed
+
+- **目录结构重构**：
+  - `platform` → `src/thera`：技术平台改名
+  - 所有子模块移动到 `docs/` 下：archive, essay, handbook, journal, paper, profile, report, specification, tutorial, usercase
+
+### Added
+
+- **src/qtadmin**：新增管理后台子模块
+- **ROADMAP.md**：v0.2.x 版本目标规划
+
+### Removed
+
+- **根目录子模块**：全部移动到 docs/ 下
+
+---
+
 ## [0.1.3] - 2026-03-19
 
 ### Changed
