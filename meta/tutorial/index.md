@@ -66,7 +66,9 @@ meta/
 │   └── index.md    # 项目宣传册
 └── tutorial/   # 使用指南
     ├── index.md    # 本指南
-    └── git.md      # Git 使用最佳实践
+    ├── git.md      # Git 使用最佳实践
+    └── code/
+        └── git.md  # Git 人机协作指南
 ```
 
 #### 2. 子模块目录
