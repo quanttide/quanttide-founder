@@ -34,3 +34,6 @@
 [submodule "tutorial"]
 	path = docs/tutorial
 	url = https://github.com/quanttide/quanttide-tutorial-of-founder.git
+[submodule "src/qtadmin"]
+	path = src/qtadmin
+	url = https://github.com/quanttide/qtadmin.git
