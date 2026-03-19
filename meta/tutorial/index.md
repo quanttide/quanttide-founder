@@ -65,7 +65,8 @@ meta/
 ├── brochure/   # 宣传册
 │   └── index.md    # 项目宣传册
 └── tutorial/   # 使用指南
-    └── index.md    # 本指南
+    ├── index.md    # 本指南
+    └── git.md      # Git 使用最佳实践
 ```
 
 #### 2. 子模块目录
@@ -221,6 +222,7 @@ meta/
 - **CONTRIBUTING.md**：贡献指南
 - **AGENTS.md**：AI 协作规范
 - **README.md**：项目说明
+- **[Git 使用最佳实践](git.md)**：Git 和子模块操作指南
 
 ### 联系方式
 
