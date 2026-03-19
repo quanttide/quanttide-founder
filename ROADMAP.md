@@ -4,9 +4,10 @@
 
 ## 维护类
 
-- **src/qtadmin → docs/archive**：归档过时代码
-  - 将 `src/qtadmin` 移动到 `docs/archive`
-  - 标记为过时，不再活跃维护
+- **src/qtadmin 分类归档**：整理旧代码不影响开发
+  - 从 `src/qtadmin` 提取过时代码模块
+  - 归档到 `docs/archive/qtadmin/` 方便参考
+  - 保持 `src/qtadmin` 核心代码清晰
 
 ## 探索类
 
