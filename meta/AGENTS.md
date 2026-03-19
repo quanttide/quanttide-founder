@@ -147,3 +147,41 @@
 - `docs/tutorial/code/git.md` = 人看的 Git 教程
 
 更新时需同步两个位置。
+
+## 脚本使用规范
+
+### scripts/ 目录
+
+存放 AI 摸索实现的工具脚本，供人类和 AI 共同使用。
+
+### 脚本使用时机
+
+| 脚本 | 触发时机 |
+|------|----------|
+| `scripts/doc_check.py` | 目录结构变更后、提交前检查一致性 |
+| `scripts/submodule_sync.py` | 开始工作前检测子模块更新、需要同步子模块时 |
+
+### 使用流程
+
+1. **开始工作前**：
+   ```bash
+   python3 scripts/submodule_sync.py --check  # 检测子模块更新
+   ```
+
+2. **目录结构变更后**：
+   ```bash
+   python3 scripts/doc_check.py  # 检查文档一致性
+   ```
+
+3. **提交前**：
+   ```bash
+   python3 scripts/doc_check.py  # 确保一致性
+   ```
+
+### 脚本演进
+
+遵循 scripts → thera → qtadmin → qtcloud 生命周期：
+- `scripts/`：AI 摸索期
+- `src/thera/`：人类识别期
+- `src/qtadmin/`：价值分类期
+- qtcloud：正式固定期
