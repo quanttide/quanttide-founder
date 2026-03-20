@@ -39,4 +39,4 @@
 	url = https://github.com/quanttide/quanttide-library-of-founder.git
 [submodule "packages/devops"]
 	path = packages/devops
-	url = https://github.com/quanttide/quanttide-devops.git
+	url = https://github.com/quanttide/quanttide-devops-toolkit.git
