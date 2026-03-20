@@ -22,6 +22,12 @@ submodules:
     type: platform
     description: DevOps 工具包，Python SDK 用于运维自动化
 
+  - name: data
+    path: packages/data
+    category: procedural
+    type: platform
+    description: 数据工具包，提供多语言数据操作 SDK
+
   - name: archive
     path: docs/archive
     category: declarative
