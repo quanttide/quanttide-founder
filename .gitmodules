@@ -37,3 +37,6 @@
 [submodule "library"]
 	path = docs/library
 	url = https://github.com/quanttide/quanttide-library-of-founder.git
+[submodule "packages/devops"]
+	path = packages/devops
+	url = https://github.com/quanttide/quanttide-devops.git
