@@ -16,6 +16,12 @@ submodules:
     type: platform
     description: 管理后台，管理和运营工具
 
+  - name: devops
+    path: packages/devops
+    category: procedural
+    type: platform
+    description: DevOps 工具包，Python SDK 用于运维自动化
+
   - name: archive
     path: docs/archive
     category: declarative

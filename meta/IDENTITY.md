@@ -118,6 +118,7 @@ meta/
 | **specification** | `docs/specification/` | 程序型-成文法 | 工程标准 |
 | **usercase** | `docs/usercase/` | 程序型-判例法 | 工作案例 |
 | **tutorial** | `docs/tutorial/` | 过去-语义类 | 工作教程 |
+| **devops** | `packages/devops/` | 程序型-平台 | DevOps 工具包 |
 
 详见 [子模块列表](./profile/submodule.md)
 
