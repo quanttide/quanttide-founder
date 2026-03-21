@@ -16,6 +16,39 @@
 
 ---
 
+## [0.2.2] - 2026-03-21
+
+### Added
+
+- **docs/bylaw 子模块**：新增 bylaws 工作章程子模块
+  - 来源：https://github.com/quanttide/quanttide-bylaw-of-founder.git
+  - 添加 bylaw 资产结构：asset/founder/bylaw.md, profile.md, report.md
+- **meta/SOUL.md 增强**：添加能力、价值、目标章节
+- **meta/report/**：合并 meta/journal 到 meta/report
+
+### Changed
+
+- **AGENTS.md**：添加子模块操作前先 checkout main 规则
+- **ROADMAP.md**：更新规划文档
+- **meta 目录重构**：
+  - meta/tutorial/category.md → meta/essay/category.md
+
+### Removed
+
+- **meta/brochure/index.md**：合并到 meta/SOUL.md
+- **meta/bylaw/*.md**：移动到 docs/bylaw 子模块
+- **meta/journal/2026-03-18.md, 2026-03-20.md**：合并到 meta/report
+- **meta/handbook/profile.md, scripts/**：归档到对应子模块
+
+### Submodules
+
+- **archive**：添加 connect/ 和 profile/ 归档
+- **journal**：归档每日日志文件
+- **profile**：归档旧结构（74 文件）
+- **roadmap**：添加 strategy/ 归档
+
+---
+
 ## [0.2.1] - 2026-03-20
 
 ### Added
