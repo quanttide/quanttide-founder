@@ -12,10 +12,6 @@
    - 例如：scripts-to-thera 演进 → 软件工程
 3. **分类标准积累**：建立问题领域目录，持续积累识别经验
 
-### v0.2.2: 程序型记忆迁移
-
-将 meta 中的程序型记忆（Paper/Usecase/Handbook/Specification/Bylaw）合并到 docs 目录
-
 ### v0.2.3: 分类规则沉淀
 
 总结 archive 和 journal 的分类规则，形成可复用的标准文档到 meta
