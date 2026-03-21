@@ -16,6 +16,36 @@
 
 ---
 
+## [0.2.3] - 2026-03-23
+
+### Added
+
+- **docs/history 子模块**：新增发展历程子模块
+  - 来源：https://github.com/quanttide/quanttide-history-of-founder.git
+- **meta/roadmap/vision.md**：愿景蓝图文档
+- **meta/essay/work-pattern.md**：实证迭代法工作模式
+
+### Changed
+
+- **ROADMAP.md**：整合创始人战略目标
+- **meta/profile/**：更新子模块注册表和 Release 列表
+
+### Submodules
+
+- **archive**：v0.2.0，添加 journal 和 report 归档
+- **bylaw**：v0.0.1，初始版本
+- **essay**：v0.0.2，添加实证迭代法
+- **handbook**：v0.0.2，更新职能板块
+- **history**：v0.0.1，初始版本
+- **journal**：v0.2.0，重构目录结构
+- **paper**：v0.0.1，添加实证迭代法
+- **profile**：v0.2.5，归档 org 内容
+- **roadmap**：v0.0.1，初始版本
+- **tutorial**：v0.0.1，初始版本
+- **usercase**：v0.1.1，添加 journal 归档
+
+---
+
 ## [0.2.2] - 2026-03-21
 
 ### Added
