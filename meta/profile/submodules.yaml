@@ -11,6 +11,18 @@ submodules:
     type: platform
     description: 管理后台，管理和运营工具
 
+  - name: devops
+    path: packages/devops
+    category: procedural
+    type: platform
+    description: DevOps 工具包
+
+  - name: data
+    path: packages/data
+    category: procedural
+    type: platform
+    description: 数据工具包
+
   - name: archive
     path: docs/archive
     category: declarative
@@ -70,3 +82,21 @@ submodules:
     category: procedural
     type: case-law
     description: 程序型-判例法：工作案例
+
+  - name: bylaw
+    path: docs/bylaw
+    category: procedural
+    type: constitution
+    description: 程序型-宪法：工作章程
+
+  - name: history
+    path: docs/history
+    category: declarative
+    grid: past-self
+    description: 过去-自我类：发展历程
+
+  - name: roadmap
+    path: docs/roadmap
+    category: declarative
+    grid: future-self
+    description: 未来-自我类：工作蓝图
