@@ -123,6 +123,7 @@
 
 ### 重要提示
 
+- **子模块操作前先 checkout main**：进入子模块前必须先 `git checkout main && git pull`，避免在 detached HEAD 状态操作
 - **读取 .env 需要临时权限**：Agent 无法直接读取 .env，需要用户授权
 - **自动同步**：当 .env 变更时，立即同步更新 .env.example
 - **自我认知**：详见 [meta/AGENTS.md](meta/AGENTS.md)（AI 自维护）
