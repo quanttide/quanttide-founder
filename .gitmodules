@@ -43,3 +43,6 @@
 [submodule "packages/data"]
 	path = packages/data
 	url = https://github.com/quanttide/quanttide-data-toolkit.git
+[submodule "docs/roadmap"]
+	path = docs/roadmap
+	url = https://github.com/quanttide/quanttide-roadmap-of-founder.git
