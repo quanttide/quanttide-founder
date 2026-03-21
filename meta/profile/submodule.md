@@ -87,6 +87,18 @@ submodules:
     category: procedural
     type: case-law
     description: 程序型-判例法：工作案例
+
+  - name: bylaw
+    path: docs/bylaw
+    category: procedural
+    type: constitution
+    description: 程序型-宪法：工作章程
+
+  - name: history
+    path: docs/history
+    category: declarative
+    grid: past-self
+    description: 过去-自我类：发展历程
 ```
 
 ## 使用说明

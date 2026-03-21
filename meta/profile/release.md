@@ -6,20 +6,25 @@
 
 | 仓库 | 最新 Release | Release 日期 |
 |------|-------------|-------------|
-| **quanttide-founder** | [v0.1.3](https://github.com/quanttide/quanttide-founder/releases/tag/v0.1.3) | 2026-03-19 |
+| **quanttide-founder** | [v0.2.2](https://github.com/quanttide/quanttide-founder/releases/tag/v0.2.2) | 2026-03-21 |
 
-**宣传册**：[meta/tutorial/index.md](../tutorial/index.md) - 项目介绍和快速开始指南
+**愿景**：[meta/roadmap/vision.md](../roadmap/vision.md) - 让知识真正流动起来
 
 ## 子模块 Release 列表
 
 | 子模块 | 仓库 | 最新 Release | Release 日期 |
 |--------|------|-------------|-------------|
-| **archive** | quanttide-archive-of-founder | [v0.1.0](https://github.com/quanttide/quanttide-archive-of-founder/releases/tag/v0.1.0) | 2026-03-17 |
-| **essay** | quanttide-essay-of-founder | [0.0.2](https://github.com/quanttide/quanttide-essay-of-founder/releases/tag/0.0.2) | 2026-03-13 |
-| **handbook** | quanttide-handbook-of-founder | [v0.1.0](https://github.com/quanttide/quanttide-handbook-of-founder/releases/tag/v0.1.0) | 2026-03-17 |
-| **journal** | quanttide-journal-of-founder | [0.1.2](https://github.com/quanttide/quanttide-journal-of-founder/releases/tag/0.1.2) | 2026-03-13 |
-| **profile** | quanttide-profile-of-founder | [v0.2.4](https://github.com/quanttide/quanttide-profile-of-founder/releases/tag/v0.2.4) | 2026-03-17 |
-| **specification** | quanttide-specification-of-founder | [0.0.1](https://github.com/quanttide/quanttide-specification-of-founder/releases/tag/0.0.1) | 2026-03-13 |
+| **archive** | quanttide-archive-of-founder | [v0.2.0](https://github.com/quanttide/quanttide-archive-of-founder/releases/tag/v0.2.0) | 2026-03-23 |
+| **bylaw** | quanttide-bylaw-of-founder | [v0.0.1](https://github.com/quanttide/quanttide-bylaw-of-founder/releases/tag/v0.0.1) | 2026-03-23 |
+| **essay** | quanttide-essay-of-founder | [v0.0.2](https://github.com/quanttide/quanttide-essay-of-founder/releases/tag/v0.0.2) | 2026-03-23 |
+| **handbook** | quanttide-handbook-of-founder | [v0.0.2](https://github.com/quanttide/quanttide-handbook-of-founder/releases/tag/v0.0.2) | 2026-03-23 |
+| **history** | quanttide-history-of-founder | [v0.0.1](https://github.com/quanttide/quanttide-history-of-founder/releases/tag/v0.0.1) | 2026-03-23 |
+| **journal** | quanttide-journal-of-founder | [v0.2.0](https://github.com/quanttide/quanttide-journal-of-founder/releases/tag/v0.2.0) | 2026-03-23 |
+| **paper** | quanttide-paper-of-founder | [v0.0.1](https://github.com/quanttide/quanttide-paper-of-founder/releases/tag/v0.0.1) | 2026-03-23 |
+| **profile** | quanttide-profile-of-founder | [v0.2.5](https://github.com/quanttide/quanttide-profile-of-founder/releases/tag/v0.2.5) | 2026-03-23 |
+| **roadmap** | quanttide-roadmap-of-founder | [v0.0.1](https://github.com/quanttide/quanttide-roadmap-of-founder/releases/tag/v0.0.1) | 2026-03-23 |
+| **tutorial** | quanttide-tutorial-of-founder | [v0.0.1](https://github.com/quanttide/quanttide-tutorial-of-founder/releases/tag/v0.0.1) | 2026-03-23 |
+| **usercase** | quanttide-usercase-of-founder | [v0.1.1](https://github.com/quanttide/quanttide-usercase-of-founder/releases/tag/v0.1.1) | 2026-03-23 |
 
 ## 版本约定
 
