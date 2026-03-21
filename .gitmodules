@@ -49,3 +49,6 @@
 [submodule "docs/bylaw"]
 	path = docs/bylaw
 	url = https://github.com/quanttide/quanttide-bylaw-of-founder.git
+[submodule "docs/history"]
+	path = docs/history
+	url = https://github.com/quanttide/quanttide-history-of-founder.git
