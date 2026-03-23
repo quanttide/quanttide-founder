@@ -52,3 +52,6 @@
 [submodule "docs/history"]
 	path = docs/history
 	url = https://github.com/quanttide/quanttide-history-of-founder.git
+[submodule "packages/opencode"]
+	path = packages/opencode
+	url = https://github.com/quanttide/quanttide-opencode.git
