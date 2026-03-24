@@ -51,3 +51,6 @@ _bookdown_files/
 .ipynb
 
 .ruff_cache/
+
+# data
+data/
