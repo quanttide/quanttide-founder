@@ -262,8 +262,8 @@ data:
   releases:
     main:
       repo: quanttide-founder
-      tag: v0.2.2
-      date: "2026-03-21"
+      tag: v0.2.4
+      date: "2026-03-28"
     submodules:
       - name: archive
         repo: quanttide-archive-of-founder
