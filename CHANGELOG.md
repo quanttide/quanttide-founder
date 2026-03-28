@@ -16,6 +16,34 @@
 
 ---
 
+## [0.2.4] - 2026-03-28
+
+### Added
+
+- **meta/profile/contract.yaml**：数据契约（单一事实源）
+  - semantics：记忆分类框架（九宫格、五层）
+  - models：Schema 定义（子模块、Release）
+  - quality：质量约束（命名、版本、文件约定）
+  - data：实际数据
+- **meta/spec/contract.md**：契约元规则（工程标准）
+- **meta/paper/contract-hierarchy.md**：契约层次论文
+  - 区分 contract.yaml（数据实例）、handbook（使用手册）、spec（元规则）
+
+### Changed
+
+- **meta/profile/ 重构**：
+  - 删除 submodules.yaml（合并到 contract.yaml）
+  - 合并 memory.md、release.md、repo.md、submodule.md 为 contract.md
+  - contract.md 最终移至 meta/handbook/
+- **meta/IDENTITY.md**：更新 Release 列表和子模块列表
+
+### Submodules
+
+- **journal**：0122b16，新增 23 个文件（日常记录和教程）
+- **qtadmin**：c5883ee，新增 qtdata PRD 和 .env.example
+
+---
+
 ## [0.2.3] - 2026-03-23
 
 ### Added
