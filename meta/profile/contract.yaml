@@ -29,15 +29,15 @@ semantics:
       present-semantic: profile # 工作档案
       present-self: brochure   # 宣传册
       future-event: report     # 工作报告
-      future-semantic: essay   # 工作札记
+      future-semantic: notice  # 工作通知
       future-self: roadmap     # 工作蓝图
 
   # 程序型记忆 - 五层体系
   procedural:
     levels:
       - id: L1
-        name: paper
-        label: 工作论文
+        name: essay
+        label: 工作札记
         metaphor: 立法原理
         binding: none
       - id: L2
@@ -205,12 +205,6 @@ data:
       grid: present-event
       description: 现在-事件类：工作日志
 
-    - name: paper
-      path: docs/paper
-      category: procedural
-      type: authoritative-law
-      description: 程序型-权威法理：工作论文
-
     - name: profile
       path: docs/profile
       category: declarative
@@ -288,10 +282,6 @@ data:
       - name: journal
         repo: quanttide-journal-of-founder
         tag: v0.2.0
-        date: "2026-03-23"
-      - name: paper
-        repo: quanttide-paper-of-founder
-        tag: v0.0.1
         date: "2026-03-23"
       - name: profile
         repo: quanttide-profile-of-founder

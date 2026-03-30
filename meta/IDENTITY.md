@@ -29,7 +29,7 @@
 本仓库采用记忆分类框架作为元理论，定义了组织知识管理的认知基础。
 
 - **陈述型记忆 - 九宫格模型**：将知识按时间（过去/现在/未来）和类型（事件/语义/自我）分类
-- **程序型记忆五层体系**：从工作论文到工作章程的五层结构
+- **程序型记忆五层体系**：从工作札记到工作章程的五层结构
 
 详见 [记忆建模](./profile/memory.md)
 
@@ -110,17 +110,16 @@ meta/
 |--------|------|------|------|
 | **archive** | `docs/archive/` | 过去-事件类 | 工作归档 |
 | **bylaw** | `docs/bylaw/` | 程序型-宪法 | 工作章程 |
-| **essay** | `docs/essay/` | 未来-语义类 | 工作札记 |
+| **essay** | `docs/essay/` | L1-立法原理 | 工作札记 |
 | **handbook** | `docs/handbook/` | 程序型-习惯法 | 工作手册 |
 | **history** | `docs/history/` | 过去-自我类 | 发展历程 |
 | **journal** | `docs/journal/` | 现在-事件类 | 工作日志（原始事件记录） |
-| **paper** | `docs/paper/` | 程序型-权威法理 | 工作论文 |
 | **profile** | `docs/profile/` | 现在-语义类 | 工作档案 |
 | **report** | `docs/report/` | 未来-事件类 | 工作报告 |
 | **roadmap** | `docs/roadmap/` | 未来-自我类 | 工作蓝图 |
 | **specification** | `docs/specification/` | 程序型-成文法 | 工程标准 |
 | **tutorial** | `docs/tutorial/` | 过去-语义类 | 工作教程 |
-| **usercase** | `docs/usercase/` | 程序型-判例法 | 工作案例 |
+| **usercase** | `docs/usercase/` | L2-判例法 | 工作案例 |
 | **devops** | `packages/devops/` | 程序型-平台 | DevOps 工具包 |
 | **data** | `packages/data/` | 程序型-平台 | 数据工具包 |
 | **thera** | `src/thera/` | 程序型-平台 | 技术平台，CLI 工具和自动化脚本 |

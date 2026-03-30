@@ -18,7 +18,6 @@
 
 - `usercase/` - 判例法：工作案例
 - `handbook/` - 习惯法：工作手册
-- `paper/` - 权威法理：工作论文
 - `specification/` - 成文法：工程标准
 - `platform/` - 宪法：技术平台
 

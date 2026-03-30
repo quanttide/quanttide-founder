@@ -32,19 +32,19 @@
 |------|--------|--------|--------|
 | **过去** | Archive | Tutorial | History |
 | **现在** | Journal | Profile | Brochure |
-| **未来** | Report | Essay | Roadmap |
+| **未来** | Report | Notice | Roadmap |
 
 ### 程序型记忆五层
 
 | 层次 | 英文名称 | 中文名称 | 法律隐喻 |
 |------|----------|----------|----------|
-| L1 | Paper | 工作论文 | 立法原理 |
+| L1 | Essay | 工作札记 | 立法原理 |
 | L2 | Usecase | 工作案例 | 精选判例 |
 | L3 | Handbook | 工作手册 | 权威汇编 |
 | L4 | Specification | 工程标准 | 程序性法律 |
 | L5 | Bylaw | 工作章程 | 宪法 |
 
-**事实源**：`paper/meta/memory.md`
+**事实源**：`docs/essay/meta/memorial_contractualism.md`
 
 ---
 
