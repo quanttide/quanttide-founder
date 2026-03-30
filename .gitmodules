@@ -22,9 +22,6 @@
 [submodule "specification"]
 	path = docs/specification
 	url = https://github.com/quanttide/quanttide-specification-of-founder.git
-[submodule "thera"]
-	path = src/thera
-	url = https://github.com/Guo-Zhang/thera.git
 [submodule "tutorial"]
 	path = docs/tutorial
 	url = https://github.com/quanttide/quanttide-tutorial-of-founder.git

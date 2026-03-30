@@ -157,12 +157,6 @@ quality:
 # ============================================
 data:
   submodules:
-    - name: thera
-      path: src/thera
-      category: procedural
-      type: platform
-      description: 技术平台，CLI 工具和自动化脚本
-
     - name: qtadmin
       path: src/qtadmin
       category: procedural

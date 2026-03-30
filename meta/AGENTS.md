@@ -180,8 +180,7 @@
 
 ### 脚本演进
 
-遵循 scripts → thera → qtadmin → qtcloud 生命周期：
+遵循 scripts → qtadmin → qtcloud 生命周期：
 - `scripts/`：AI 摸索期
-- `src/thera/`：人类识别期
-- `src/qtadmin/`：价值分类期
+- `src/qtadmin/`：人类识别期 + 价值分类期
 - qtcloud：正式固定期

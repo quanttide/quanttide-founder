@@ -106,10 +106,7 @@
   - 先更新 CHANGELOG.md 添加新版本内容
   - 提交 CHANGELOG.md
   - 创建 Release 后更新 Release notes 只包含对应版本
-- **提交推送变更** → `python src/thera/src/thera/auto_commit.py`
-  - `--dry-run`：仅显示变更，不提交
-  - 自动处理子模块和主仓库，按序提交推送
-  - 追加日志到 `meta/journal/YYYY-MM-DD.md`
+- **提交推送变更** → 使用 qtadmin 或手动 git 操作
 - **处理错误** → CONTRIBUTING > 常见错误处理
 - **更新环境变量** → CONTRIBUTING > 环境变量
 

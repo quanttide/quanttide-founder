@@ -23,8 +23,7 @@
 | L3 | Handbook | 工作手册 | 权威汇编 | `docs/handbook/` | 对实践和原理的系统化整理 |
 | L4 | Specification | 工程标准 | 程序性法律 | `docs/specification/` | 系统性程序规范，具有约束力 |
 | L5 | Bylaw | 工作章程 | 宪法 | `meta/bylaw/` | 规定基本原则与权责划分 |
-| L6 | Thera | 技术平台 | 基础设施 | `src/thera/` | CLI 工具和自动化脚本 |
-| L7 | Qtadmin | 管理后台 | 运营系统 | `src/qtadmin/` | 管理和运营工具 |
+| L6 | Qtadmin | 管理后台 | 运营系统 | `src/qtadmin/` | 管理和运营工具 |
 
 **事实源**：`docs/essay/meta/memorial_contractualism.md`
 
@@ -33,7 +32,6 @@
 ```
 quanttide-founder/
 ├── src/
-│   ├── thera/       # 技术平台
 │   └── qtadmin/     # 管理后台
 ├── scripts/         # AI 工具脚本（给AI写代码用）
 ├── docs/            # 文档（给人类读）

@@ -122,7 +122,6 @@ meta/
 | **usercase** | `docs/usercase/` | L2-判例法 | 工作案例 |
 | **devops** | `packages/devops/` | 程序型-平台 | DevOps 工具包 |
 | **data** | `packages/data/` | 程序型-平台 | 数据工具包 |
-| **thera** | `src/thera/` | 程序型-平台 | 技术平台，CLI 工具和自动化脚本 |
 | **qtadmin** | `src/qtadmin/` | 程序型-平台 | 管理后台，管理和运营工具 |
 
 详见 [子模块列表](./profile/submodule.md)
