@@ -49,3 +49,6 @@
 [submodule "packages/opencode"]
 	path = packages/opencode
 	url = https://github.com/quanttide/quanttide-opencode.git
+[submodule "src/qtcloud-data"]
+	path = src/qtcloud-data
+	url = https://github.com/quanttide/qtcloud-data.git
