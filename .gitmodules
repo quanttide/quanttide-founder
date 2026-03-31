@@ -61,6 +61,6 @@
 [submodule "src/qtcloud-read"]
 	path = src/qtcloud-read
 	url = https://github.com/quanttide/qtcloud-read.git
-[submodule "src/quanttide-write"]
-	path = src/quanttide-write
-	url = https://github.com/quanttide/quanttide-write.git
+[submodule "src/qtcloud-write"]
+	path = src/qtcloud-write
+	url = https://github.com/quanttide/qtcloud-write.git
