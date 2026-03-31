@@ -1,164 +1,40 @@
-# AGENTS.md - Agent 工作指南
-
-## 什么是 AGENTS.md
-
-**关于文档的文档**（元文档）
-
-- 不是详细说明书，是**导航 + 使用指南**
-- 告诉 Agent："想做事？去那里找"
-- 核心原则：**少写内容，多指路**
-
----
+# AGENTS.md
 
 ## 相关文档
 
-| 文档 | 用途 | 对象 |
-|------|------|------|
-| [README](README.md) | 项目概述、子模块列表、核心框架 | 用户 |
-| [贡献指南](CONTRIBUTING.md) | 人机协作、子模块工作流、发布流程、环境变量 | 开发者 |
-| [meta/IDENTITY.md](meta/IDENTITY.md) | 仓库自我映射、子模块列表、Release列表 | Agent |
-| [AGENTS.md](AGENTS.md) | 导航索引、使用指南、AI 工作规范 | AI Agent |
-| [meta/AGENTS.md](meta/AGENTS.md) | AI 自我认知、能力清单、工作方式 | AI Agent（自维护）|
-| [meta/SOUL.md](meta/SOUL.md) | 自我认知、思考记录、信念价值观 | AI Agent（自维护）|
-| [meta/TOOLS.md](meta/TOOLS.md) | 工具清单、配置、工作流 | AI Agent（自维护）|
-
----
-
-## 核心框架（事实源）
-
-记忆分类框架是本项目的元理论，定义了组织知识管理的认知基础。
-
-### 九宫格模型
-
-| | 事件类 | 语义类 | 自我类 |
-|------|--------|--------|--------|
-| **过去** | Archive | Tutorial | History |
-| **现在** | Journal | Profile | Brochure |
-| **未来** | Report | Notice | Roadmap |
-
-### 程序型记忆五层
-
-| 层次 | 英文名称 | 中文名称 | 法律隐喻 |
-|------|----------|----------|----------|
-| L1 | Essay | 工作札记 | 立法原理 |
-| L2 | Usecase | 工作案例 | 精选判例 |
-| L3 | Handbook | 工作手册 | 权威汇编 |
-| L4 | Specification | 工程标准 | 程序性法律 |
-| L5 | Bylaw | 工作章程 | 宪法 |
-
-**事实源**：`docs/essay/meta/memorial_contractualism.md`
-
-### meta 目录结构
-
-`meta/` 目录遵循程序型记忆五层体系，优先级依次为：
-
-1. **bylaw**（最高优先级）- 工作章程
-   - `bylaw.md`：元章程，定义人机分工
-   - `journal.md`：日志规范
-   - `profile.md`：Profile 维护章程
-
-2. **handbook**（次高优先级）- 工作手册
-   - `profile.md`：Profile 维护经验
-
-3. **profile**（中等优先级）- 工作档案
-   - `repo.md`：仓库结构规范
-   - `release.md`：版本管理
-   - `memory.md`：记忆建模知识
-   - `submodule.md`：子模块管理
-
-4. **journal**（基础优先级）- 工作日志
-   - 按日期命名的日志文件
-   - 记录 meta 目录的日常变更和思考
-
-5. **report**（基础优先级）- 工作报告
-   - 按日期命名的日报文件
-   - 采用记忆分类格式
-
-详见 [meta/README.md](meta/README.md) 和 [meta/IDENTITY.md](meta/IDENTITY.md)
-
----
-
-## 如何维护 AGENTS.md
-
-### 判断标准：修路 vs 指路
-
-| 类型 | 说明 | 写在哪里 |
-|------|------|---------|
-| 修路 | 详细说明、工作流步骤 | CONTRIBUTING |
-| 指路 | 给链接、导航索引 | AGENTS.md |
-
-### 更新时机
-
-- **不更新**：README/CONTRIBUTING 已有的内容
-- **更新**：新增文档、新增任务类型、重要规则变化
-
-### 好的 AGENTS.md
-
-- 简洁（~50行）
-- 使用场景表格
-- 快速索引
-- 特殊规则（如 .env 权限）
-
----
-
-## 文档使用
-
-### README 使用场景
-
-| 任务 | 查看 README 部分 |
-|------|-----------------|
-| 了解项目是什么 | 项目概述 |
-| 查找子模块信息 | 子模块列表 |
-| 克隆项目 | 构建 |
-| 了解项目性质 | 项目性质 |
-
-### CONTRIBUTING 使用场景
-
-| 任务 | 查看 CONTRIBUTING 部分 |
-|------|----------------------|
-| 初始化开发环境 | 开发环境 |
-| 修改子模块内容 | 子模块工作流 - 提交推送 |
-| 发布新版本 | 子模块工作流 - 发布 Release |
-| 遇到 git 错误 | 常见错误处理 |
-| 了解协作原则 | 人机协作 |
-| 了解注意事项 | 注意事项 |
-| 更新环境变量 | 环境变量 |
+| 文档 | 用途 |
+|------|------|
+| [README](README.md) | 项目概述、子模块列表 |
+| [CONTRIBUTING](CONTRIBUTING.md) | 人机协作、子模块工作流、发布流程、环境变量 |
+| [meta/IDENTITY.md](meta/IDENTITY.md) | 仓库自我映射、子模块列表 |
+| [meta/SOUL.md](meta/SOUL.md) | AI 自我认知（自维护）|
+| [meta/TOOLS.md](meta/TOOLS.md) | 工具清单（自维护）|
 
 ---
 
 ## 快速索引
 
-### 常见任务
+| 任务 | 操作位置 |
+|------|---------|
+| 修改子模块 | CONTRIBUTING > 子模块工作流 |
+| 发布 Release | CONTRIBUTING > 主仓库发布 Release |
+| 提交变更 | `cz commit` |
+| 处理错误 | CONTRIBUTING > 常见错误处理 |
+| 更新环境变量 | CONTRIBUTING > 环境变量 |
+| 记录日报 | `meta/report/YYYY-MM-DD.md` |
 
-- **修改子模块** → CONTRIBUTING > 子模块工作流 > 提交推送
-- **同步子模块更新** → CONTRIBUTING > 子模块工作流
-- **发布 Release** → CONTRIBUTING > 主仓库发布 Release
-  - 先更新 CHANGELOG.md 添加新版本内容
-  - 提交 CHANGELOG.md
-  - 创建 Release 后更新 Release notes 只包含对应版本
-- **提交推送变更** → 使用 `cz commit`（commitizen）生成规范提交
-- **处理错误** → CONTRIBUTING > 常见错误处理
-- **更新环境变量** → CONTRIBUTING > 环境变量
-- **更新自我认知** → meta/SOUL.md（AI 自维护）
-- **更新工具清单** → meta/TOOLS.md（AI 自维护）
-- **记录日报** → meta/report/YYYY-MM-DD.md（按日期命名）
+---
 
-### 协作原则
+## 协作原则
 
 - 最小干预：仅用户明确请求时操作
 - 原子提交：每次提交独立完整
 - 验证优先：修改后运行构建验证
-- 独立发布：子模块独立仓库 Release
-- 子模块同步：更新子模块后，尽快将父仓库的子模块指针同步到最新提交
 
-### 重要提示
+## 重要提示
 
-- **子模块操作前先 checkout main**：进入子模块前必须先 `git checkout main && git pull`，避免在 detached HEAD 状态操作
-- **读取 .env 需要临时权限**：Agent 无法直接读取 .env，需要用户授权
-- **自动同步**：当 .env 变更时，立即同步更新 .env.example
-- **自我认知**：详见 [meta/AGENTS.md](meta/AGENTS.md)（AI 自维护）
-- **自我更新**：任务中发现新"自我"认知时，更新到 meta/SOUL.md
-- **记录变更**：重要更新记录到 `meta/report/YYYY-MM-DD.md`，按日期命名
-- **Release 标题规范**：GitHub Release 标题应使用 `v` 前缀（如 v0.1.2），保持一致性
-- **Release notes 规范**：Release notes 应该只包含对应版本的内容，不包含整个 CHANGELOG.md
-- **meta 目录维护**：bylaw 和 handbook 文件需要人类验收确认，其他文件由 AI 自动维护
+- **子模块操作前先 checkout main**：`git checkout main && git pull`
+- **读取 .env 需要临时权限**：Agent 无法直接读取 .env
+- **自动同步**：.env 变更时同步更新 .env.example
+- **Release 标题**：使用 `项目名/vX.Y.Z` 格式（如 cli/v0.0.1-alpha.3）
+- **Release notes**：只包含对应版本内容
