@@ -38,3 +38,14 @@
 - **自动同步**：.env 变更时同步更新 .env.example
 - **Release 标题**：使用 `项目名/vX.Y.Z` 格式（如 cli/v0.0.1-alpha.3）
 - **Release notes**：只包含对应版本内容
+
+---
+
+## 如何维护 AGENTS.md
+
+| 类型 | 写在哪里 |
+|------|---------|
+| 详细说明、工作流步骤 | CONTRIBUTING |
+| 给链接、导航索引 | AGENTS.md |
+
+更新时机：新增文档、新增任务类型、重要规则变化时更新；README/CONTRIBUTING 已有的内容不重复。
