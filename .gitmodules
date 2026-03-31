@@ -58,3 +58,6 @@
 [submodule "src/qtcloud-think"]
 	path = src/qtcloud-think
 	url = https://github.com/quanttide/qtcloud-think.git
+[submodule "src/qtcloud-read"]
+	path = src/qtcloud-read
+	url = https://github.com/quanttide/qtcloud-read.git
