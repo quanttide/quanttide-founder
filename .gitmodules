@@ -55,3 +55,6 @@
 [submodule "src/qtcloud-finance"]
 	path = src/qtcloud-finance
 	url = https://github.com/quanttide/qtcloud-finance.git
+[submodule "src/qtcloud-think"]
+	path = src/qtcloud-think
+	url = https://github.com/quanttide/qtcloud-think.git
