@@ -16,9 +16,11 @@
 |------|------|------|
 | [README](README.md) | 项目概述、子模块列表、核心框架 | 用户 |
 | [贡献指南](CONTRIBUTING.md) | 人机协作、子模块工作流、发布流程、环境变量 | 开发者 |
-| [元数据](meta/metadata.md) | 子模块版本状态、Release列表 | Agent |
+| [meta/IDENTITY.md](meta/IDENTITY.md) | 仓库自我映射、子模块列表、Release列表 | Agent |
 | [AGENTS.md](AGENTS.md) | 导航索引、使用指南、AI 工作规范 | AI Agent |
 | [meta/AGENTS.md](meta/AGENTS.md) | AI 自我认知、能力清单、工作方式 | AI Agent（自维护）|
+| [meta/SOUL.md](meta/SOUL.md) | 自我认知、思考记录、信念价值观 | AI Agent（自维护）|
+| [meta/TOOLS.md](meta/TOOLS.md) | 工具清单、配置、工作流 | AI Agent（自维护）|
 
 ---
 
@@ -45,6 +47,34 @@
 | L5 | Bylaw | 工作章程 | 宪法 |
 
 **事实源**：`docs/essay/meta/memorial_contractualism.md`
+
+### meta 目录结构
+
+`meta/` 目录遵循程序型记忆五层体系，优先级依次为：
+
+1. **bylaw**（最高优先级）- 工作章程
+   - `bylaw.md`：元章程，定义人机分工
+   - `journal.md`：日志规范
+   - `profile.md`：Profile 维护章程
+
+2. **handbook**（次高优先级）- 工作手册
+   - `profile.md`：Profile 维护经验
+
+3. **profile**（中等优先级）- 工作档案
+   - `repo.md`：仓库结构规范
+   - `release.md`：版本管理
+   - `memory.md`：记忆建模知识
+   - `submodule.md`：子模块管理
+
+4. **journal**（基础优先级）- 工作日志
+   - 按日期命名的日志文件
+   - 记录 meta 目录的日常变更和思考
+
+5. **report**（基础优先级）- 工作报告
+   - 按日期命名的日报文件
+   - 采用记忆分类格式
+
+详见 [meta/README.md](meta/README.md) 和 [meta/IDENTITY.md](meta/IDENTITY.md)
 
 ---
 
@@ -109,6 +139,9 @@
 - **提交推送变更** → 使用 `cz commit`（commitizen）生成规范提交
 - **处理错误** → CONTRIBUTING > 常见错误处理
 - **更新环境变量** → CONTRIBUTING > 环境变量
+- **更新自我认知** → meta/SOUL.md（AI 自维护）
+- **更新工具清单** → meta/TOOLS.md（AI 自维护）
+- **记录日报** → meta/report/YYYY-MM-DD.md（按日期命名）
 
 ### 协作原则
 
@@ -128,3 +161,4 @@
 - **记录变更**：重要更新记录到 `meta/report/YYYY-MM-DD.md`，按日期命名
 - **Release 标题规范**：GitHub Release 标题应使用 `v` 前缀（如 v0.1.2），保持一致性
 - **Release notes 规范**：Release notes 应该只包含对应版本的内容，不包含整个 CHANGELOG.md
+- **meta 目录维护**：bylaw 和 handbook 文件需要人类验收确认，其他文件由 AI 自动维护
