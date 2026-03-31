@@ -106,7 +106,7 @@
   - 先更新 CHANGELOG.md 添加新版本内容
   - 提交 CHANGELOG.md
   - 创建 Release 后更新 Release notes 只包含对应版本
-- **提交推送变更** → 使用 qtadmin 或手动 git 操作
+- **提交推送变更** → 使用 `cz commit`（commitizen）生成规范提交
 - **处理错误** → CONTRIBUTING > 常见错误处理
 - **更新环境变量** → CONTRIBUTING > 环境变量
 

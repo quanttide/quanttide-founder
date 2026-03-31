@@ -45,10 +45,13 @@ cd <子模块名>
 
 #### 在子模块中提交和推送
 
+使用 commitizen 生成规范提交：
+
 ```bash
-# 1. 在子模块中提交
-git add .
-git commit -m "commit message"
+# 1. 在子模块中提交（使用 commitizen）
+cz commit
+# 或简写
+cz c
 
 # 2. 推送子模块
 git push origin main
@@ -56,9 +59,29 @@ git push origin main
 # 3. 返回主仓库提交子模块引用更新
 cd ..
 git add <子模块名>
-git commit -m "Update <子模块名> submodule"
+cz commit -m "chore: update <子模块名> submodule"
 git push origin main
 ```
+
+**Commitizen 基本用法：**
+```bash
+# 交互式创建规范提交
+cz commit
+
+# 自动版本升级 + 生成 CHANGELOG
+cz bump
+```
+
+**Commit 类型：**
+
+| 类型 | 说明 | 示例 |
+|------|------|------|
+| `feat` | 新功能 | `feat: add user authentication` |
+| `fix` | 修复 bug | `fix: resolve null pointer exception` |
+| `docs` | 文档更新 | `docs: update README` |
+| `test` | 测试相关 | `test: add unit tests for api` |
+| `refactor` | 代码重构 | `refactor: simplify logic` |
+| `chore` | 构建/工具 | `chore: update dependencies` |
 
 #### 同步子模块远程更新
 

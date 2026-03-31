@@ -126,6 +126,39 @@
 - 定期校验工具实际可用性
 - 与实际工作流程保持一致
 
+## Git 提交规范
+
+### 默认工具：commitizen
+
+使用 `commitizen` 生成符合 Conventional Commits 规范的 commit message。
+
+**基本用法：**
+```bash
+# 交互式创建规范提交
+cz commit
+# 或简写
+cz c
+
+# 自动版本升级 + 生成 CHANGELOG
+cz bump
+```
+
+**Commit 类型：**
+
+| 类型 | 说明 | 示例 |
+|------|------|------|
+| `feat` | 新功能 | `feat: add user authentication` |
+| `fix` | 修复 bug | `fix: resolve null pointer exception` |
+| `docs` | 文档更新 | `docs: update README` |
+| `test` | 测试相关 | `test: add unit tests for api` |
+| `refactor` | 代码重构 | `refactor: simplify logic` |
+| `chore` | 构建/工具 | `chore: update dependencies` |
+
+**脚本集成：**
+- `scripts/commit_submodules.py` - 基础版，使用规则生成
+- `scripts/commit_submodules_ai.py` - AI 增强版，使用 OpenAI API
+- 优先使用 `cz commit` 交互式提交
+
 ### 本文档更新
 
 更新时机：

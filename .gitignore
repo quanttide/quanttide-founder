@@ -1,3 +1,7 @@
+# QuantTide
+data/
+.qwen/
+
 # OS
 .DS_Store
 .DS_Store?
