@@ -2,30 +2,7 @@
 
 基于认知科学记忆分类框架的组织知识库。
 
-## 核心框架
-
-**记忆分类框架**是本项目的元理论，定义了组织知识管理的认知基础。
-
-### 陈述型记忆 - 九宫格模型
-
-| | 事件类 | 语义类 | 自我类 |
-|------|--------|--------|--------|
-| **过去** | `docs/archive/` Archive<br>工作归档 | `docs/tutorial/` Tutorial<br>工作教程 | History<br>工作历程 |
-| **现在** | `docs/journal/` Journal<br>工作日志<br>（原始事件记录） | `docs/profile/` Profile<br>工作档案 |  Brochure<br>宣传册 |
-| **未来** | `docs/report/` Report<br>工作报告 | Notice<br>工作通知 | Roadmap<br>工作蓝图 |
-
-### 程序型记忆五层体系
-
-| 层次 | 英文名称 | 中文名称 | 法律隐喻 | 子模块 | 说明 |
-|------|----------|----------|----------|--------|------|
-| L1 | Essay | 工作札记 | 立法原理 | `docs/essay/` | 系统总结归纳基本原理与方法论，无直接约束力 |
-| L2 | Usecase | 工作案例 | 精选判例 | `docs/usercase/` | 来源于具体实践案例的积累与复用 |
-| L3 | Handbook | 工作手册 | 权威汇编 | `docs/handbook/` | 对实践和原理的系统化整理 |
-| L4 | Specification | 工程标准 | 程序性法律 | `docs/specification/` | 系统性程序规范，具有约束力 |
-| L5 | Bylaw | 工作章程 | 宪法 | `meta/bylaw/` | 规定基本原则与权责划分 |
-| L6 | Qtadmin | 管理后台 | 运营系统 | `src/qtadmin/` | 管理和运营工具 |
-
-**事实源**：`docs/essay/meta/memorial_contractualism.md`
+具体分类详见 [记忆模型简介](docs/profile/meta/memory_model.md)。
 
 ## 目录
 
@@ -33,18 +10,15 @@
 quanttide-founder/
 ├── src/
 │   └── qtadmin/     # 管理后台
-├── scripts/         # AI 工具脚本（给AI写代码用）
-├── docs/            # 文档（给人类读）
-│   ├── archive/     # 过去-事件类：工作归档
-│   ├── essay/       # 立法原理：工作札记（L1）
-│   ├── handbook/    # 权威法理：工作手册
-│   ├── journal/    # 现在-事件类：工作日志
-│   ├── profile/     # 现在-语义类：工作档案
-│   ├── report/      # 未来-事件类：工作报告
-│   ├── specification/  # 程序性法律：工程标准
-│   ├── tutorial/    # 过去-语义类：工作教程
-│   └── usercase/    # 判例法：工作案例（L2）
-├── meta/            # 元信息（给AI读）
+├── scripts/         # AI 工具脚本
+├── docs/            # 文档
+│   ├── archive/     # 工作归档
+│   ├── essay/       # 工作札记
+│   ├── journal/     # 工作日志
+│   ├── profile/     # 工作简介
+│   ├── roadmap/     # 工作蓝图
+│   └── roadmap/     # 工作蓝图
+├── meta/            # 元信息
 ├── AGENTS.md        # Agent 工作指南
 ├── CONTRIBUTING.md  # 贡献指南
 └── README.md        # 项目说明
@@ -60,6 +34,6 @@ git submodule update --init --recursive
 
 ### 更新关联子模块
 
-```
+```bash
 git submodule update --remote --merge
 ```
