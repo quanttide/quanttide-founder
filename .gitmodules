@@ -25,9 +25,6 @@
 [submodule "tutorial"]
 	path = docs/tutorial
 	url = https://github.com/quanttide/quanttide-tutorial-of-founder.git
-[submodule "usercase"]
-	path = docs/usercase
-	url = https://github.com/quanttide/quanttide-usercase-of-founder.git
 [submodule "library"]
 	path = docs/library
 	url = https://github.com/quanttide/quanttide-library-of-founder.git
