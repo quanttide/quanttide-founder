@@ -44,9 +44,3 @@
 	path = src/qtcloud-data
 	url = https://github.com/quanttide/qtcloud-data.git
 
-[submodule "asset/company/gallery"]
-	path = asset/company/gallery
-	url = https://github.com/quanttide/quanttide-gallery-of-business-entity.git
-[submodule "asset/company/specification"]
-	path = asset/company/specification
-	url = https://github.com/quanttide/quanttide-specification-of-business-entity.git
