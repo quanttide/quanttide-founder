@@ -4,9 +4,6 @@
 [submodule "essay"]
 	path = docs/essay
 	url = https://github.com/quanttide/quanttide-essay-of-founder.git
-[submodule "handbook"]
-	path = docs/handbook
-	url = https://github.com/quanttide/quanttide-handbook-of-founder.git
 [submodule "journal"]
 	path = docs/journal
 	url = https://github.com/quanttide/quanttide-journal-of-founder.git
@@ -19,18 +16,9 @@
 [submodule "report"]
 	path = docs/report
 	url = https://github.com/quanttide/quanttide-report-of-founder.git
-[submodule "tutorial"]
-	path = docs/tutorial
-	url = https://github.com/quanttide/quanttide-tutorial-of-founder.git
 [submodule "library"]
 	path = docs/library
 	url = https://github.com/quanttide/quanttide-library-of-founder.git
-[submodule "packages/devops"]
-	path = packages/devops
-	url = https://github.com/quanttide/quanttide-devops-toolkit.git
-[submodule "packages/data"]
-	path = packages/data
-	url = https://github.com/quanttide/quanttide-data-toolkit.git
 [submodule "docs/roadmap"]
 	path = docs/roadmap
 	url = https://github.com/quanttide/quanttide-roadmap-of-founder.git
@@ -40,7 +28,3 @@
 [submodule "packages/opencode"]
 	path = packages/opencode
 	url = https://github.com/quanttide/quanttide-opencode.git
-[submodule "src/qtcloud-data"]
-	path = src/qtcloud-data
-	url = https://github.com/quanttide/qtcloud-data.git
-
