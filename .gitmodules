@@ -19,9 +19,6 @@
 [submodule "report"]
 	path = docs/report
 	url = https://github.com/quanttide/quanttide-report-of-founder.git
-[submodule "specification"]
-	path = docs/specification
-	url = https://github.com/quanttide/quanttide-specification-of-founder.git
 [submodule "tutorial"]
 	path = docs/tutorial
 	url = https://github.com/quanttide/quanttide-tutorial-of-founder.git
