@@ -22,9 +22,6 @@
 [submodule "docs/roadmap"]
 	path = docs/roadmap
 	url = https://github.com/quanttide/quanttide-roadmap-of-founder.git
-[submodule "docs/history"]
-	path = docs/history
-	url = https://github.com/quanttide/quanttide-history-of-founder.git
 [submodule "packages/opencode"]
 	path = packages/opencode
 	url = https://github.com/quanttide/quanttide-opencode.git
