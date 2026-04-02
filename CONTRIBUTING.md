@@ -6,20 +6,14 @@
 
 本项目为 Git 子模块仓库，包含以下子模块：
 
-### 陈述型记忆
+- `archive/` - 工作归档
+- `journal/` - 工作日志
+- `roadmap/` - 工作蓝图
+- `profile/` - 工作简介
+- `essay/` - 工作札记
+- `qtadmin/` - 管理后台（含 CLI、Studio、Provider）
 
-- `archive/` - 过去-事件类：工作归档
-- `journal/` - 现在-事件类：工作日志
-- `report/` - 现在-语义类：工作报告
-- `profile/` - 未来-事件类：工作档案
-- `essay/` - 未来-语义类：工作札记
-
-### 程序型记忆
-
-- `usercase/` - 判例法：工作案例
-- `handbook/` - 习惯法：工作手册
-- `specification/` - 成文法：工程标准
-- `platform/` - 宪法：技术平台
+具体分类详见 [记忆模型简介](docs/profile/meta/memory_model.md)。
 
 ## 开发环境
 
