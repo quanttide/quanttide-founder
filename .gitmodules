@@ -13,9 +13,6 @@
 [submodule "qtadmin"]
 	path = src/qtadmin
 	url = https://github.com/quanttide/qtadmin.git
-[submodule "report"]
-	path = docs/report
-	url = https://github.com/quanttide/quanttide-report-of-founder.git
 [submodule "docs/roadmap"]
 	path = docs/roadmap
 	url = https://github.com/quanttide/quanttide-roadmap-of-founder.git
