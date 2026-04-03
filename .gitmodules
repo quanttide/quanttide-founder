@@ -10,9 +10,6 @@
 [submodule "profile"]
 	path = docs/profile
 	url = https://github.com/quanttide/quanttide-profile-of-founder.git
-[submodule "qtadmin"]
-	path = src/qtadmin
-	url = https://github.com/quanttide/qtadmin.git
 [submodule "docs/roadmap"]
 	path = docs/roadmap
 	url = https://github.com/quanttide/quanttide-roadmap-of-founder.git
