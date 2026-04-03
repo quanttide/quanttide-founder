@@ -16,6 +16,28 @@
 
 ---
 
+## [0.3.0] - 2026-04-03
+
+### Changed
+
+- **meta 目录重构**：精简元目录结构
+  - 移除 memory classification 引用
+  - 简化 CONTRIBUTING.md 和 AGENTS.md
+
+### Removed
+
+- **子模块清理**：移除多个未使用的子模块
+  - bylaw, data, devops, gallery, history, library, qtcloud-data, specification, tutorial, usercase
+
+### Submodules
+
+- **qtadmin**：更新至 cli/v0.0.1-alpha.6
+- **journal**：更新至 v0.2.0
+- **profile**：更新至 v0.2.5
+- **archive**：更新至 v0.1.0
+
+---
+
 ## [0.2.4] - 2026-03-28
 
 ### Added
