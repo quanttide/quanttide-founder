@@ -2,8 +2,8 @@
 """
 从产品日志生成产品路线图
 
-读取 docs/journal/product/ 下的日志文件，
-按 ## 产品名 拆分并聚合，每个产品输出一个路线图文件。
+读取 docs/journal/<slug>/<product>/ 下的日志文件，
+每个产品输出一个路线图文件到 docs/roadmap/<slug>/。
 
 用法:
     python examples/generate_product_roadmap.py              # 处理 product 标识
@@ -12,51 +12,30 @@
 
 import re
 import sys
-from datetime import datetime
 from pathlib import Path
 
 JOURNAL_BASE = Path("docs/journal")
 ROADMAP_BASE = Path("docs/roadmap")
 
 
-def load_journal(slug: str) -> list[dict]:
-    """加载指定标识符下的所有日志文件"""
+def load_journal(slug: str) -> dict[str, list[dict]]:
+    """加载指定标识符下所有产品的日志文件，返回 {product: [{date, file, content}]}"""
     journal_dir = JOURNAL_BASE / slug
     if not journal_dir.exists():
         print(f"错误: 找不到 {journal_dir}")
         sys.exit(1)
 
-    entries = []
-    for f in sorted(journal_dir.glob("*.md")):
-        content = f.read_text(encoding="utf-8")
-        entries.append({"date": f.stem, "file": f.name, "content": content})
-    return entries
-
-
-def split_by_product(content: str, date: str) -> list[dict]:
-    """按 ## 标题拆分内容，返回 [{product, section, date}]"""
-    sections = re.split(r"^## (.+)$", content, flags=re.MULTILINE)
-    results = []
-    i = 1
-    while i < len(sections) - 1:
-        name = sections[i].strip()
-        body = sections[i + 1].strip()
-        if name and body:
-            results.append({"product": name, "section": body, "date": date})
-        i += 2
-    return results
-
-
-def aggregate_products(entries: list[dict]) -> dict[str, list[dict]]:
-    """按产品名聚合所有条目"""
     products = {}
-    for entry in entries:
-        items = split_by_product(entry["content"], entry["date"])
-        for item in items:
-            name = item["product"]
-            if name not in products:
-                products[name] = []
-            products[name].append(item)
+    for d in sorted(journal_dir.iterdir()):
+        if not d.is_dir():
+            continue
+        product_name = d.name
+        entries = []
+        for f in sorted(d.glob("*.md")):
+            content = f.read_text(encoding="utf-8")
+            entries.append({"date": f.stem, "file": f.name, "content": content})
+        if entries:
+            products[product_name] = entries
     return products
 
 
@@ -72,7 +51,7 @@ def build_roadmap(product_name: str, items: list[dict]) -> str:
     for item in items:
         lines.append(f"## {item['date']}")
         lines.append("")
-        lines.append(item["section"])
+        lines.append(item["content"])
         lines.append("")
 
     return "\n".join(lines)
@@ -85,21 +64,19 @@ def main():
         else "product"
     )
 
-    entries = load_journal(slug)
-    print(f"加载 {len(entries)} 个日志文件")
-
-    products = aggregate_products(entries)
+    products = load_journal(slug)
     print(f"识别到 {len(products)} 个产品: {', '.join(products.keys())}")
 
-    ROADMAP_BASE.mkdir(parents=True, exist_ok=True)
+    output_dir = ROADMAP_BASE / slug
+    output_dir.mkdir(parents=True, exist_ok=True)
 
     for name, items in products.items():
-        output = ROADMAP_BASE / f"{slugify(name)}.md"
+        output = output_dir / f"{slugify(name)}.md"
         content = build_roadmap(name, items)
         output.write_text(content, encoding="utf-8")
         print(f"  输出: {output}")
 
-    print(f"\n完成! 共生成 {len(products)} 个文件到 {ROADMAP_BASE}/")
+    print(f"\n完成! 共生成 {len(products)} 个文件到 {output_dir}/")
 
 
 if __name__ == "__main__":
