@@ -6,9 +6,9 @@
 |------|------|
 | [README](README.md) | 项目概述、子模块列表 |
 | [CONTRIBUTING](CONTRIBUTING.md) | 人机协作、子模块工作流、发布流程、环境变量 |
-| [meta/IDENTITY.md](meta/IDENTITY.md) | 仓库自我映射、子模块列表 |
-| [meta/SOUL.md](meta/SOUL.md) | AI 自我认知（自维护）|
-| [meta/TOOLS.md](meta/TOOLS.md) | 工具清单（自维护）|
+| [IDENTITY.md](IDENTITY.md) | 仓库自我映射、子模块列表 |
+| [SOUL.md](SOUL.md) | AI 自我认知（自维护）|
+| [TOOLS.md](TOOLS.md) | 工具清单（自维护）|
 
 ---
 
@@ -21,7 +21,7 @@
 | 提交变更 | `cz commit` |
 | 处理错误 | CONTRIBUTING > 常见错误处理 |
 | 更新环境变量 | CONTRIBUTING > 环境变量 |
-| 记录日报 | `meta/report/YYYY-MM-DD.md` |
+| 记录日报 | `docs/archive/report/default/diary/YYYY-MM-DD.md` |
 
 ---
 
@@ -67,7 +67,7 @@
 ## 自我更新
 
 ### 总体原则
-- 重要变更记录到 `meta/report/YYYY-MM-DD.md`
+- 重要变更记录到 `docs/archive/report/default/diary/YYYY-MM-DD.md`
 - 能力变化时更新本文档
 - 保持所有文档与实际情况一致
 
@@ -180,61 +180,7 @@ cz bump
 | `chore` | 构建/工具 | `chore: update dependencies` |
 
 **脚本集成：**
-- `scripts/commit_submodules.py` - 基础版，使用规则生成
-- `scripts/commit_submodules_ai.py` - AI 增强版，使用 OpenAI API
 - 优先使用 `cz commit` 交互式提交
-
-## 文档读写规范
-
-### meta vs 子模块
-
-| 目录 | 对象 | 说明 |
-|------|------|------|
-| `meta/` | AI 读 | 给 AI 的工作指南、认知文档 |
-| `docs/tutorial/` (子模块) | 人读 | 给人类的教程文档 |
-
-两者内容相同但用途不同：
-- `meta/tutorial/git.md` = AI 看的 Git 教程
-- `docs/tutorial/code/git.md` = 人看的 Git 教程
-
-更新时需同步两个位置。
-
-## 脚本使用规范
-
-### scripts/ 目录
-
-存放 AI 摸索实现的工具脚本，供人类和 AI 共同使用。
-
-### 脚本使用时机
-
-| 脚本 | 触发时机 |
-|------|----------|
-| `scripts/doc_check.py` | 目录结构变更后、提交前检查一致性 |
-| `scripts/submodule_sync.py` | 开始工作前检测子模块更新、需要同步子模块时 |
-
-### 使用流程
-
-1. **开始工作前**：
-   ```bash
-   python3 scripts/submodule_sync.py --check  # 检测子模块更新
-   ```
-
-2. **目录结构变更后**：
-   ```bash
-   python3 scripts/doc_check.py  # 检查文档一致性
-   ```
-
-3. **提交前**：
-   ```bash
-   python3 scripts/doc_check.py  # 确保一致性
-   ```
-
-### 脚本演进
-
-遵循 scripts → qtadmin → qtcloud 生命周期：
-- `scripts/`：AI 摸索期
-- `src/qtadmin/`：人类识别期 + 价值分类期
-- qtcloud：正式固定期
 
 ## 重要提示
 
