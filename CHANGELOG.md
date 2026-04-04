@@ -16,6 +16,31 @@
 
 ---
 
+## [0.3.1] - 2026-04-05
+
+### Changed
+
+- **目录结构重构**：
+  - `meta/` 目录下的文件（IDENTITY, SOUL, TOOLS, USER）移至根目录
+  - `meta/AGENTS.md` 合并到根 `AGENTS.md`
+  - `src/` 重命名为 `apps/`
+
+### Added
+
+- **examples/generate_product_roadmap.py**：从产品日志生成产品路线图的示例脚本
+
+### Removed
+
+- **meta/ 目录**：所有文件已迁移或删除
+- **scripts/README.md**：删除冗余文档
+
+### Submodules
+
+- **qtcloud-think**：新增子模块，包含记忆卡片解析和画像报告生成
+- **archive**：归档 meta/memory 文件至 report/default/diary
+
+---
+
 ## [0.3.0] - 2026-04-03
 
 ### Changed
