@@ -2,144 +2,104 @@
 """
 从产品日志生成产品路线图
 
-读取 docs/journal/product/ 下的产品日志文件，
-使用本地 ollama (qwen2.5-coder:3b) 分析并生成产品路线图，
-输出到 docs/roadmap/product/ 目录。
+读取 docs/journal/product/ 下的日志文件，
+按 ## 产品名 拆分并聚合，每个产品输出一个路线图文件。
 
 用法:
-    python examples/generate_product_roadmap.py              # 生成完整路线图
-    python examples/generate_product_roadmap.py --output docs/roadmap/product/custom.md
+    python examples/generate_product_roadmap.py              # 处理 product 标识
+    python examples/generate_product_roadmap.py think        # 处理 think 标识
 """
 
-import json
+import re
 import sys
 from datetime import datetime
 from pathlib import Path
 
-JOURNAL_DIR = Path("docs/journal/product")
-DEFAULT_OUTPUT = Path("docs/roadmap/product/roadmap.md")
-OLLAMA_MODEL = "qwen2.5-coder:3b"
-OLLAMA_BASE_URL = "http://127.0.0.1:11434"
+JOURNAL_BASE = Path("docs/journal")
+ROADMAP_BASE = Path("docs/roadmap")
 
 
-def load_journals() -> list[dict]:
-    """加载所有产品日志文件"""
-    journals = []
-    if not JOURNAL_DIR.exists():
-        print(f"错误: 找不到 {JOURNAL_DIR}")
+def load_journal(slug: str) -> list[dict]:
+    """加载指定标识符下的所有日志文件"""
+    journal_dir = JOURNAL_BASE / slug
+    if not journal_dir.exists():
+        print(f"错误: 找不到 {journal_dir}")
         sys.exit(1)
 
-    for f in sorted(JOURNAL_DIR.glob("*.md")):
+    entries = []
+    for f in sorted(journal_dir.glob("*.md")):
         content = f.read_text(encoding="utf-8")
-        journals.append({"date": f.stem, "file": f.name, "content": content})
-
-    return journals
-
-
-def call_ollama(prompt: str, system: str, model: str = OLLAMA_MODEL) -> str:
-    """调用本地 ollama API"""
-    import urllib.request
-    import urllib.error
-
-    data = json.dumps(
-        {
-            "model": model,
-            "prompt": prompt,
-            "system": system,
-            "stream": False,
-        }
-    ).encode("utf-8")
-
-    req = urllib.request.Request(
-        f"{OLLAMA_BASE_URL}/api/generate",
-        data=data,
-        headers={"Content-Type": "application/json"},
-    )
-
-    try:
-        with urllib.request.urlopen(req, timeout=120) as resp:
-            result = json.loads(resp.read().decode("utf-8"))
-            return result.get("response", "")
-    except Exception as e:
-        return f"[调用失败: {e}]"
+        entries.append({"date": f.stem, "file": f.name, "content": content})
+    return entries
 
 
-def generate_roadmap(journals: list[dict]) -> str:
-    """生成产品路线图"""
-    journals_text = ""
-    for j in journals:
-        journals_text += f"### {j['date']} ({j['file']})\n\n{j['content']}\n\n"
+def split_by_product(content: str, date: str) -> list[dict]:
+    """按 ## 标题拆分内容，返回 [{product, section, date}]"""
+    sections = re.split(r"^## (.+)$", content, flags=re.MULTILINE)
+    results = []
+    i = 1
+    while i < len(sections) - 1:
+        name = sections[i].strip()
+        body = sections[i + 1].strip()
+        if name and body:
+            results.append({"product": name, "section": body, "date": date})
+        i += 2
+    return results
 
-    system_prompt = """你是一位产品战略分析师。请根据以下产品日志，生成一份结构化的产品路线图。
 
-输出 Markdown 格式，包含以下部分：
+def aggregate_products(entries: list[dict]) -> dict[str, list[dict]]:
+    """按产品名聚合所有条目"""
+    products = {}
+    for entry in entries:
+        items = split_by_product(entry["content"], entry["date"])
+        for item in items:
+            name = item["product"]
+            if name not in products:
+                products[name] = []
+            products[name].append(item)
+    return products
 
-## 产品全景
 
-按产品线/模块组织，每个产品包含：
-- 定位与愿景
-- 核心功能清单
-- 当前状态（探索/验证/开发/成熟）
+def slugify(name: str) -> str:
+    """产品名转文件名"""
+    return re.sub(r"[^\w\u4e00-\u9fff-]", "_", name)
 
-## 功能规划
 
-按优先级排列的功能项，每项包含：
-- 功能名称
-- 所属产品
-- 优先级（P0/P1/P2）
-- 状态（待探索/待验证/开发中/已完成）
-- 来源日志日期
+def build_roadmap(product_name: str, items: list[dict]) -> str:
+    """构建产品路线图（规则驱动，不调用 LLM）"""
+    lines = [f"# {product_name}", ""]
 
-## 技术债务与修复
+    for item in items:
+        lines.append(f"## {item['date']}")
+        lines.append("")
+        lines.append(item["section"])
+        lines.append("")
 
-从日志中提取的 bug 修复、技术债务项。
-
-## 下一步行动
-
-按紧急性和重要性排列的近期行动计划。
-
-重要约束：
-- 只基于日志中明确提到的内容，不要臆测
-- 保留原始表述的关键信息
-- 标注每条信息的来源日期"""
-
-    prompt = f"请根据以下产品日志生成路线图：\n\n{journals_text}"
-
-    print("正在生成产品路线图...")
-    return call_ollama(prompt, system_prompt)
+    return "\n".join(lines)
 
 
 def main():
-    output = DEFAULT_OUTPUT
-    for arg in sys.argv[1:]:
-        if arg.startswith("--output="):
-            output = Path(arg.split("=", 1)[1])
-        elif arg.startswith("--output"):
-            idx = sys.argv.index(arg)
-            if idx + 1 < len(sys.argv):
-                output = Path(sys.argv[idx + 1])
+    slug = (
+        sys.argv[1]
+        if len(sys.argv) > 1 and not sys.argv[1].startswith("--")
+        else "product"
+    )
 
-    journals = load_journals()
-    print(f"加载 {len(journals)} 个产品日志文件")
+    entries = load_journal(slug)
+    print(f"加载 {len(entries)} 个日志文件")
 
-    roadmap = generate_roadmap(journals)
+    products = aggregate_products(entries)
+    print(f"识别到 {len(products)} 个产品: {', '.join(products.keys())}")
 
-    output.parent.mkdir(parents=True, exist_ok=True)
+    ROADMAP_BASE.mkdir(parents=True, exist_ok=True)
 
-    header = f"""# 产品路线图
+    for name, items in products.items():
+        output = ROADMAP_BASE / f"{slugify(name)}.md"
+        content = build_roadmap(name, items)
+        output.write_text(content, encoding="utf-8")
+        print(f"  输出: {output}")
 
-> 基于 {len(journals)} 个产品日志文件生成
-> 生成时间: {datetime.now().strftime("%Y-%m-%d %H:%M")}
-> 数据来源: {JOURNAL_DIR}
-
----
-
-"""
-
-    full_report = header + roadmap
-
-    output.write_text(full_report, encoding="utf-8")
-    print(f"\n路线图已输出: {output}")
+    print(f"\n完成! 共生成 {len(products)} 个文件到 {ROADMAP_BASE}/")
 
 
 if __name__ == "__main__":
