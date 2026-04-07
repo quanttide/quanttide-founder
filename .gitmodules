@@ -22,3 +22,6 @@
 [submodule "apps/qtcloud-org"]
 	path = apps/qtcloud-org
 	url = https://github.com/quanttide/qtcloud-org.git
+[submodule "docs/context"]
+	path = docs/context
+	url = https://github.com/quanttide/quanttide-context-of-founder.git
