@@ -4,9 +4,6 @@
 [submodule "journal"]
 	path = docs/journal
 	url = https://github.com/quanttide/quanttide-journal-of-founder.git
-[submodule "profile"]
-	path = docs/profile
-	url = https://github.com/quanttide/quanttide-profile-of-founder.git
 [submodule "docs/roadmap"]
 	path = docs/roadmap
 	url = https://github.com/quanttide/quanttide-roadmap-of-founder.git
