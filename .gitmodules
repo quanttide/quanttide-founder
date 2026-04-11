@@ -1,9 +1,6 @@
 [submodule "archive"]
 	path = docs/archive
 	url = https://github.com/quanttide/quanttide-archive-of-founder.git
-[submodule "essay"]
-	path = docs/essay
-	url = https://github.com/quanttide/quanttide-essay-of-founder.git
 [submodule "journal"]
 	path = docs/journal
 	url = https://github.com/quanttide/quanttide-journal-of-founder.git
@@ -16,9 +13,6 @@
 [submodule "src/qtcloud-think"]
 	path = apps/qtcloud-think
 	url = https://github.com/quanttide/qtcloud-think.git
-[submodule "apps/qtcloud-asset"]
-	path = apps/qtcloud-asset
-	url = https://github.com/quanttide/qtcloud-asset.git
 [submodule "apps/qtcloud-org"]
 	path = apps/qtcloud-org
 	url = https://github.com/quanttide/qtcloud-org.git
