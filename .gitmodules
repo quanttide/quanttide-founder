@@ -7,12 +7,6 @@
 [submodule "docs/roadmap"]
 	path = docs/roadmap
 	url = https://github.com/quanttide/quanttide-roadmap-of-founder.git
-[submodule "src/qtcloud-think"]
-	path = apps/qtcloud-think
-	url = https://github.com/quanttide/qtcloud-think.git
-[submodule "apps/qtcloud-org"]
-	path = apps/qtcloud-org
-	url = https://github.com/quanttide/qtcloud-org.git
 [submodule "docs/context"]
 	path = docs/context
 	url = https://github.com/quanttide/quanttide-context-of-founder.git
