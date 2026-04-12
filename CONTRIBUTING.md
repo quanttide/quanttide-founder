@@ -14,13 +14,7 @@
 
 ## 使用 Skill
 
-Agent 会根据用户输入的触发词自动匹配对应的 Skill 并执行。也可直接指定：
-
-```bash
-skill: commit
-skill: release
-skill: submodule
-```
+Agent 会根据用户输入的触发词自动匹配对应的 Skill 并执行。
 
 ## 维护 Skill
 
