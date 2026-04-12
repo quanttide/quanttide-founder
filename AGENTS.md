@@ -5,10 +5,18 @@
 | 文档 | 用途 |
 |------|------|
 | [README](README.md) | 项目概述、子模块列表 |
-| [CONTRIBUTING](CONTRIBUTING.md) | 人机协作、子模块工作流、发布流程、环境变量 |
+| [CONTRIBUTING](CONTRIBUTING.md) | Skill 使用和维护指南 |
 | [IDENTITY.md](IDENTITY.md) | 仓库自我映射、子模块列表 |
 | [SOUL.md](SOUL.md) | AI 自我认知（自维护）|
 | [TOOLS.md](TOOLS.md) | 工具清单（自维护）|
+
+### Skill 索引
+
+| Skill | 用途 | 路径 |
+|-------|------|------|
+| [commit](.agents/skills/commit/SKILL.md) | 规范提交 | `.agents/skills/commit/SKILL.md` |
+| [release](.agents/skills/release/SKILL.md) | 发布 Release | `.agents/skills/release/SKILL.md` |
+| [submodule](.agents/skills/submodule/SKILL.md) | 子模块管理 | `.agents/skills/submodule/SKILL.md` |
 
 ---
 
@@ -16,11 +24,9 @@
 
 | 任务 | 操作位置 |
 |------|---------|
-| 修改子模块 | CONTRIBUTING > 子模块工作流 |
-| 发布 Release | CONTRIBUTING > 主仓库发布 Release |
-| 提交变更 | `cz commit` |
-| 处理错误 | CONTRIBUTING > 常见错误处理 |
-| 更新环境变量 | CONTRIBUTING > 环境变量 |
+| 提交变更 | Skill: `commit` |
+| 发布 Release | Skill: `release` |
+| 修改子模块 | Skill: `submodule` |
 | 记录日报 | `docs/archive/report/default/diary/YYYY-MM-DD.md` |
 
 ---
@@ -154,20 +160,7 @@
 
 ## Git 提交规范
 
-### 默认工具：commitizen
-
-使用 `commitizen` 生成符合 Conventional Commits 规范的 commit message。
-
-**基本用法：**
-```bash
-# 交互式创建规范提交
-cz commit
-# 或简写
-cz c
-
-# 自动版本升级 + 生成 CHANGELOG
-cz bump
-```
+遵循 Conventional Commits 格式，详见 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
 **Commit 类型：**
 
@@ -179,9 +172,6 @@ cz bump
 | `test` | 测试相关 | `test: add unit tests for api` |
 | `refactor` | 代码重构 | `refactor: simplify logic` |
 | `chore` | 构建/工具 | `chore: update dependencies` |
-
-**脚本集成：**
-- 优先使用 `cz commit` 交互式提交
 
 ## 重要提示
 
@@ -197,7 +187,7 @@ cz bump
 
 | 类型 | 写在哪里 |
 |------|---------|
-| 详细说明、工作流步骤 | CONTRIBUTING |
+| 详细说明、工作流步骤 | `.agents/skills/` 中的 Skill 文件 |
 | 给链接、导航索引 | AGENTS.md |
 
-更新时机：新增文档、新增任务类型、重要规则变化时更新；README/CONTRIBUTING 已有的内容不重复。
+更新时机：新增文档、新增任务类型、重要规则变化时更新；README/Skill 已有的内容不重复。
