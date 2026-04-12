@@ -2,10 +2,10 @@
 
 ## 提交规范
 
-使用 commitizen 生成规范提交：
+提交信息遵循 Conventional Commits 格式：
 
 ```bash
-cz commit
+git commit -m "<type>: <description>"
 ```
 
 **Commit 类型：**
