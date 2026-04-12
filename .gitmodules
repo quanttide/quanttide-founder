@@ -13,3 +13,6 @@
 [submodule "docs/fiction"]
 	path = docs/fiction
 	url = https://github.com/quanttide/quanttide-fiction-of-founder.git
+[submodule "docs/vision"]
+	path = docs/vision
+	url = https://github.com/quanttide/quanttide-vision-of-founder.git
