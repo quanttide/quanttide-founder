@@ -16,6 +16,47 @@
 
 ---
 
+## [0.3.2] - 2026-04-12
+
+### Added
+
+- **Skill 体系**：`.agents/skills/` 目录，封装高频 DevOps 工作流
+  - `devops-commit`：规范提交
+  - `devops-release`：发布 Release
+  - `devops-submodule`：子模块管理（add/remove/update/fix/status）
+  - 符合 [agentskills.io](https://agentskills.io/specification) 规范（YAML Frontmatter + 标准目录结构）
+- **docs/context 子模块**：新增上下文文档子模块
+- **docs/fiction 子模块**：新增小说创作子模块
+- **docs/vision 子模块**：新增愿景文档子模块
+- **.agents/README.md**：Skill 索引和使用说明
+
+### Changed
+
+- **CONTRIBUTING.md 重构**：从详细工作流指南 → Skill 使用和维护指南
+- **AGENTS.md 更新**：新增 Skill 索引，快速索引改为引用 Skill
+- **文档精简**：移除 IDENTITY.md、SOUL.md、TOOLS.md、USER.md
+- **提交规范**：移除 commitizen 依赖，直接使用 Conventional Commits 格式
+
+### Removed
+
+- **子模块清理**：移除多个未使用的子模块
+  - `apps/qtcloud-asset`
+  - `apps/qtcloud-org`
+  - `apps/qtcloud-think`
+  - `docs/essay`
+  - `docs/profile`（云端仓库已删除）
+
+### Submodules
+
+- **archive**：归档 journal entries before 2026-04-11
+- **context**：新增，包含资产定价和 Git 仓库规范文档
+- **fiction**：新增
+- **journal**：归档非今日日志到 archive，合并 tutorial 到 context
+- **roadmap**：新增 qtcloud-devops 路线图
+- **vision**：新增，初始版本
+
+---
+
 ## [0.3.1] - 2026-04-05
 
 ### Changed
