@@ -6,9 +6,9 @@
 
 | Skill | 用途 | 触发词 |
 |-------|------|--------|
-| [commit](.agents/skills/commit/SKILL.md) | 规范提交 | "提交"、"commit" |
-| [release](.agents/skills/release/SKILL.md) | 发布 Release | "发布"、"release" |
-| [submodule](.agents/skills/submodule/SKILL.md) | 子模块管理 | "子模块"、"submodule" |
+| [devops-commit](.agents/skills/devops-commit/SKILL.md) | 规范提交 | "提交"、"commit" |
+| [devops-release](.agents/skills/devops-release/SKILL.md) | 发布 Release | "发布"、"release" |
+| [devops-submodule](.agents/skills/devops-submodule/SKILL.md) | 子模块管理 | "子模块"、"submodule" |
 
 每个 Skill 的 `SKILL.md` 包含：触发词、规则、工作流步骤。
 

@@ -14,9 +14,9 @@
 
 | Skill | 用途 | 路径 |
 |-------|------|------|
-| [commit](.agents/skills/commit/SKILL.md) | 规范提交 | `.agents/skills/commit/SKILL.md` |
-| [release](.agents/skills/release/SKILL.md) | 发布 Release | `.agents/skills/release/SKILL.md` |
-| [submodule](.agents/skills/submodule/SKILL.md) | 子模块管理 | `.agents/skills/submodule/SKILL.md` |
+| [devops-commit](.agents/skills/devops-commit/SKILL.md) | 规范提交 | `.agents/skills/devops-commit/SKILL.md` |
+| [devops-release](.agents/skills/devops-release/SKILL.md) | 发布 Release | `.agents/skills/devops-release/SKILL.md` |
+| [devops-submodule](.agents/skills/devops-submodule/SKILL.md) | 子模块管理 | `.agents/skills/devops-submodule/SKILL.md` |
 
 ---
 
