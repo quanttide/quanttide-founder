@@ -17,12 +17,24 @@ Agent 会根据用户输入自动匹配 Skill，也可直接调用：
 ```
 .agents/
 └── skills/
-    ├── devops-commit/       # 规范提交
-    ├── devops-release/      # 发布 Release
-    └── devops-submodule/    # 子模块管理
+    ├── devops-commit/
+    │   ├── SKILL.md
+    │   ├── scripts/
+    │   ├── references/
+    │   └── assets/
+    ├── devops-release/
+    │   ├── SKILL.md
+    │   ├── scripts/
+    │   ├── references/
+    │   └── assets/
+    └── devops-submodule/
+        ├── SKILL.md
+        ├── scripts/
+        ├── references/
+        └── assets/
 ```
 
-每个 Skill 目录包含 `SKILL.md`，定义触发词、规则和工作流步骤。
+每个 Skill 包含 `SKILL.md`（YAML Frontmatter + Markdown 正文）和可选的 `scripts/`、`references/`、`assets/` 目录。
 
 ## 新建 Skill
 

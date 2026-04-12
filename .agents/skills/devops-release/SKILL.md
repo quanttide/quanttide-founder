@@ -1,10 +1,11 @@
-# release
+---
+name: devops-release
+description: 发布 Git 仓库 Release，支持子模块和主仓库两种发布流程。创建 tag、推送远端、生成 GitHub Release。
+---
+
+# devops-release
 
 发布 Git 仓库 Release。
-
-## 触发词
-
-"发布"、"release"、"发版"
 
 ## 规则
 
