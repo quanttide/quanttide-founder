@@ -96,9 +96,9 @@ assets:
     path: examples
     description: 产品路线图生成、Ollama blueprint 生成等示例
 
-# ── 操作定义 ──────────────────────────────────────────
+# ── Skills 定义 ──────────────────────────────────────────
 
-operations:
+skills:
   # 日志归档
   archive_journal:
     title: 日志归档
