@@ -13,6 +13,8 @@ Agent 会根据用户输入自动匹配 Skill，也可直接调用：
 | [devops-submodule](skills/devops-submodule/SKILL.md) | "子模块"、"submodule" | 子模块管理 |
 | [asset-vision](skills/asset-vision/SKILL.md) | "愿景"、"vision" | 从 roadmap/context 提取愿景文档 |
 
+> vision 子仓库另有独立 Skill：`vision-write`（撰写愿景文档）
+
 ## 目录结构
 
 ```
