@@ -38,7 +38,7 @@ git push origin <version>
 # 4. 创建 GitHub Release
 gh release create <version> \
   --title "v<version>" \
-  --notes-file CHANGELOG.md \
+  --notes "$(awk '/## vX.Y.Z/{flag=1;next}/## vX.Y.(Z-1)/{flag=0}flag' CHANGELOG.md)" \
   --repo quanttide/<仓库名>
 ```
 
@@ -46,7 +46,7 @@ gh release create <version> \
 
 ```bash
 # 1. 创建预发布版本（可选）
-gh release create vX.Y.Z-rc.1 --prerelease --title "vX.Y.Z RC" --notes-file CHANGELOG.md
+gh release create vX.Y.Z-rc.1 --prerelease --title "vX.Y.Z RC" --notes "$(awk '/## vX.Y.Z/{flag=1;next}/## vX.Y.(Z-1)/{flag=0}flag' CHANGELOG.md)"
 
 # 2. 确认所有子模块已更新
 git submodule update --remote
