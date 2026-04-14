@@ -1,6 +1,3 @@
-[submodule "archive"]
-	path = docs/archive
-	url = https://github.com/quanttide/quanttide-archive-of-founder.git
 [submodule "docs/roadmap"]
 	path = docs/roadmap
 	url = https://github.com/quanttide/quanttide-roadmap-of-founder.git
