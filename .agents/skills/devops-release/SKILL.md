@@ -16,6 +16,12 @@ description: 发布 Git 仓库 Release，支持子模块和主仓库两种发布
 
 ## 工作流
 
+### 预发布检查
+- [ ] 所有子模块版本已锁定
+- [ ] 通过 CI 测试
+- [ ] CHANGELOG.md 版本段已验证
+- [ ] 执行过 `npm run build` (如适用)
+
 ### 子模块发布 Release
 
 ```bash
@@ -39,21 +45,24 @@ gh release create <version> \
 ### 主仓库发布 Release
 
 ```bash
-# 1. 确认所有子模块已更新
+# 1. 创建预发布版本（可选）
+gh release create vX.Y.Z-rc.1 --prerelease --title "vX.Y.Z RC" --notes-file CHANGELOG.md
+
+# 2. 确认所有子模块已更新
 git submodule update --remote
 git status
 
-# 2. 更新 CHANGELOG.md
+# 3. 更新 CHANGELOG.md
 
-# 3. 提交 CHANGELOG.md
+# 4. 提交 CHANGELOG.md
 git add CHANGELOG.md && git commit -m "docs: update CHANGELOG"
 
-# 4. 创建标签并推送
+# 5. 创建标签并推送
 git tag <version> && git push origin <version>
 
-# 5. 创建 GitHub Release
+# 6. 创建 GitHub Release
 gh release create <version> \
   --title "v<version>" \
-  --notes-file CHANGELOG.md \
+  --notes "$(awk '/## vX.Y.Z/{flag=1;next}/## vX.Y.(Z-1)/{flag=0}flag' CHANGELOG.md)" \
   --repo quanttide/quanttide-founder
 ```
