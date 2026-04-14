@@ -16,6 +16,29 @@
 
 ---
 
+## [0.4.0] - 2026-04-14
+
+### Changed
+
+- **devops-release Skill 增强**：
+  - 新增预发布检查清单（子模块版本锁定、CI 测试验证、CHANGELOG 校验、构建验证）
+  - 新增预发布版本流程（vX.Y.Z-rc.1）
+  - 优化 Release Notes 生成逻辑（精确提取 CHANGELOG 版本段）
+
+### Removed
+
+- **子模块清理**：
+  - 移除 `docs/journal` 子模块
+  - 移除 `docs/archive` 子模块
+- **远端仓库删除**：删除 `quanttide/quanttide-journal-of-founder` 仓库
+- **远端仓库重命名**：`quanttide/quanttide-archive-of-founder` → `quanttide-archive-of-asset-management`，描述更新为"量潮数字资产工作归档"
+
+### Fixed
+
+- **Release Notes 生成**：修复从 CHANGELOG.md 提取版本段内容为空的问题
+
+---
+
 ## [0.3.2] - 2026-04-12
 
 ### Added
