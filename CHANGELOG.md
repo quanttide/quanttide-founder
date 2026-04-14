@@ -16,6 +16,36 @@
 
 ---
 
+## [0.4.1] - 2026-04-14
+
+### Added
+
+- **devops-review Skill**：新增流程审查 Skill
+  - 版本号格式验证（semver）
+  - CHANGELOG 完整性验证（版本存在 + 内容不为空）
+  - 工作区状态验证
+  - 子模块状态验证（初始化 + 更新检查）
+  - 标签冲突检测
+  - 远程仓库连接验证
+  - 支持发布前检查、代码审查、文档审查等多场景
+
+### Changed
+
+- **devops-release Skill 增强**：
+  - 新增依赖声明（devops-commit、devops-submodule）
+  - 新增预检查流程（版本格式、CHANGELOG、标签冲突、工作区状态）
+  - 新增发布前确认对话框
+  - 新增错误处理和回滚机制
+  - 新增常见错误诊断表
+  - 新增标准化输出（成功/失败状态）
+- **AGENTS.md 更新**：新增 devops-review Skill 索引
+
+### Removed
+
+- **devops-validate Skill**：重命名为 devops-review，扩展审查场景
+
+---
+
 ## [0.4.0] - 2026-04-14
 
 ### Changed
