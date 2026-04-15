@@ -52,10 +52,16 @@ git commit -m "chore: remove <name> submodule"
 ### update - 更新子模块
 
 ```bash
-# 1. 拉取最新代码
-git submodule update --remote
+# 1. 先检查子模块状态（路径必须是完整路径，如 docs/fiction）
+git submodule status
 
-# 2. 检查子模块状态
+# 2. 初始化（如需要）
+git submodule update --init <path>
+
+# 3. 拉取最新代码
+git submodule update --remote <path>
+
+# 4. 检查子模块状态
 git -C <path> status
 
 # 3. 若在 detached HEAD 上有提交，切换到 main 分支并合并
