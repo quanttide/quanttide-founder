@@ -16,6 +16,22 @@
 
 ---
 
+## [0.4.2] - 2026-04-18
+
+### Added
+
+- **memory 子模块**：新增创始人工作记忆仓库
+  - 来源：https://github.com/quanttide/quanttide-memory-of-founder.git
+  - 包含 roadmap 目录结构重构
+- **devops-commit Skill 增强**：自动 push 并返回 GitHub 提交链接
+
+### Changed
+
+- **资产契约更新**：`.quanttide/asset/contract.yaml` 添加 memory 子模块
+- **devops-release Skill**：优化输出格式，添加返回链接
+
+---
+
 ## [0.4.1] - 2026-04-14
 
 ### Added
