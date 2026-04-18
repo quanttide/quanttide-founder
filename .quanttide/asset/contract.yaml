@@ -64,6 +64,14 @@ assets:
     path: docs/journal
     description: 每日工作日志，按分类归档到 archive
 
+  # 工作记忆子模块
+  memory:
+    title: 工作记忆子模块
+    type: submodule
+    category: memory
+    path: docs/memory
+    description: 创始人工作记忆仓库
+
   # 路线图子模块
   roadmap:
     title: 路线图子模块

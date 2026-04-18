@@ -1,13 +1,5 @@
 # ROADMAP
 
-本文件记录 quanttide-founder 仓库的未来版本规划。
+# v0.4.x: 整合memory子仓库
 
-## v0.2: 探索分类规则与自动化分类
-
-将隐性的问题领域识别显性化，形成可执行的判断依据：
-
-1. **问题领域识别**：从脚本需求中抽象出领域概念
-   - 例如：doc_check.py, submodule_sync.py → 数字资产治理
-2. **工程方法论识别**：从实践中总结方法论
-   - 例如：scripts-to-thera 演进 → 软件工程
-3. **分类标准积累**：建立问题领域目录，持续积累识别经验
+roadmap、context、vision等子仓库整合为memory子仓库。
