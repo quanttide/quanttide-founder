@@ -10,3 +10,6 @@
 [submodule "docs/vision"]
 	path = docs/vision
 	url = https://github.com/quanttide/quanttide-vision-of-founder.git
+[submodule "docs/memory"]
+	path = docs/memory
+	url = https://github.com/quanttide/quanttide-memory-of-founder.git
