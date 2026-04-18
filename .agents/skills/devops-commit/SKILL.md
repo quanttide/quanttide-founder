@@ -47,8 +47,19 @@ git commit -m "<type>: <description>"
 
 ### 4. 推送
 
-提交成功后询问是否 push：
+提交成功后自动 push：
 
 ```bash
 git push
 ```
+
+### 5. 验证并返回链接
+
+检查 push 是否成功，返回 GitHub 提交链接：
+
+```bash
+git log -1 --format="%H"
+git remote get-url origin
+```
+
+组合返回格式：`https://github.com/{org}/{repo}/commit/{commit_hash}`
