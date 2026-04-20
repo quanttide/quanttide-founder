@@ -16,6 +16,16 @@
 
 ---
 
+## [0.4.4] - 2026-04-20
+
+### Removed
+
+- **子模块清理**：
+  - 移除 `docs/roadmap` 子模块
+- **远端仓库删除**：删除 `quanttide/quanttide-roadmap-of-founder` 仓库
+
+---
+
 ## [0.4.3] - 2026-04-20
 
 ### Added
