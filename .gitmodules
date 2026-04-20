@@ -13,3 +13,6 @@
 [submodule "docs/memory"]
 	path = docs/memory
 	url = https://github.com/quanttide/quanttide-memory-of-founder.git
+[submodule "docs/archive"]
+	path = docs/archive
+	url = https://github.com/quanttide/quanttide-archive-of-founder
