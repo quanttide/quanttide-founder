@@ -16,6 +16,21 @@
 
 ---
 
+## [0.4.3] - 2026-04-20
+
+### Added
+
+- **archive 子模块**：新增创始人档案归档仓库
+  - 来源：https://github.com/quanttide/quanttide-archive-of-founder.git
+  - 路径：`docs/archive`
+
+### Changed
+
+- **fiction 子模块**：更新至最新提交 `7cc7844`
+- **memory 子模块**：更新至最新提交 `b0029e6`
+
+---
+
 ## [0.4.2] - 2026-04-18
 
 ### Added
