@@ -1,6 +1,3 @@
-[submodule "docs/roadmap"]
-	path = docs/roadmap
-	url = https://github.com/quanttide/quanttide-roadmap-of-founder.git
 [submodule "docs/context"]
 	path = docs/context
 	url = https://github.com/quanttide/quanttide-context-of-founder.git
