@@ -13,3 +13,6 @@
 [submodule "docs/archive"]
 	path = docs/archive
 	url = https://github.com/quanttide/quanttide-archive-of-founder
+[submodule "apps/qtcloud-think"]
+	path = apps/qtcloud-think
+	url = https://github.com/quanttide/qtcloud-think.git
