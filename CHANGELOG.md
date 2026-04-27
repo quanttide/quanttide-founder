@@ -16,30 +16,27 @@
 
 ---
 
-## [0.4.5] - 2026-04-25
+## [0.4.6] - 2026-04-27
 
 ### Added
-
-- **memory v0.2.0**：新增 qtcloud-think.md 整合思考云产品愿景
-- **visualization.md**：数据可视化方案
-- **sync.md**：协作同步机制
-- **internal-training.md**：内部培训蓝图
+- memory v0.2.0：新增 qtcloud-think.md 整合思考云产品愿景
+- visualization.md：数据可视化方案
+- sync.md：协作同步机制
+- internal-training.md：内部培训蓝图
 
 ### Changed
-
-- **memory 子模块**：整合 vision qtcloud-think 原始思考到结构化产品愿景
-- **vision 子模块**：移除 .quanttide 目录和废弃 skills
-- **fiction 子模块**：更新至最新提交
+- memory 子模块：整合 vision qtcloud-think 原始思考到结构化产品愿景
+- vision 子模块：移除 .quanttide 目录和废弃 skills
+- fiction 子模块：更新至最新提交
 
 ### Submodules
-
-- **memory**：更新至 v0.2.0 (e6395c8)
-- **vision**：更新至 v0.0.1-4 (390d376)
-- **fiction**：更新至最新提交 (7780d30)
+- memory：更新至 v0.2.0 (e6395c8)
+- vision：更新至 v0.0.1-4 (390d376)
+- fiction：更新至最新提交 (7780d30)
 
 ---
 
-## [0.4.4] - 2026-04-20
+## [0.4.5] - 2026-04-25
 
 ### Removed
 
