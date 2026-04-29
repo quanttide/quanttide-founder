@@ -1,6 +1,3 @@
-[submodule "docs/context"]
-	path = docs/context
-	url = https://github.com/quanttide/quanttide-context-of-founder.git
 [submodule "docs/fiction"]
 	path = docs/fiction
 	url = https://github.com/quanttide/quanttide-fiction-of-founder.git
