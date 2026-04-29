@@ -7,3 +7,6 @@
 [submodule "docs/archive"]
 	path = docs/archive
 	url = https://github.com/quanttide/quanttide-archive-of-founder
+[submodule "apps/qtgame-tycoon"]
+	path = apps/qtgame-tycoon
+	url = https://github.com/quanttide/qtgame-tycoon
