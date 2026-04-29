@@ -16,6 +16,26 @@
 
 ---
 
+## [0.5.0] - 2026-04-29
+
+### Removed
+
+- **子模块清理**：
+  - 移除 `docs/context` 子模块，删除远端仓库 `quanttide/quanttide-context-of-founder`
+  - 移除 `docs/vision` 子模块，删除远端仓库 `quanttide/quanttide-vision-of-founder`
+
+### Changed
+
+- memory 子模块：更新至 v0.3.1，新增 context/ 目录文档和 vision/default/ 愿景层文档
+- fiction 子模块：更新至最新提交
+
+### Submodules
+
+- memory：更新至 v0.3.1 (a656a56)
+- fiction：更新至最新提交
+- context：已移除
+- vision：已移除
+
 ## [0.4.6] - 2026-04-27
 
 ### Added
