@@ -16,6 +16,28 @@
 
 ---
 
+## [0.5.1] - 2026-05-01
+
+### Added
+
+- **qtgame-war 子模块**：新增战争叙事游戏子项目
+- **transfer.md**：新增学习迁移 essay，记录 SaaS 工程能力到游戏架构的映射认知
+
+### Removed
+
+- **旧原型代码**：删除 `apps/qtgame-war/src/` 目录（HTML 单文件原型已废弃）
+
+### Changed
+
+- **文档迁移**：将 `docs/memory/platform/` 下的 add.md / prd.md / qa.md 移至 `apps/qtgame-war/docs/` 对应目录
+- **设计文档重构**：`apps/qtgame-war/docs/add/` 丢弃旧模块化方案，以架构设计文档作为入口
+- **essay 重构**：prototype.md 按认知过程重新组织
+
+### Submodules
+
+- qtgame-war：新增子模块，包含架构设计、PRD、QA 文档
+- memory：更新至最新提交，移除 platform/ 目录文件，新增 transfer essay
+
 ## [0.5.0] - 2026-04-29
 
 ### Removed
