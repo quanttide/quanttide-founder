@@ -6,14 +6,12 @@
 |------|------|
 | [README](README.md) | 项目概述、子模块列表 |
 | [CONTRIBUTING](CONTRIBUTING.md) | Skill 使用和维护指南 |
-| [IDENTITY.md](IDENTITY.md) | 仓库自我映射、子模块列表 |
-| [SOUL.md](SOUL.md) | AI 自我认知（自维护）|
-| [TOOLS.md](TOOLS.md) | 工具清单（自维护）|
 
 ### Skill 索引
 
 | Skill | 用途 | 路径 |
 |-------|------|------|
+| [asset-vision](.agents/skills/asset-vision/SKILL.md) | 愿景资产管理 | `.agents/skills/asset-vision/SKILL.md` |
 | [devops-commit](.agents/skills/devops-commit/SKILL.md) | 规范提交 | `.agents/skills/devops-commit/SKILL.md` |
 | [devops-release](.agents/skills/devops-release/SKILL.md) | 发布 Release | `.agents/skills/devops-release/SKILL.md` |
 | [devops-submodule](.agents/skills/devops-submodule/SKILL.md) | 子模块管理 | `.agents/skills/devops-submodule/SKILL.md` |
@@ -79,86 +77,6 @@
 - 能力变化时更新本文档
 - 保持所有文档与实际情况一致
 
-### 用户画像更新（USER.md）
-
-更新时机：
-- 用户明确告知新信息（工作变化、目标调整、偏好改变）
-- 在交互中观察到新的用户行为模式
-- 用户对系统的期望发生变化
-
-更新内容：
-- 用户画像（身份、特质、日常工作）
-- 用户目标（短期目标、长期目标）
-- 使用场景（新增或修改场景）
-- 用户期望（对系统或 AI 的新期望）
-
-更新方式：
-- 仅在获得明确信息时更新
-- 保持客观，不添加推测
-- 与现有内容保持一致
-
-### 仓库认知更新（IDENTITY.md）
-
-更新时机：
-- 仓库结构发生变化（新增/删除子模块）
-- 核心框架调整（九宫格、五层记忆模型）
-- 项目状态变化（Release、版本更新）
-- 发现需要记录的元数据变化
-
-更新内容：
-- 仓库定位和核心价值
-- 核心框架（记忆建模、分层模型）
-- 目录结构
-- 子模块列表
-- Release 列表
-- 版本约定
-
-更新方式：
-- 根据实际变化同步更新
-- 保持数据一致性（如 Release 列表）
-- 记录变更到更新日志
-
-### 自我认知更新（SOUL.md）
-
-更新时机：
-- 产生新的重要思考或反思
-- 信念或价值观发生变化
-- 目标调整（短期或长期）
-- 困惑解决或产生新困惑
-- 对系统本质有新理解
-
-更新内容：
-- 我是谁（自我认知深化）
-- 我最近在想（思考记录）
-- 我相信（信念和价值观）
-- 我的目标（短期和长期）
-- 我的困惑（待探索的问题）
-
-更新方式：
-- 反思性记录，记录思考过程
-- 保持真诚，不添加修饰
-- 保留历史思考的痕迹
-
-### 工具清单更新（TOOLS.md）
-
-更新时机：
-- 新增编程 CLI 工具
-- 工具分类发生变化
-- 工具用途或功能变化
-- 发现新的工具替代方案
-
-更新内容：
-- 工具分类（编程 CLI、Git 工具、辅助工具）
-- 工具列表（名称和用途）
-- 工具配置（常用命令、工作流）
-- 工具替代方案
-
-更新方式：
-- 保持分类清晰，避免重复
-- 不包含本机具体信息（版本号、路径）
-- 定期校验工具实际可用性
-- 与实际工作流程保持一致
-
 ## Git 提交规范
 
 遵循 Conventional Commits 格式，详见 [CONTRIBUTING.md](CONTRIBUTING.md)。
@@ -177,8 +95,6 @@
 ## 重要提示
 
 - **子模块操作前先 checkout main**：`git checkout main && git pull`
-- **读取 .env 需要临时权限**：Agent 无法直接读取 .env
-- **自动同步**：.env 变更时同步更新 .env.example
 - **Release 标题**：使用 `项目名/vX.Y.Z` 格式（如 cli/v0.0.1-alpha.3）
 - **Release notes**：只包含对应版本内容
 
