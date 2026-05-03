@@ -13,3 +13,6 @@
 [submodule "apps/qtgame-war"]
 	path = apps/qtgame-war
 	url = https://github.com/quanttide/qtgame-war.git
+[submodule "apps/qtadmin"]
+	path = apps/qtadmin
+	url = https://github.com/quanttide/qtadmin.git
