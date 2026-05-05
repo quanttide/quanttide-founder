@@ -14,6 +14,25 @@
 
 **工作流程**：创建 Release 之前必须先更新此文件。
 
+## [0.6.1] - 2026-05-06
+
+### Changed
+
+- **日志归档到 archive**：将 memory 子仓库中 journal/default/、product/、game/、qtcloud/ 批量备份至 archive 子仓库
+- **memory 子模块引用更新**：更新至 v0.4.2（移除已归档目录，新增 2026-05-06 日报）
+- **archive 子模块引用更新**：更新至 v0.3.1（接收 memory 归档内容）
+- **qtadmin 子模块引用更新**：更新至最新提交
+- **qtgame-war 子模块引用更新**：更新至最新提交
+
+### Submodules
+
+- memory：v0.4.0 → v0.4.2
+- archive：v0.3.0 → v0.3.1
+- qtadmin：cli/v0.0.1-beta.5-35 → cli/v0.0.1-beta.5-48
+- qtgame-war：更新至最新提交
+
+---
+
 ## [0.6.0] - 2026-05-05
 
 ### Added
