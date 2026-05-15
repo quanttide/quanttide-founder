@@ -14,6 +14,24 @@
 
 **工作流程**：创建 Release 之前必须先更新此文件。
 
+## [0.7.0] - 2026-05-15
+
+### Added
+
+- **examples/default 子模块**：新增 quanttide-example-of-founder 示例仓库
+
+### Changed
+
+- **qtadmin 子模块**：更新至最新提交
+- **qtgame-war 子模块**：更新至最新提交
+- **fiction 子模块**：更新至 v0.2.0-47
+- **memory 子模块**：更新至 v0.4.3-121
+- **archive 子模块**：更新至 v0.3.1-3
+
+### Fixed
+
+- **examples/default 子模块**：修复本地提交被远端覆盖的问题
+
 ## [0.6.2] - 2026-05-08
 
 ### Changed
