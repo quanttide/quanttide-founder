@@ -16,3 +16,6 @@
 [submodule "apps/qtadmin"]
 	path = apps/qtadmin
 	url = https://github.com/quanttide/qtadmin.git
+[submodule "examples/default"]
+	path = examples/default
+	url = https://github.com/quanttide/quanttide-example-of-founder.git
