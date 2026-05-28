@@ -14,6 +14,18 @@
 
 **工作流程**：创建 Release 之前必须先更新此文件。
 
+## [0.7.2] - 2026-05-28
+
+### Removed
+
+- **apps/qtadmin 子模块**：移除
+- **assets/context-of-knowledge-engineering 子模块**：移除，迁移至 quanttide-knowl docs/context
+
+### Changed
+
+- **archive 子模块**：从 archive/ 移至 docs/archive/
+- **docs/memory 子模块**：归档大量内容至 docs/archive（journals、context、brochure、report、profile、vision、essay、laboratory、roadmap）；handbook 整理为正式章程
+
 ## [0.7.1] - 2026-05-15
 
 ### Changed
