@@ -16,3 +16,6 @@
 [submodule "docs/archive"]
 	path = docs/archive
 	url = https://github.com/quanttide/quanttide-archive-of-founder
+[submodule "examples/game"]
+	path = examples/game
+	url = https://github.com/quanttide/quanttide-laboratory-of-game-developing.git
