@@ -26,5 +26,5 @@
 	path = examples/org
 	url = https://github.com/quanttide/quanttide-laboratory-of-organization.git
 [submodule "examples/exec"]
-	path = examples/exec
+	path = examples/execute
 	url = https://github.com/quanttide/quanttide-laboratory-of-execution.git
