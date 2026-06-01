@@ -22,3 +22,6 @@
 [submodule "examples/human"]
 	path = examples/human
 	url = https://github.com/quanttide/quanttide-laboratory-of-human-resources.git
+[submodule "examples/org"]
+	path = examples/org
+	url = https://github.com/quanttide/quanttide-laboratory-of-organization.git
