@@ -19,3 +19,6 @@
 [submodule "examples/game"]
 	path = examples/game
 	url = https://github.com/quanttide/quanttide-laboratory-of-game-developing.git
+[submodule "examples/human"]
+	path = examples/human
+	url = https://github.com/quanttide/quanttide-laboratory-of-human-resources.git
