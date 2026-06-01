@@ -14,6 +14,14 @@
 
 **工作流程**：创建 Release 之前必须先更新此文件。
 
+## [0.7.3] - 2026-06-01
+
+### Changed
+
+- **docs/archive 子模块**：更新至 v0.4.0
+- **docs/memory 子模块**：更新子模块引用
+- **examples 子模块**：移除 company、execute、game、human、innov、org 子模块，保留 default
+
 ## [0.7.2] - 2026-05-28
 
 ### Removed
