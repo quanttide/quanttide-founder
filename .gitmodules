@@ -31,3 +31,6 @@
 [submodule "examples/company"]
 	path = examples/company
 	url = https://github.com/quanttide/quanttide-laboratory-of-business-entity.git
+[submodule "examples/innov"]
+	path = examples/innov
+	url = https://github.com/quanttide/quanttide-laboratory-of-innovation.git
