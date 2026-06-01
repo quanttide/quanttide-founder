@@ -28,3 +28,6 @@
 [submodule "examples/exec"]
 	path = examples/execute
 	url = https://github.com/quanttide/quanttide-laboratory-of-execution.git
+[submodule "examples/company"]
+	path = examples/company
+	url = https://github.com/quanttide/quanttide-laboratory-of-business-entity.git
