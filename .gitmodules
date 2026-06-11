@@ -10,9 +10,9 @@
 [submodule "apps/qtgame-war"]
 	path = apps/qtgame-war
 	url = https://github.com/quanttide/qtgame-war.git
-[submodule "docs/archive"]
-	path = docs/archive
-	url = https://github.com/quanttide/quanttide-archive-of-founder
 [submodule "examples/default"]
 	path = examples/default
 	url = https://github.com/quanttide/quanttide-laboratory-of-founder.git
+[submodule "assets/archive"]
+	path = assets/archive
+	url = https://github.com/quanttide/quanttide-archive-of-founder
