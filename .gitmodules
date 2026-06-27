@@ -13,6 +13,7 @@
 [submodule "apps/qtfounder"]
 	path = apps/qtfounder
 	url = https://github.com/quanttide/qtfounder
+	branch = main
 [submodule "apps/qtgame-weiqi"]
 	path = apps/qtgame-weiqi
 	url = https://github.com/quanttide/qtgame-weiqi.git
