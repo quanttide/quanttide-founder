@@ -14,6 +14,22 @@
 
 **工作流程**：创建 Release 之前必须先更新此文件。
 
+## [0.8.0] - 2026-06-27
+
+### Added
+
+- **apps/qtgame-weiqi**：新增围棋游戏子模块
+
+### Changed
+
+- **子模块路径迁移**：`docs/fiction` → `assets/fiction`，`docs/memory` → `assets/memory`
+- **fiction 子模块**：更新至 v0.4.0，新增母题分析提纲和创作情境引导
+- **memory 子模块**：更新至 v0.5.0，新增写作方法论和写作云蓝图
+
+### Removed
+
+- **ROADMAP.md**：移除过时的路线图文件
+
 ## [0.7.4] - 2026-06-12
 
 ### Changed
