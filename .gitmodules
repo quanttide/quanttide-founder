@@ -1,9 +1,3 @@
-[submodule "docs/fiction"]
-	path = docs/fiction
-	url = https://github.com/quanttide/quanttide-fiction-of-founder.git
-[submodule "docs/memory"]
-	path = docs/memory
-	url = https://github.com/quanttide/quanttide-memory-of-founder.git
 [submodule "apps/qtgame-tycoon"]
 	path = apps/qtgame-tycoon
 	url = https://github.com/quanttide/qtgame-tycoon
@@ -25,3 +19,9 @@
 [submodule "apps/qtgame-weiqi"]
 	path = apps/qtgame-weiqi
 	url = https://github.com/quanttide/qtgame-weiqi.git
+[submodule "assets/fiction"]
+	path = assets/fiction
+	url = https://github.com/quanttide/quanttide-fiction-of-founder.git
+[submodule "assets/memory"]
+	path = assets/memory
+	url = https://github.com/quanttide/quanttide-memory-of-founder.git
