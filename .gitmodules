@@ -22,3 +22,6 @@
 [submodule "apps/qtadmin"]
 	path = apps/qtadmin
 	url = https://github.com/quanttide/qtadmin
+[submodule "apps/qtgame-weiqi"]
+	path = apps/qtgame-weiqi
+	url = https://github.com/quanttide/qtgame-weiqi.git
