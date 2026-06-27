@@ -19,6 +19,7 @@
 [submodule "apps/qtgame-weiqi"]
 	path = apps/qtgame-weiqi
 	url = https://github.com/quanttide/qtgame-weiqi.git
+	branch = main
 [submodule "assets/fiction"]
 	path = assets/fiction
 	url = https://github.com/quanttide/quanttide-fiction-of-founder.git
