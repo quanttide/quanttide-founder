@@ -14,6 +14,16 @@
 
 **工作流程**：创建 Release 之前必须先更新此文件。
 
+## [0.8.1] - 2026-06-27
+
+### Removed
+
+- **apps/qtadmin**：移除 qtadmin 子模块
+
+### Changed
+
+- **assets/memory**：更新至最新提交，简化 fiction 路线图
+
 ## [0.8.0] - 2026-06-27
 
 ### Added
