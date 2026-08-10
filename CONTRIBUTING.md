@@ -9,6 +9,8 @@
 | [devops-commit](.agents/skills/devops-commit/SKILL.md) | 规范提交 | "提交"、"commit" |
 | [devops-release](.agents/skills/devops-release/SKILL.md) | 发布 Release | "发布"、"release" |
 | [devops-submodule](.agents/skills/devops-submodule/SKILL.md) | 子模块管理 | "子模块"、"submodule" |
+| [devops-review](.agents/skills/devops-review/SKILL.md) | 流程审查 | "审查"、"review" |
+| [docs-deploy](.agents/skills/docs-deploy/SKILL.md) | 部署 MyST 文档站点 | "部署"、"deploy" |
 
 每个 Skill 的 `SKILL.md` 包含：触发词、规则、工作流步骤。
 
@@ -75,6 +77,25 @@ git commit -m "<type>: <description>"
 | `test` | 测试相关 |
 | `refactor` | 代码重构 |
 | `chore` | 构建/工具 |
+
+## 版本与发布规范
+
+### 版本契约（v1.0.0 起）
+
+- 结构类变更（目录迁移、文件重命名、归档规范变化）属**破坏性变更**，必须升 major 版本（如 1.1.0 → 2.0.0）
+- 内容新增升 minor，修复升 patch
+- 子模块先发布，主仓库后发布；主仓库发布前确认所有子模块引用最新
+
+### 大版本 CHANGELOG 规范
+
+条目需包含：
+
+1. **定位说明**：该版本的意义（如"首个正式发布"）
+2. **破坏性变更**：单独声明，附旧路径 → 新路径迁移映射
+3. **Removed 清单**：被删除的文档/目录
+4. **内容总览**：内容型仓库（如 assets/*）附仓库全貌
+
+详细流程见 [devops-release](.agents/skills/devops-release/SKILL.md)。
 
 ## 人机协作原则
 
