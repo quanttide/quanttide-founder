@@ -14,6 +14,26 @@
 
 **工作流程**：创建 Release 之前必须先更新此文件。
 
+## [1.0.0] - 2026-08-10
+
+首个正式发布（1.0.0）：核心资产子仓库 archive / fiction / memory 已全部升级至 v1.0.0，子模块结构趋于稳定，后续遵循语义化版本规范，破坏性变更将单独声明。
+
+### Changed
+
+- **assets/archive**：更新至 v1.0.0，journal 日报备份归档扩展至 2026-07-28
+- **assets/fiction**：更新至 v1.0.0，新增重生系列与大量场景成稿、创作文档
+- **assets/memory**：更新至 v1.0.0，report 与 roadmap 目录扁平化，新增 voice-input 报告
+- **apps/qtfounder**：更新至最新提交（site 目录重构）
+- **apps/qtgame-war / examples/default**：更新至最新提交
+
+### Removed
+
+- **asset-vision skill**：移除过时技能（`.agents/skills/asset-vision/`）
+
+### Submodules
+
+- 全部 9 个子模块更新至各自最新版本
+
 ## [0.8.1] - 2026-06-27
 
 ### Removed
