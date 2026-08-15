@@ -24,3 +24,6 @@
 [submodule "assets/memory"]
 	path = assets/memory
 	url = https://github.com/quanttide/quanttide-memory-of-founder.git
+[submodule "packages/quanttide-founder-toolkit"]
+	path = packages/quanttide-founder-toolkit
+	url = https://github.com/quanttide/quanttide-founder-toolkit.git
