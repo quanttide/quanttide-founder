@@ -14,6 +14,24 @@
 
 **工作流程**：创建 Release 之前必须先更新此文件。
 
+## [1.1.0] - 2026-08-15
+
+### Added
+
+- **packages/quanttide-founder-toolkit**：新增子模块（新增 `packages/` 目录），工具包仓库初始化
+- **apps/qtfounder**：site 进入 v0.1.0 系列迭代（alpha 阶段），新增 studio 初始化、docs 体系（user-guide / api-reference / STATUS.md）、资产契约与数据模型文档、创作职能分组导航、资产目录实现
+- **assets/memory**：新增 intention 概念、insight 条目、转化方法论、fiction roadmap
+
+### Changed
+
+- **apps/qtfounder**：移除 /brain 页面，SPA 路由修复（basename、200 keys），创作页实现与简化，logo 量潮
+- **assets/fiction**：包子店成稿，作品编号重排
+- **assets/memory**：叙事化重写、意图准确化
+
+### Submodules
+
+- 全部 9 个子模块更新至各自最新版本
+
 ## [1.0.1] - 2026-08-10
 
 ### Changed
