@@ -27,3 +27,6 @@
 [submodule "packages/quanttide-founder-toolkit"]
 	path = packages/quanttide-founder-toolkit
 	url = https://github.com/quanttide/quanttide-founder-toolkit.git
+[submodule "apps/qtfiction"]
+	path = apps/qtfiction
+	url = https://github.com/quanttide/qtfiction.git
