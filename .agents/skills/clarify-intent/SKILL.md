@@ -36,13 +36,12 @@ description: 当用户跟 AI 协作中出现返工信号（同一要求说第二
 - **记歪了用 `--revise <clr_id>` 原地改**，重拼提示词、不新增记录；不要手改账本文件（手改最容易漏掉提示词那一份，账本就不自洽了）。删整条才手改文件。
 - **用户自己改主意不算差**：需求重新定义、方案改方向、命名换一套——两头都是用户自己的判断，没有 AI 行为的差，不进账本（要留痕归 journal / insight）。账本只收「我以为 AI 知道 vs 它实际做了」这一类，混进别的会让「同类差第 2 次」失真。
 - **规则文本永远是用户的话**。工具与 agent 都不代写规则，只把候选顶到用户面前，点头后才落库。
-- **数据目录固定，不按 cwd 散落**。所有命令前先 `export QTFOUNDER_LAB_DATA=${QTFOUNDER_LAB_DATA:-$HOME/.local/share/qtfounder-lab}`——CLI 默认落 `./data/`，换目录跑就会各存一份。
+- **数据落点由 CLI 自己选，不用 export**。开发版（`cargo run`）落代码包内 `src/cli/data/`，正式版（`cargo install`）落 `$XDG_DATA_HOME/qtfounder-lab`（未设则 `~/.local/share/qtfounder-lab`）；只有需要隔离（跑实验、造夹具）时才用 `QTFOUNDER_LAB_DATA` 指到临时目录。
 - 输出给用户的是提示词原文（`prompt` 字段），不让用户自己组织语言。
 
 ## 前置
 
 ```bash
-export QTFOUNDER_LAB_DATA=${QTFOUNDER_LAB_DATA:-$HOME/.local/share/qtfounder-lab}
 command -v qtfounder-lab || cargo install --offline --path \
   "$HOME/repos/quanttide/defaults/quanttide-founder/examples/quanttide-founder-lab/src/cli"
 ```
