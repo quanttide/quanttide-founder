@@ -18,7 +18,7 @@
 | 修改子模块 | Skill: `git-submodule` |
 | 流程审查 | Skill: `devops-audit` |
 | 记录日报 | `data/context/default/YYYY-MM-DD.md`（当天放集根，更早日志在 `data/context/default/journal/`） |
-| 记一次与 AI 的澄清 | Skill: `clarify-intent`（调 `qtfounder-lab work clarify`） |
+| 记一次与 AI 的澄清 | Skill: `clarify-intent`（调 `qtfounder-lab code clarify`） |
 | 归档旧日志 | Skill: `journal-to-archive` |
 | 移交领域归档 | Skill: `archive-to-domain` |
 
