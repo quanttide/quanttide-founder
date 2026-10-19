@@ -104,7 +104,7 @@ git commit -m "<type>: <description>"
 - **因此 work 必须自足**：前置（安装与认证）、用到的参数、失败现象与处置都在本篇内写全，不依赖别处
 - **案例集内两种文体分目录**：`media/` 一类是判例（遇到过什么、当时怎么处理），`work/` 是工作流（这样跑就得到结果）
 - 手册与 work 的关系是「定规则 / 照着跑」，不是互相链接：同一条事实同时像规则又像步骤时，步骤归 work，规则抽成一行留在手册
-- work 的写法按规格执行：`data/context/work/specification/syntax.md`（散文管命令与取舍，块管步骤、判据、偏差与边界）
+- work 的写法按规格执行：`data/context/work/specification/task-blueprint.md`（散文管命令与取舍，块管步骤、判据、偏差与边界）
 
 ## 子模块边界
 
