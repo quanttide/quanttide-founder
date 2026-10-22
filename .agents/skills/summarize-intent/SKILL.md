@@ -17,7 +17,7 @@ description: 当用户要汇总澄清账本、把攒下的「和 AI 协作的差
 
 目标仓：`data/profile`（`quanttide-profile-of-founder`），分区 `code/`，档在 `code/intent/`。先把 profile 仓 `git pull`，再看 `code/index.md` 里已有哪些主题。
 
-## 分类判据
+## 分类验收标准
 
 - **主题来自「实际做了什么」这一列**，不是来自任务名、日期或工具。同一件事下的多条差，`actual` 归一化后同键的归一类。
 - 主题名是协作维度上的短语（如「输出形态与篇幅」「边界与范围」「验收与收尾」），不是命令名、不是产品模块名。
