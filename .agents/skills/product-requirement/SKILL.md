@@ -72,7 +72,7 @@ description: 把 `qtfounder-lab` 本地账本里的需求差按主题整理进 `
 
 **校验**：对账本里每条 `clr_` id，在 `product/requirement/*.md` 里搜一次，必须都能搜到。搜不到的那条留在缓存，不删，并在汇报里点名。
 
-**删除**：把已归档的条目从 `clarify.json` 移除；全部归档时直接写回空库：
+**删除**：把已归档的记录从 `clarify.json` 移除；全部归档时直接写回空库：
 
 ```bash
 printf '{\n  "requirements": []\n}\n' > "$LEDGER"

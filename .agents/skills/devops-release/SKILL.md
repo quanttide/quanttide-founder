@@ -10,13 +10,13 @@ description: 发布 Git 仓库 Release。使用 qtcloud-devops release publish �
 ## 规则
 
 - 版本号遵循 semver：`vX.Y.Z` 或 `scope/vX.Y.Z`（如 `cli/v0.5.0`）
-- 发布前确认 CHANGELOG.md 已包含目标版本条目
+- 发布前确认 CHANGELOG.md 已包含目标版本的记录
 - Release notes 来自 CHANGELOG.md 对应版本段
 - 发布主仓库前确认所有子模块引用是最新的
 
 ## 前置条件
 
-- [ ] CHANGELOG.md 已更新，包含目标版本条目
+- [ ] CHANGELOG.md 已更新，包含目标版本的记录
 - [ ] 版本号格式正确（`vX.Y.Z` 或 `scope/vX.Y.Z`）
 - [ ] 工作区干净（无未提交变更）
 - [ ] 标签不存在（避免重复发布）
