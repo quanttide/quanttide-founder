@@ -10,7 +10,6 @@
 | [devops-release](.agents/skills/devops-release/SKILL.md) | 发布 Release | "发布"、"release" |
 | [git-submodule](.agents/skills/git-submodule/SKILL.md) | 子模块管理 | "子模块"、"submodule" |
 | [devops-audit](.agents/skills/devops-audit/SKILL.md) | 流程审查 | "审查"、"review" |
-| [journal-to-archive](.agents/skills/journal-to-archive/SKILL.md) | 归档一周以上日志 | "归档"、"archive" |
 | [archive-to-domain](.agents/skills/archive-to-domain/SKILL.md) | 归档站资源移交领域 archive | "移交"、"领域归档" |
 
 每个 Skill 的 `SKILL.md` 包含：触发词、规则、工作流步骤。
