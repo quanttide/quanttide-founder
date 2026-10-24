@@ -14,9 +14,7 @@
 | [default-to-domain](.agents/skills/default-to-domain/SKILL.md) | default 内容移交领域资产仓 | "从 default 到领域" |
 | [product-clarify](.agents/skills/product-clarify/SKILL.md) | 记一次澄清、立规则 | "记一次澄清"、返工信号 |
 | [product-requirement](.agents/skills/product-requirement/SKILL.md) | 需求归档与清缓存 | "归档需求"、"汇总澄清账本"、"清缓存" |
-| [journal-to-roadmap](.agents/skills/journal-to-roadmap/SKILL.md) | 从日志蒸馏方向层路线图 | "日志到路线图" |
-| [journal-to-insight](.agents/skills/journal-to-insight/SKILL.md) | 从日志提炼认知洞察 | "日志到洞察" |
-| [journal-to-intention](.agents/skills/journal-to-intention/SKILL.md) | 从日志提取人机协作意图 | "日志到意图" |
+| [meta-category](.agents/skills/meta-category/SKILL.md) | 判类、从日志分诊到各层、按类写入 | "这条该放哪"、"日志到洞察"、"日志到路线图" |
 | [founder-reflect](.agents/skills/founder-reflect/SKILL.md) | 创始人角色分离式自我反思 | 边界模糊、双重角色耗能、"要不要亲自做"、情绪不对 |
 
 每个 Skill 的 `SKILL.md` 包含：触发词、规则、工作流步骤。

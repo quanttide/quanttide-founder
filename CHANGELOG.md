@@ -22,6 +22,7 @@
 
 ### Removed
 
+- **三个 `journal-to-*` Skill 并入 `meta-category`**：日志蒸馏不再按层各跑一遍，改为一次通读、分诊到 insight / roadmap / intention；`memory-layer-check` 同时改名为 `meta-category`，补进文档层的六类与准入条件。`.agents/README.md`、`CONTRIBUTING.md` 与 `data/context` 的 AGENTS/README/CONTRIBUTING 索引同步
 - **`journal-to-profile` Skill**：从 `.agents/skills/` 删除；`.agents/README.md`、`CONTRIBUTING.md` 与 `data/context` 的 AGENTS/README 索引同步
 - **`journal-to-archive` Skill**：日志归档改由 `data/journal`（正式日志仓）按 `<域>/<YYYY-MM>/` 直接收口，该 Skill 的一周滚动归档口径不再适用；AGENTS.md、CONTRIBUTING.md、.agents/README.md 索引同步
 
