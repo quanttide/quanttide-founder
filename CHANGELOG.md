@@ -22,6 +22,7 @@
 
 ### Removed
 
+- **`archive-to-domain` 与 `default-to-domain` 并入 `meta-domain`**：两种形态分开写——移交（default → 领域资产仓，按目标体例改写，先写后删）与归档（归档站 → 领域 archive，只移动不改内容）；资产路径表不再复制，改指 `meta-category`。AGENTS.md、CONTRIBUTING.md 与 `.agents/README.md` 索引同步
 - **三个 `journal-to-*` Skill 并入 `meta-category`**：日志蒸馏不再按层各跑一遍，改为一次通读、分诊到 insight / roadmap / intention；`memory-layer-check` 同时改名为 `meta-category`，分类表按十八类标准资产（陈述型与程序型两个九宫格）重写，并补上 Context 入口与 Archive 出口。`.agents/README.md`、`CONTRIBUTING.md` 与 `data/context` 的 AGENTS/README/CONTRIBUTING 索引同步
 - **`journal-to-profile` Skill**：从 `.agents/skills/` 删除；`.agents/README.md`、`CONTRIBUTING.md` 与 `data/context` 的 AGENTS/README 索引同步
 - **`journal-to-archive` Skill**：日志归档改由 `data/journal`（正式日志仓）按 `<域>/<YYYY-MM>/` 直接收口，该 Skill 的一周滚动归档口径不再适用；AGENTS.md、CONTRIBUTING.md、.agents/README.md 索引同步

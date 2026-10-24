@@ -21,8 +21,7 @@
 | 记一次澄清 / 立规则 | Skill: `product-clarify`（调 `qtfounder-lab product clarify`） |
 | 归档需求 / 清缓存 | Skill: `product-requirement`（写 `data/profile` 的 `product/`，归档后删本地账本） |
 | 归档旧日志 | 手动迁入 `data/journal/<域>/<YYYY-MM>/YYYY-MM-DD.md` |
-| 移交领域（全部资产） | Skill: `default-to-domain` |
-| 移交领域归档 | Skill: `archive-to-domain` |
+| 移交领域（资产 / 归档） | Skill: `meta-domain` |
 
 ## 如何维护 AGENTS.md
 

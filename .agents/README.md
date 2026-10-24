@@ -12,8 +12,7 @@ Agent 会根据用户输入自动匹配 Skill，也可直接调用：
 | [devops-release](skills/devops-release/SKILL.md) | "发布"、"release" | 发布 Release |
 | [devops-audit](skills/devops-audit/SKILL.md) | "审查"、"review" | 流程审查 |
 | [git-submodule](skills/git-submodule/SKILL.md) | "子模块"、"submodule" | 子模块管理 |
-| [archive-to-domain](skills/archive-to-domain/SKILL.md) | "移交"、"领域归档" | 归档站资源移交领域 archive |
-| [default-to-domain](skills/default-to-domain/SKILL.md) | "从 default 到领域" | default 内容移交领域资产仓 |
+| [meta-domain](skills/meta-domain/SKILL.md) | "移交"、"从 default 到领域"、"领域归档" | 跨仓迁移：移交改体例，归档只移动 |
 | [product-clarify](skills/product-clarify/SKILL.md) | "记一次澄清"、返工信号 | 记录需求差、立规则 |
 | [product-requirement](skills/product-requirement/SKILL.md) | "归档需求"、"汇总澄清账本"、"清缓存" | 按主题归入 `product/requirement/`，归档后清本地缓存 |
 | [meta-category](skills/meta-category/SKILL.md) | "这条该放哪"、"日志到洞察"、"日志到路线图"、"日志到意图" | 判类、从日志分诊到各层、按类写入 |
