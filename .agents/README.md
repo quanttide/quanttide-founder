@@ -16,7 +16,6 @@ Agent 会根据用户输入自动匹配 Skill，也可直接调用：
 | [default-to-domain](skills/default-to-domain/SKILL.md) | "从 default 到领域" | default 内容移交领域资产仓 |
 | [product-clarify](skills/product-clarify/SKILL.md) | "记一次澄清"、返工信号 | 记录需求差、立规则 |
 | [product-requirement](skills/product-requirement/SKILL.md) | "归档需求"、"汇总澄清账本"、"清缓存" | 按主题归入 `product/requirement/`，归档后清本地缓存 |
-| [journal-to-profile](skills/journal-to-profile/SKILL.md) | "日志到档案" | 从日志蒸馏档案 |
 | [journal-to-roadmap](skills/journal-to-roadmap/SKILL.md) | "日志到路线图" | 从日志蒸馏方向层路线图 |
 | [journal-to-insight](skills/journal-to-insight/SKILL.md) | "日志到洞察" | 从日志提炼认知洞察 |
 | [journal-to-intention](skills/journal-to-intention/SKILL.md) | "日志到意图" | 从日志提取人机协作意图 |

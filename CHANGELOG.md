@@ -22,6 +22,7 @@
 
 ### Removed
 
+- **`journal-to-profile` Skill**：从 `.agents/skills/` 删除；`.agents/README.md`、`CONTRIBUTING.md` 与 `data/context` 的 AGENTS/README 索引同步
 - **`journal-to-archive` Skill**：日志归档改由 `data/journal`（正式日志仓）按 `<域>/<YYYY-MM>/` 直接收口，该 Skill 的一周滚动归档口径不再适用；AGENTS.md、CONTRIBUTING.md、.agents/README.md 索引同步
 
 ### Changed
