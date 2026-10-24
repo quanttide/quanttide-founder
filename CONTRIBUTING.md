@@ -155,5 +155,6 @@ git commit -m "<type>: <description>"
 ## 输出规范
 
 - 不使用 emoji（除非用户明确请求）；输出简洁，适合 CLI 显示；使用 MyST Markdown
+- 非财务语境不用记账类术语（记账、账目、两笔账）；写「记录」「事项」「衡量标准」
 - 文件路径用 `code` 格式，每个引用独立、不合并，可选包含行号
 - 代码示例用 fenced code blocks，包含语言标识符，保持简洁
