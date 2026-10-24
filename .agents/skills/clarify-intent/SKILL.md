@@ -60,7 +60,7 @@ command -v qtfounder-lab || cargo install --offline --path \
 - **用户补了 agent 划的边界**（在 agent 说「不做 A」之后加一句「A 也要」）；
 - agent 自己发现同类错误在本会话重复（又铺陈、又漏验收）。
 
-动作：自己把「原以为 / 实际」写成两条进 `code clarify --stdin --json`，然后**一行回执**——`已记 int_xxx / clr_xxx：<一句话的差>，不想要就说删`。不解释、不展开、不打断手头的活。
+动作：自己把「原以为 / 实际」写成两条进 `work clarify --stdin --json`，然后**一行回执**——`已记 int_xxx / clr_xxx：<一句话的差>，不想要就说删`。不解释、不展开、不打断手头的活。
 
 用户说「删掉 / 不用记」→ 删掉这条（删除无命令，手改账本文件），本会话不再记这一类。记歪了用 `--revise` 原地改。
 
@@ -69,7 +69,7 @@ command -v qtfounder-lab || cargo install --offline --path \
 任务交付时跑一次：
 
 ```bash
-qtfounder-lab code intent --json
+qtfounder-lab work intent --json
 ```
 
 当前 intent 的 `candidates` 里有 `count ≥ 2` 的项，就问一句「这类差第 N 次了，要不要立规则？你给一句话」。**等用户给文本**，不替它写；同时把 `rules.md` 提醒一句：下次开工前给 AI 看。
@@ -87,7 +87,7 @@ qtfounder-lab code intent --json
 一次把整条记录走 stdin，`--json` 拿结构化结果：
 
 ```bash
-qtfounder-lab code clarify --stdin --json <<'JSON'
+qtfounder-lab work clarify --stdin --json <<'JSON'
 {"before":"我以为它知道我要能直接跑的代码","actual":"给了五段解释加伪代码"}
 JSON
 ```
@@ -97,7 +97,7 @@ JSON
 ### 用户点头才落规则
 
 ```bash
-qtfounder-lab code clarify --rule "<用户原话>"
+qtfounder-lab work clarify --rule "<用户原话>"
 ```
 
 落库后回一句：写进了哪个文件、这一批重复差已标为处理过。`rules.md` 由用户自己保管。
