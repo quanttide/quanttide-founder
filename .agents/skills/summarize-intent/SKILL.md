@@ -3,7 +3,7 @@ name: summarize-intent
 description: 当用户要汇总澄清账本、把攒下的「和 AI 协作的差」归档、或按主题整理那些差时使用；产出去向是 `quanttide-profile-of-founder` 的 `code/intent/`，一主题一档。
 ---
 
-# 汇总澄清意图
+# 汇总澄清需求
 
 把澄清账本（`qtfounder-lab` 的 `clarify.json` + `rules.md`）里攒下的差，按**主题**提炼成档案，落到 profile 仓的 `code/intent/`。账本是逐条记录，档案是提炼后的类型——两者分工不能混。
 
@@ -39,7 +39,7 @@ description: 当用户要汇总澄清账本、把攒下的「和 AI 协作的差
 
 ## 记录
 
-- `clr_xxx`（int_xxx，日期）：原以为 …… / 实际 ……
+- `clr_xxx`（req_xxx，日期）：原以为 …… / 实际 ……
 
 ## 该用的提示词
 
@@ -62,7 +62,7 @@ description: 当用户要汇总澄清账本、把攒下的「和 AI 协作的差
 
 ## 边界
 
-- **不改账本**：`clarify.json` 与 `rules.md` 只读。要修记录用 `work clarify --revise`，删记录才手改文件。
+- **不改账本**：`clarify.json` 与 `rules.md` 只读。要修记录用 `code clarify --revise`，删记录才手改文件。
 - **不生成规则**：规则文本永远是用户原话；这里只呈现「该用的提示词」和已落库的规则。
 - **不搬原文**：档案收提炼后的类型与那句提示词，原始每条以 `clr_` id 指回账本；单次出现、不成类型的差留在账本，不进档案。
 - 不按日期切档、不按命令切档。

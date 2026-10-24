@@ -3,7 +3,7 @@ name: clarify-intent
 description: 当用户跟 AI 协作中出现返工信号（同一要求说第二遍、「又是这样」、同一处改三次）要记一次澄清、或任务收尾要复盘已攒的差并立成规则时使用；落地调用 qtfounder-lab 的命令行。主动开口，但只在明确信号上开口。
 ---
 
-# 澄清意图
+# 澄清需求
 
 把一句「不对劲」变成一条记录和一段能粘回对话的话，同一类差重复出现时提示立成规则。命令是 `qtfounder-lab`（与正式版 `qtfounder` 区分），契约见 lab 仓 `src/cli/docs/api-references/`。
 
@@ -22,7 +22,7 @@ description: 当用户跟 AI 协作中出现返工信号（同一要求说第二
 
 用户要做的动作只有一个：回「对」，或改其中一行。不要求他重新陈述背景，不问「你具体想怎样」这类空问题——三行是从他的原话里摘的，摘不准是 agent 的错，他改一个字也算。
 
-**记完只回一行**：`已记 int_xxx / clr_xxx，这次是第 N 次` + 那段可直接粘回的话。不复述流程、不解释设计。
+**记完只回一行**：`已记 req_xxx / clr_xxx，这次是第 N 次` + 那段可直接粘回的话。不复述流程、不解释设计。
 
 ## 规则
 
@@ -60,7 +60,7 @@ command -v qtfounder-lab || cargo install --offline --path \
 - **用户补了 agent 划的边界**（在 agent 说「不做 A」之后加一句「A 也要」）；
 - agent 自己发现同类错误在本会话重复（又铺陈、又漏验收）。
 
-动作：自己把「原以为 / 实际」写成两条进 `work clarify --stdin --json`，然后**一行回执**——`已记 int_xxx / clr_xxx：<一句话的差>，不想要就说删`。不解释、不展开、不打断手头的活。
+动作：自己把「原以为 / 实际」写成两条进 `code clarify --stdin --json`，然后**一行回执**——`已记 req_xxx / clr_xxx：<一句话的差>，不想要就说删`。不解释、不展开、不打断手头的活。
 
 用户说「删掉 / 不用记」→ 删掉这条（删除无命令，手改账本文件），本会话不再记这一类。记歪了用 `--revise` 原地改。
 
@@ -69,10 +69,10 @@ command -v qtfounder-lab || cargo install --offline --path \
 任务交付时跑一次：
 
 ```bash
-qtfounder-lab work intent --json
+qtfounder-lab code requirement --json
 ```
 
-当前 intent 的 `candidates` 里有 `count ≥ 2` 的项，就问一句「这类差第 N 次了，要不要立规则？你给一句话」。**等用户给文本**，不替它写；同时把 `rules.md` 提醒一句：下次开工前给 AI 看。
+当前需求的 `candidates` 里有 `count ≥ 2` 的项，就问一句「这类差第 N 次了，要不要立规则？你给一句话」。**等用户给文本**，不替它写；同时把 `rules.md` 提醒一句：下次开工前给 AI 看。
 
 ### C · 用户召唤（`/clarify-intent`）
 
@@ -87,7 +87,7 @@ qtfounder-lab work intent --json
 一次把整条记录走 stdin，`--json` 拿结构化结果：
 
 ```bash
-qtfounder-lab work clarify --stdin --json <<'JSON'
+qtfounder-lab code clarify --stdin --json <<'JSON'
 {"before":"我以为它知道我要能直接跑的代码","actual":"给了五段解释加伪代码"}
 JSON
 ```
@@ -97,7 +97,7 @@ JSON
 ### 用户点头才落规则
 
 ```bash
-qtfounder-lab work clarify --rule "<用户原话>"
+qtfounder-lab code clarify --rule "<用户原话>"
 ```
 
 落库后回一句：写进了哪个文件、这一批重复差已标为处理过。`rules.md` 由用户自己保管。
@@ -107,7 +107,7 @@ qtfounder-lab work clarify --rule "<用户原话>"
 ```text
 （A 级：用户第三次要求同一处改动）
 agent：（自己写入库，不问）
-       已记 int_1SC3 / clr_X8BG：原以为只改指定段 / 实际整段重写，不想要就说删。
+       已记 req_1SC3 / clr_X8BG：原以为只改指定段 / 实际整段重写，不想要就说删。
        我原以为「只改我指定的那一段」。
        它实际做了「整段重写」。
        请按我原以为的重做一遍，把这两条当约束。
@@ -116,7 +116,7 @@ agent：（自己写入库，不问）
 agent：（删掉这条，本会话不再记这一类）
 
 （B 级：任务交付时）
-agent：（跑 intent --json，同类差 ×2）
+agent：（跑 requirement --json，同类差 ×2）
        这类差第 2 次了，要不要立成一条规则？你给一句话。
 用户：只改指定段，别动其它
 agent：（跑 clarify --rule "只改指定段，别动其它"）已写进 rules.md，下次开工前给它看。
@@ -133,5 +133,5 @@ agent：要澄清哪一段？
 | 码 | 含义 | 常见原因 |
 |----|------|---------|
 | 0 | 成功（含去重） | — |
-| 2 | 用法错 | `--stdin` 少 `before`/`actual`；`--task` 与 `--rule` 同给；`--rule` 文本为空；无可挂的意图（没给 `task` 而库里还没有任何意图） |
-| 3 | 未找到 | `--id` 指向的意图不存在 |
+| 2 | 用法错 | `--stdin` 少 `before`/`actual`；`--task` 与 `--rule` 同给；`--rule` 文本为空；无可挂的需求（没给 `task` 而库里还没有任何需求） |
+| 3 | 未找到 | `--id` 指向的需求不存在 |
