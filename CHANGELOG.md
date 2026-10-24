@@ -18,6 +18,7 @@
 
 ### Added
 
+- **写入闸门**：`.githooks/` 在提交前跑文字与文档审计，只拦这一笔新引入的错误，存量放行；嫌疑与目录级体裁要求不拦，记进 `passed.log`。`.githooks/install.sh` 装到主仓与各子模块，`core.hooksPath` 指向同一份钩子
 - **迁入四个日志蒸馏 Skill**：`journal-to-profile`、`journal-to-roadmap`、`journal-to-insight`、`journal-to-intention` 从 `data/context/.agents/skills/` 移至本仓 `.agents/skills/`，Skill 统一在主仓维护；CONTRIBUTING.md 与 `.agents/README.md` 索引同步
 
 ### Removed

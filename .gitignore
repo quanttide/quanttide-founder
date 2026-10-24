@@ -42,3 +42,4 @@ ENV/
 .ipynb
 
 .ruff_cache/
+.githooks/passed.log

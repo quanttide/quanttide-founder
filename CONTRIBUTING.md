@@ -88,6 +88,14 @@ git commit -m "<type>: <description>"
 - 验证通过再提交；提交即推送，main 更新会触发站点部署
 - 一次提交只做一件事，提交后回报 GitHub 提交链接
 
+### 写入闸门
+
+提交前自动跑一遍文字与文档审计，只拦这一笔新引入的错误；HEAD 里已经有的算存量，放行。
+
+- 装一次：`.githooks/install.sh`，装到主仓与各子模块；卸下用 `git config --unset core.hooksPath`
+- 嫌疑不拦，目录级的体裁要求也不拦，后者归人判
+- 确属误判，`git commit --no-verify` 放行这一次，别当常规
+
 ## 记忆集划分与提炼
 
 `data/context` 的记忆按主题域分集（详见 `data/context/AGENTS.md`）。集与集之间有**提炼关系**，不是并列：
