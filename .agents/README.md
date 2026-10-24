@@ -14,7 +14,8 @@ Agent 会根据用户输入自动匹配 Skill，也可直接调用：
 | [git-submodule](skills/git-submodule/SKILL.md) | "子模块"、"submodule" | 子模块管理 |
 | [archive-to-domain](skills/archive-to-domain/SKILL.md) | "移交"、"领域归档" | 归档站资源移交领域 archive |
 | [default-to-domain](skills/default-to-domain/SKILL.md) | "从 default 到领域" | default 内容移交领域资产仓 |
-| [code-clarify](skills/code-clarify/SKILL.md) | "记一次澄清"、"汇总澄清账本"、返工信号 | 记录需求差、立规则，并按主题汇总到 `code/intent/` |
+| [code-clarify](skills/code-clarify/SKILL.md) | "记一次澄清"、返工信号 | 记录需求差、立规则 |
+| [code-requirement](skills/code-requirement/SKILL.md) | "归档需求差"、"汇总澄清账本"、"清缓存" | 按主题归入 `code/requirement/`，归档后清本地缓存 |
 | [journal-to-profile](skills/journal-to-profile/SKILL.md) | "日志到档案" | 从日志蒸馏档案 |
 | [journal-to-roadmap](skills/journal-to-roadmap/SKILL.md) | "日志到路线图" | 从日志蒸馏方向层路线图 |
 | [journal-to-insight](skills/journal-to-insight/SKILL.md) | "日志到洞察" | 从日志提炼认知洞察 |
