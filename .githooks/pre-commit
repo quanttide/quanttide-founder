@@ -44,11 +44,23 @@ findings_of() {
   printf '%s\n' "$errs" | grep -v '"line":0,' | keys_of
 }
 
+# 契约里 exclude 的是「不是给人反复读的」：流水、归档、示例、变更日志。
+# 传单个文件路径时契约不过滤，所以这里自己排一遍，免得闸门比契约严。
+skipped() {
+  case "/$1" in
+    */CHANGELOG.md) return 0 ;;
+    */node_modules/* | */_build/* | */target/*) return 0 ;;
+    */archive/* | */journal/* | */report/* | */assets/* | */examples/*) return 0 ;;
+  esac
+  return 1
+}
+
 blocked=0
 
 while IFS= read -r f; do
   [ -n "$f" ] || continue
   [ -f "$f" ] || continue
+  skipped "$f" && continue
 
   for audit in language docs; do
     if [ "$audit" = language ]; then
