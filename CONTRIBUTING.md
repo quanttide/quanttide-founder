@@ -18,7 +18,7 @@
 | [journal-to-roadmap](.agents/skills/journal-to-roadmap/SKILL.md) | 从日志蒸馏方向层路线图 | "日志到路线图" |
 | [journal-to-insight](.agents/skills/journal-to-insight/SKILL.md) | 从日志提炼认知洞察 | "日志到洞察" |
 | [journal-to-intention](.agents/skills/journal-to-intention/SKILL.md) | 从日志提取人机协作意图 | "日志到意图" |
-| [founder-self-reflection](.agents/skills/founder-self-reflection/SKILL.md) | 创始人角色分离式自我反思 | 边界模糊、双重角色耗能、"要不要亲自做"、情绪不对 |
+| [founder-reflect](.agents/skills/founder-reflect/SKILL.md) | 创始人角色分离式自我反思 | 边界模糊、双重角色耗能、"要不要亲自做"、情绪不对 |
 
 每个 Skill 的 `SKILL.md` 包含：触发词、规则、工作流步骤。
 
