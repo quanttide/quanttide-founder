@@ -56,7 +56,7 @@ description: 从 <集>/journal/ 日志提炼认知洞察，写入 <集>/insight/
 
 写成陈述句（"X 导致 Y"），不写"我觉得可能"；出处一句带日期，不展开叙事。
 
-落层前过一遍 [memory-layer-check](../memory-layer-check/SKILL.md)：它给出每层的形状、与相邻层的界线，以及成对的真实正反例。
+落层前过一遍 [meta-category](../meta-category/SKILL.md)：它给出每类的形状、准入条件与相邻类的界线，带成对的真实正反例。
 
 ## 边界
 

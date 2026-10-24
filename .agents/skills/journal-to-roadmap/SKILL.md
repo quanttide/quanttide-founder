@@ -58,7 +58,7 @@ description: 从 <集>/journal/ 日志按证据分级蒸馏方向层内容，写
 
 条目一行一条，祈使句或陈述句，必要时括注依据或约束。
 
-落层前过一遍 [memory-layer-check](../memory-layer-check/SKILL.md)：它给出每层的形状、与相邻层的界线，以及成对的真实正反例。
+落层前过一遍 [meta-category](../meta-category/SKILL.md)：它给出每类的形状、准入条件与相邻类的界线，带成对的真实正反例。
 
 ## 边界
 
