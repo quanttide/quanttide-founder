@@ -22,6 +22,7 @@
 | 归档需求 / 清缓存 | Skill: `product-requirement`（写 `data/profile` 的 `product/`，归档后删本地账本） |
 | 归档旧日志 | 手动迁入 `data/journal/<域>/<YYYY-MM>/YYYY-MM-DD.md` |
 | 看文字体检 | `qtfounder audit`（每期只说一处） |
+| 清一批禁用词 | Skill: `language-governance`（清单见 `data/roadmap/language/governance.md`） |
 | 写一次性脚本 | `examples/quanttide-founder-lab/examples/`，不写临时目录 |
 | 移交领域（资产 / 归档） | Skill: `meta-domain` |
 

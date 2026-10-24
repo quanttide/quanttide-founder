@@ -14,6 +14,7 @@
 | [product-clarify](.agents/skills/product-clarify/SKILL.md) | 记一次澄清、立规则 | "记一次澄清"、返工信号 |
 | [product-requirement](.agents/skills/product-requirement/SKILL.md) | 需求归档与清缓存 | "归档需求"、"汇总澄清账本"、"清缓存" |
 | [meta-category](.agents/skills/meta-category/SKILL.md) | 判类、从日志分诊到各层、按类写入 | "这条该放哪"、"日志到洞察"、"日志到路线图" |
+| [language-governance](.agents/skills/language-governance/SKILL.md) | 清一轮禁用词、判断某个词还能不能用、跑文字体检 | "清禁用词"、"改术语"、"这个词能不能用" |
 | [founder-reflect](.agents/skills/founder-reflect/SKILL.md) | 创始人角色分离式自我反思 | 边界模糊、双重角色耗能、"要不要亲自做"、情绪不对 |
 
 每个 Skill 的 `SKILL.md` 包含：触发词、规则、工作流步骤。
