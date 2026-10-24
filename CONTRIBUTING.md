@@ -12,8 +12,7 @@
 | [devops-audit](.agents/skills/devops-audit/SKILL.md) | 流程审查 | "审查"、"review" |
 | [archive-to-domain](.agents/skills/archive-to-domain/SKILL.md) | 归档站资源移交领域 archive | "移交"、"领域归档" |
 | [default-to-domain](.agents/skills/default-to-domain/SKILL.md) | default 内容移交领域资产仓 | "从 default 到领域" |
-| [clarify-intent](.agents/skills/clarify-intent/SKILL.md) | 记录与 AI 协作的澄清 | "记一次澄清"、返工信号 |
-| [summarize-intent](.agents/skills/summarize-intent/SKILL.md) | 澄清账本汇总到 `code/intent/` | "汇总澄清账本" |
+| [code-clarify](.agents/skills/code-clarify/SKILL.md) | 记一次澄清、立规则、汇总账本 | "记一次澄清"、"汇总澄清账本"、返工信号 |
 | [journal-to-profile](.agents/skills/journal-to-profile/SKILL.md) | 从日志蒸馏档案 | "日志到档案" |
 | [journal-to-roadmap](.agents/skills/journal-to-roadmap/SKILL.md) | 从日志蒸馏方向层路线图 | "日志到路线图" |
 | [journal-to-insight](.agents/skills/journal-to-insight/SKILL.md) | 从日志提炼认知洞察 | "日志到洞察" |
