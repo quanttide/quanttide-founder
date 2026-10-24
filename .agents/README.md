@@ -19,6 +19,7 @@ Agent 会根据用户输入自动匹配 Skill，也可直接调用：
 | [journal-to-roadmap](skills/journal-to-roadmap/SKILL.md) | "日志到路线图" | 从日志蒸馏方向层路线图 |
 | [journal-to-insight](skills/journal-to-insight/SKILL.md) | "日志到洞察" | 从日志提炼认知洞察 |
 | [journal-to-intention](skills/journal-to-intention/SKILL.md) | "日志到意图" | 从日志提取人机协作意图 |
+| [memory-layer-check](skills/memory-layer-check/SKILL.md) | "这条该放哪"、"是不是洞察" | 判层与放错层自检，自带正反例 |
 
 ## 目录结构
 

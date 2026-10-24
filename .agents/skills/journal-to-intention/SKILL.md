@@ -53,6 +53,8 @@ description: 从 <集>/journal/ 日志提取人类意图，写入 <集>/intentio
 
 ## 自查
 
+落层前先过一遍 [memory-layer-check](../memory-layer-check/SKILL.md)：它给出每层的形状、与相邻层的界线，以及成对的真实正反例。
+
 增改条目后逐项过一遍，任一项不过就改到过：
 
 | 标准 | 要求 | 反例 |
