@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
 # 写入闸门：提交前查暂存的 Markdown。
 #
-# 只拦这一笔新引入的错误：同一处问题在 HEAD 里已有，算存量，放行。
+# 只拦这一笔新引入的用词错误：同一处问题在 HEAD 里已有，算存量，放行。
 # 放过并记下：嫌疑（机器拿不准）；目录级的体裁要求（line 0）。
+# 不管格式：列表、加粗、表格由体检报告定期报，不在提交时挡人。
 # 关掉一次：git commit --no-verify
 
 set -u
 
 main_root=$(cd "$(dirname "$0")/.." && pwd)
 lang_rules="$main_root/apps/qtfounder/src/cli/src/language/default-contract.toml"
-docs_rules="$main_root/apps/qtfounder/src/cli/src/docs/default-contract.toml"
 passed_log="$main_root/.githooks/passed.log"
 
 if ! command -v qtfounder >/dev/null 2>&1; then
@@ -32,16 +32,10 @@ keys_of() {
 }
 
 findings_of() {
-  audit=$1
-  path=$2
-  rules=$3
-  out=$(qtfounder "$audit" "$path" --rules "$rules" --json 2>/dev/null) || true
-  if [ "$audit" = language ]; then
-    errs=$(printf '%s\n' "$out" | grep '"severity":"error"' | grep '"verdict":"real"')
-  else
-    errs=$(printf '%s\n' "$out" | grep '"severity":"error"')
-  fi
-  printf '%s\n' "$errs" | grep -v '"line":0,' | keys_of
+  path=$1
+  rules=$2
+  out=$(qtfounder language "$path" --rules "$rules" --json 2>/dev/null) || true
+  printf '%s\n' "$out" | grep '"severity":"error"' | grep '"verdict":"real"' | grep -v '"line":0,' | keys_of
 }
 
 # 契约里 exclude 的是「不是给人反复读的」：流水、归档、示例、变更日志。
@@ -62,39 +56,30 @@ while IFS= read -r f; do
   [ -f "$f" ] || continue
   skipped "$f" && continue
 
-  for audit in language docs; do
-    if [ "$audit" = language ]; then
-      rules="$lang_rules"
-    else
-      rules="$docs_rules"
-      [ -f "$rules" ] || continue
-    fi
+  findings_of "$f" "$lang_rules" >"$tmp.current"
+  if git cat-file -e "HEAD:$f" 2>/dev/null; then
+    git show "HEAD:$f" >"$tmp.head"
+    findings_of "$tmp.head" "$lang_rules" >"$tmp.base"
+  else
+    : >"$tmp.base"
+  fi
 
-    findings_of "$audit" "$f" "$rules" >"$tmp.current"
-    if git cat-file -e "HEAD:$f" 2>/dev/null; then
-      git show "HEAD:$f" >"$tmp.head"
-      findings_of "$audit" "$tmp.head" "$rules" >"$tmp.base"
-    else
-      : >"$tmp.base"
-    fi
+  # 用 FILENAME 分文件，不用 NR==FNR：前者为空时 NR==FNR 会把后一个也当基准。
+  new=$(awk 'FILENAME == ARGV[1] { b[$0]++; next } { c[$0]++ }
+             END { for (k in c) if (c[k] > b[k]) print k }' "$tmp.base" "$tmp.current" | sort)
 
-    # 用 FILENAME 分文件，不用 NR==FNR：前者为空时 NR==FNR 会把后一个也当基准。
-    new=$(awk 'FILENAME == ARGV[1] { b[$0]++; next } { c[$0]++ }
-               END { for (k in c) if (c[k] > b[k]) print k }' "$tmp.base" "$tmp.current" | sort)
+  if [ -n "$new" ]; then
+    echo "闸门拦下：$f" >&2
+    printf '%s\n' "$new" | while IFS='|' read -r kind advice; do
+      printf '  %s：%s\n' "$kind" "$advice" >&2
+    done
+    blocked=1
+  fi
 
-    if [ -n "$new" ]; then
-      echo "闸门拦下：$f（$audit）" >&2
-      printf '%s\n' "$new" | while IFS='|' read -r kind advice; do
-        printf '  %s：%s\n' "$kind" "$advice" >&2
-      done
-      blocked=1
-    fi
-
-    soft=$(qtfounder "$audit" "$f" --rules "$rules" 2>/dev/null | grep -c '\[嫌疑\]' || true)
-    if [ "${soft:-0}" -gt 0 ]; then
-      printf '%s | %s | %s | 嫌疑 %s 处\n' "$(date '+%F %T')" "$f" "$audit" "$soft" >>"$passed_log"
-    fi
-  done
+  soft=$(qtfounder language "$f" --rules "$lang_rules" 2>/dev/null | grep -c '\[嫌疑\]' || true)
+  if [ "${soft:-0}" -gt 0 ]; then
+    printf '%s | %s | language | 嫌疑 %s 处\n' "$(date '+%F %T')" "$f" "$soft" >>"$passed_log"
+  fi
 done < <(git -c core.quotePath=false diff --cached --name-only --diff-filter=ACMR -- '*.md')
 
 if [ "$blocked" -ne 0 ]; then

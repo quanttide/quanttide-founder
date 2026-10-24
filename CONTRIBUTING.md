@@ -90,9 +90,10 @@ git commit -m "<type>: <description>"
 
 ### 写入闸门
 
-提交前自动跑一遍文字与文档审计，只拦这一笔新引入的错误；HEAD 里已经有的算存量，放行。
+提交前跑一遍语言审计，只拦这一笔新引入的用词错误；HEAD 里已经有的算存量，放行。
 
 - 装一次：`.githooks/install.sh`，装到主仓与各子模块；卸下用 `git config --unset core.hooksPath`
+- 格式不管：列表、加粗、表格由体检报告定期报，不在提交时挡人；挡多了只会逼人用 `--no-verify`
 - 嫌疑不拦，目录级的体裁要求也不拦，后者归人判
 - 确属误判，`git commit --no-verify` 放行这一次，别当常规
 
