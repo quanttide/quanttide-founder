@@ -1,13 +1,13 @@
 ---
-name: code-clarify
-description: 记录与 AI 协作中出现过的需求差（同一要求说第二遍、同一处改三次、默认值或边界被推翻），提示并把重复差立成规则。当出现返工信号、要记一次澄清、或要立规则时使用；归档与清缓存走 `code-requirement`。
+name: product-clarify
+description: 记录与 AI 协作中出现过的需求差（同一要求说第二遍、同一处改三次、默认值或边界被推翻），提示并把重复差立成规则。当出现返工信号、要记一次澄清、或要立规则时使用；归档与清缓存走 `product-requirement`。
 ---
 
-# 代码需求澄清
+# 产品需求澄清
 
-把一句「不对劲」变成一条记录和一段能粘回对话的话，同类差重复时立成规则，攒到一定量再按主题汇进档案。命令是 `qtfounder-lab code ...`（与正式版 `qtfounder` 区分），契约见 lab 仓 `src/cli/docs/api-references/`。
+把一句「不对劲」变成一条记录和一段能粘回对话的话，同类差重复时立成规则，攒到一定量再按主题汇进档案。命令是 `qtfounder-lab product ...`（与正式版 `qtfounder` 区分），契约见 lab 仓 `src/cli/docs/api-references/`。
 
-三件事：记一条（`code clarify`）、立一条规则（`code clarify --rule`）、攒批归档（走 `code-requirement`）。前两件在协作现场做，第三件不在本 Skill 展开。
+三件事：记一条（`code clarify`）、立一条规则（`code clarify --rule`）、攒批归档（走 `product-requirement`）。前两件在协作现场做，第三件不在本 Skill 展开。
 
 ## 澄清的形状
 
@@ -71,7 +71,7 @@ command -v qtfounder-lab || cargo install --offline --path \
 任务交付时跑一次：
 
 ```bash
-qtfounder-lab code requirement --json
+qtfounder-lab product requirement --json
 ```
 
 当前需求的 `candidates` 里有 `count ≥ 2` 的项，就问一句「这类差第 N 次了，要不要立规则？你给一句话」。等用户给文本，不替它写；同时把 `rules.md` 提醒一句：下次开工前给 AI 看。
@@ -89,7 +89,7 @@ qtfounder-lab code requirement --json
 一次把整条记录走 stdin，`--json` 拿结构化结果：
 
 ```bash
-qtfounder-lab code clarify --stdin --json <<'JSON'
+qtfounder-lab product clarify --stdin --json <<'JSON'
 {"before":"我以为它知道我要能直接跑的代码","actual":"给了五段解释加伪代码"}
 JSON
 ```
@@ -99,14 +99,14 @@ JSON
 ### 用户点头才落规则
 
 ```bash
-qtfounder-lab code clarify --rule "<用户原话>"
+qtfounder-lab product clarify --rule "<用户原话>"
 ```
 
 落库后回一句：写进了哪个文件、这一批重复差已标为处理过。`rules.md` 由用户自己保管。
 
 ## 汇总到档案
 
-归档不在本 Skill 展开。账本攒到一定量后，按 `code-requirement` Skill 把记录整理进 `data/profile/code/requirement/`，归档成功后清空本地缓存。分类标准、主题档结构与清缓存步骤都在那一份里。
+归档不在本 Skill 展开。账本攒到一定量后，按 `product-requirement` Skill 把记录整理进 `data/profile/product/requirement/`，归档成功后清空本地缓存。分类标准、主题档结构与清缓存步骤都在那一份里。
 
 ## 示例
 
@@ -128,7 +128,7 @@ agent：（跑 requirement --json，同类差 ×2）
 agent：（跑 clarify --rule "只改指定段，别动其它"）已写进 rules.md，下次开工前给它看。
 
 （C 级：召唤但没有对象）
-用户：/code-clarify
+用户：/product-clarify
 agent：要澄清哪一段？
 ```
 

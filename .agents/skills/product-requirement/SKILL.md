@@ -1,11 +1,11 @@
 ---
-name: code-requirement
-description: 把 `qtfounder-lab` 本地账本里的需求差按主题整理进 `data/profile/code/requirement/`，建立持久档案，归档完成后清理本地缓存。当用户要汇总或归档澄清账本、按主题整理需求差、或清理本地缓存时使用。
+name: product-requirement
+description: 把 `qtfounder-lab` 本地账本里的需求差按主题整理进 `data/profile/product/requirement/`，建立持久档案，归档完成后清理本地缓存。当用户要汇总或归档澄清账本、按主题整理需求差、或清理本地缓存时使用。
 ---
 
-# 代码需求归档
+# 产品需求归档
 
-本地账本是缓存：逐条记录、随归档清空。`data/profile/code/requirement/` 是持久档案：一主题一档、长期保留。归档就是把这个方向走完——读账本，分类成主题档，校验落盘，再清掉缓存。
+本地账本是缓存：逐条记录、随归档清空。`data/profile/product/requirement/` 是持久档案：一主题一档、长期保留。归档就是把这个方向走完——读账本，分类成主题档，校验落盘，再清掉缓存。
 
 ## 前置
 
@@ -15,15 +15,15 @@ description: 把 `qtfounder-lab` 本地账本里的需求差按主题整理进 `
 2. 开发版：`<lab 仓>/src/cli/data/`；
 3. 发布版：`$XDG_DATA_HOME/qtfounder-lab`，未设则 `~/.local/share/qtfounder-lab`。
 
-目标仓是 `data/profile`（`quanttide-profile-of-founder`），档在 `code/requirement/`。先把 profile 仓 `git pull`，再看 `code/index.md` 里已有哪些主题。
+目标仓是 `data/profile`（`quanttide-profile-of-founder`），档在 `product/requirement/`。先把 profile 仓 `git pull`，再看 `product/index.md` 里已有哪些主题。
 
 ## 分类验收标准
 
-先把产品需求挑出去：换个产品就不成立的（做什么、给谁、分几层交付）归路线图或意图仓，不进本分区；这里只收换个产品也成立的工程约束。刚归档的那三条「入口与主体」「适配层与领域层」「两条需求一条流水线」就是因此迁到了路线图仓的 `work/novel-preference-library.md`。
+产品需求与协作差分开放：换个产品就不成立的（做什么、给谁、分几层交付）写成产品档放 `product/` 顶层，一产品一档；`requirement/` 只收与 AI 协作的差。刚归档的那三条已按此写成 `product/novel-preference-library.md`。
 
 - 主题来自「实际做了什么」这一列，不是来自任务名、日期或工具。同一件事下的多条差，`actual` 归一化后同键的归一类。
 - 主题名是协作维度上的短语（如「输出形态与篇幅」「边界与范围」「验收与收尾」），不是命令名、不是产品模块名。
-- 已存在的主题档优先归入；确实新类型才新增档，并在 `code/index.md` 的表格里登记一行。
+- 已存在的主题档优先归入；确实新类型才新增档，并在 `product/index.md` 的表格里登记一行。
 - 一个主题一档，档名用英文 slug（与 `think/`、`work/` 一致）。
 - 每条记录都要进档案：单次出现进「观察」档，不留在缓存里。
 
@@ -59,9 +59,9 @@ description: 把 `qtfounder-lab` 本地账本里的需求差按主题整理进 `
 
 1. 读账本：`clarify.json` 的全部记录与 `rules.md` 的规则原文。
 2. 按 `actual` 归一化键聚成簇，算出每簇次数与涉及记录。
-3. 与 `code/requirement/` 既有档比对：能归入的归入，不能的才新增。
+3. 与 `product/requirement/` 既有档比对：能归入的归入，不能的才新增。
 4. 逐档改写，不是追加：更新状态、差的一句话、记录明细、提示词、规则节。同一档里同一记录只出现一次。
-5. 同步 `code/index.md` 的表格与 profile 仓 `CHANGELOG.md` 的 `[Unreleased]`。
+5. 同步 `product/index.md` 的表格与 profile 仓 `CHANGELOG.md` 的 `[Unreleased]`。
 6. 提交并推送 profile 仓，再更新 `data/profile` 子模块指针。缓存清理只在这一步成功之后做。
 7. 清缓存，见下节。
 8. 汇报：归档了哪些主题、写了几条记录、删了几条缓存；有记录没能归类就单独说。
@@ -70,7 +70,7 @@ description: 把 `qtfounder-lab` 本地账本里的需求差按主题整理进 `
 
 先校验，再删除。顺序不能反。
 
-**校验**：对账本里每条 `clr_` id，在 `code/requirement/*.md` 里搜一次，必须都能搜到。搜不到的那条留在缓存，不删，并在汇报里点名。
+**校验**：对账本里每条 `clr_` id，在 `product/requirement/*.md` 里搜一次，必须都能搜到。搜不到的那条留在缓存，不删，并在汇报里点名。
 
 **删除**：把已归档的条目从 `clarify.json` 移除；全部归档时直接写回空库：
 
@@ -91,4 +91,4 @@ printf '{\n  "requirements": []\n}\n' > "$LEDGER"
 
 ## 排错
 
-账本读不到，多半是已经清空过：直接看 `code/requirement/` 与 `code/index.md`，不要重建缓存。归类时拿不准的，先归入最接近的既有档并在记录里保留原话，下次归档再拆。
+账本读不到，多半是已经清空过：直接看 `product/requirement/` 与 `product/index.md`，不要重建缓存。归类时拿不准的，先归入最接近的既有档并在记录里保留原话，下次归档再拆。
