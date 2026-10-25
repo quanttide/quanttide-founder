@@ -13,7 +13,7 @@ Agent 会根据用户输入自动匹配 Skill，也可直接调用：
 | [devops-audit](skills/devops-audit/SKILL.md) | "审查"、"review" | 流程审查 |
 | [git-submodule](skills/git-submodule/SKILL.md) | "子模块"、"submodule" | 子模块管理 |
 
-`meta-classify`、`language-govern`、`think-reflect`、`product-collect`、`product-organize` 五条随 `qtfounder` CLI 发布，正文在 `apps/qtfounder/src/cli/skills/`，装在 `~/.agents/skills/`，本目录不再保留。
+`meta-classify`、`language-govern`、`think-reflect`、`product-collect`、`product-organize`、`write-express` 六条随 `qtfounder` CLI 发布，正文在 `apps/qtfounder/src/cli/skills/`，装在 `~/.agents/skills/`，本目录不再保留。
 
 ## 目录结构
 
