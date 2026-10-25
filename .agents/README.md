@@ -12,9 +12,8 @@ Agent 会根据用户输入自动匹配 Skill，也可直接调用：
 | [devops-release](skills/devops-release/SKILL.md) | "发布"、"release" | 发布 Release |
 | [devops-audit](skills/devops-audit/SKILL.md) | "审查"、"review" | 流程审查 |
 | [git-submodule](skills/git-submodule/SKILL.md) | "子模块"、"submodule" | 子模块管理 |
-| [product-requirement](skills/product-requirement/SKILL.md) | "归档需求"、"汇总澄清账本"、"清缓存" | 按主题归入 `product/requirement/`，归档后清本地缓存 |
 
-`meta-classify`、`language-govern`、`think-reflect`、`product-clarify` 四条随 `qtfounder` CLI 发布，正文在 `apps/qtfounder/src/cli/skills/`，装在 `~/.agents/skills/`，本目录不再保留。
+`meta-classify`、`language-govern`、`think-reflect`、`product-collect`、`product-organize` 五条随 `qtfounder` CLI 发布，正文在 `apps/qtfounder/src/cli/skills/`，装在 `~/.agents/skills/`，本目录不再保留。
 
 ## 目录结构
 
