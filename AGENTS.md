@@ -25,7 +25,9 @@
 | 判断该放哪 | `qtfounder meta classify <文件>`（Skill: `meta-classify`） |
 | 清一批禁用词 | Skill: `language-governance`（清单见 `data/roadmap/language/governance.md`） |
 | 写一次性脚本 | `examples/quanttide-founder-lab/examples/`，不写临时目录 |
-| 装 Skill 到别的仓 | `qtfounder skill install --root <仓>`（`skill check` 查差异） |
+| 装 Skill 到系统位置 | `qtfounder skill install`（缺省 `~/.agents/skills`；只装某个仓加 `--root`，`skill check` 查差异） |
+
+`meta-classify`、`language-governance`、`founder-reflect` 三条随 `qtfounder` 发布，正文在 `apps/qtfounder/src/cli/skills/`，装在 `~/.agents/skills/`；本仓 `.agents/skills/` 不再保留这三条。
 
 ## 如何维护 AGENTS.md
 

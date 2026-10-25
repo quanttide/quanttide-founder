@@ -10,11 +10,10 @@
 | [devops-release](.agents/skills/devops-release/SKILL.md) | 发布 Release | "发布"、"release" |
 | [git-submodule](.agents/skills/git-submodule/SKILL.md) | 子模块管理 | "子模块"、"submodule" |
 | [devops-audit](.agents/skills/devops-audit/SKILL.md) | 流程审查 | "审查"、"review" |
-| [meta-classify](.agents/skills/meta-classify/SKILL.md) | 归位：判进哪一格、要不要跨域；移交改体例，归档只移动 | "这条该放哪"、"移交"、"从 default 到领域"、"日志到洞察" |
 | [product-clarify](.agents/skills/product-clarify/SKILL.md) | 记一次澄清、立规则 | "记一次澄清"、返工信号 |
 | [product-requirement](.agents/skills/product-requirement/SKILL.md) | 需求归档与清缓存 | "归档需求"、"汇总澄清账本"、"清缓存" |
-| [language-governance](.agents/skills/language-governance/SKILL.md) | 清一轮禁用词、判断某个词还能不能用、跑文字体检 | "清禁用词"、"改术语"、"这个词能不能用" |
-| [founder-reflect](.agents/skills/founder-reflect/SKILL.md) | 创始人角色分离式自我反思 | 边界模糊、双重角色耗能、"要不要亲自做"、情绪不对 |
+
+`meta-classify`、`language-governance`、`founder-reflect` 三条随 `qtfounder` CLI 发布，正文在 `apps/qtfounder/src/cli/skills/`，装在 `~/.agents/skills/`，不在本仓维护。
 
 每个 Skill 的 `SKILL.md` 包含：触发词、规则、工作流步骤。
 
