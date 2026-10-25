@@ -24,6 +24,7 @@
 
 ### Removed
 
+- **`product-clarify` 移出本仓**：随 `qtfounder` CLI 发布，正文搬到 `apps/qtfounder/src/cli/skills/`，装在 `~/.agents/skills/`；正文里两处旧命令 `code clarify` 改为 `product clarify`，与 `qtfounder-lab product` 对齐。AGENTS.md、CONTRIBUTING.md 与 `.agents/README.md` 索引同步
 - **`meta-classify`、`language-govern`、`think-reflect` 移出本仓**：三条都调 `qtfounder` 的命令，正文随之搬进 `apps/qtfounder/src/cli/skills/`，跟二进制一起发布；装到系统位置 `~/.agents/skills/`，本仓 `.agents/skills/` 不再保留。后两条同时改名（原 `language-governance`、`founder-reflect`），叫法与其余 Skill 一致：动词在前。AGENTS.md、CONTRIBUTING.md、`.agents/README.md` 与 `data/context` 索引同步
 - **`meta-domain` 与 `meta-category` 合并为 `meta-classify`**：一份 Skill 一次回答两个问题——进哪一格、要不要跨域；两个九宫格、准入、分诊、移交与归档两套流程收在一处，命令行先看一眼的入口也写在同一份里。AGENTS.md、CONTRIBUTING.md、`.agents/README.md` 与 `data/context` 索引同步
 - **`archive-to-domain` 与 `default-to-domain` 并入 `meta-domain`**：两种形态分开写——移交（default → 领域资产仓，按目标体例改写，先写后删）与归档（归档站 → 领域 archive，只移动不改内容）；资产路径表不再复制，改指 `meta-category`。AGENTS.md、CONTRIBUTING.md 与 `.agents/README.md` 索引同步

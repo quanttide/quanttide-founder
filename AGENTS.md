@@ -28,7 +28,7 @@
 | 写一次性脚本 | `examples/quanttide-founder-lab/examples/`，不写临时目录 |
 | 装 Skill 到系统位置 | `qtfounder agent skill install`（缺省 `~/.agents/skills`；只装某个仓加 `--root`，`check` 查差异） |
 
-`meta-classify`、`language-govern`、`think-reflect` 三条随 `qtfounder` 发布，正文在 `apps/qtfounder/src/cli/skills/`，装在 `~/.agents/skills/`；本仓 `.agents/skills/` 不再保留这三条。
+`meta-classify`、`language-govern`、`think-reflect`、`product-clarify` 四条随 `qtfounder` 发布，正文在 `apps/qtfounder/src/cli/skills/`，装在 `~/.agents/skills/`；本仓 `.agents/skills/` 不再保留这四条。
 
 ## 如何维护 AGENTS.md
 
