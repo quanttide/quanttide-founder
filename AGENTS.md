@@ -18,7 +18,7 @@
 | 修改子模块 | Skill: `git-submodule` |
 | 流程审查 | Skill: `devops-audit` |
 | 记录日报 | `data/context/default/YYYY-MM-DD.md`（当天放集根，更早日志在 `data/context/default/journal/`） |
-| 记一次澄清 / 立规则 | Skill: `product-clarify`（调 `qtfounder-lab product clarify`） |
+| 记一次澄清 / 立规则 | Skill: `product-clarify`（调 `qtfounder product clarify`） |
 | 归档需求 / 清缓存 | Skill: `product-requirement`（写 `data/profile` 的 `product/`，归档后删本地账本） |
 | 归档旧日志 | 手动迁入 `data/journal/<域>/<YYYY-MM>/YYYY-MM-DD.md` |
 | 看文字体检 | `qtfounder audit`（每期只说一处） |

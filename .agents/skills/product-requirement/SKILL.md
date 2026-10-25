@@ -1,6 +1,6 @@
 ---
 name: product-requirement
-description: 把 `qtfounder-lab` 本地账本里的需求差按主题整理进 `data/profile/product/requirement/`，建立持久档案，归档完成后清理本地缓存。当用户要汇总或归档澄清账本、按主题整理需求差、或清理本地缓存时使用。
+description: 把 `qtfounder` 本地账本里的需求差按主题整理进 `data/profile/product/requirement/`，建立持久档案，归档完成后清理本地缓存。当用户要汇总或归档澄清账本、按主题整理需求差、或清理本地缓存时使用。
 ---
 
 # 产品需求归档
@@ -11,9 +11,9 @@ description: 把 `qtfounder-lab` 本地账本里的需求差按主题整理进 `
 
 账本位置按下面顺序取，取到即止：
 
-1. `QTFOUNDER_LAB_DATA`（临时隔离时才设）；
-2. 开发版：`<lab 仓>/src/cli/data/`；
-3. 发布版：`$XDG_DATA_HOME/qtfounder-lab`，未设则 `~/.local/share/qtfounder-lab`。
+1. `QTFOUNDER_DATA`（临时隔离时才设）；
+2. 开发版：`<qtfounder 仓>/src/cli/data/`；
+3. 发布版：`$XDG_DATA_HOME/qtfounder`，未设则 `~/.local/share/qtfounder`。
 
 目标仓是 `data/profile`（`quanttide-profile-of-founder`），档在 `product/requirement/`。先把 profile 仓 `git pull`，再看 `product/index.md` 里已有哪些主题。
 
