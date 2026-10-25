@@ -13,7 +13,7 @@
 | [product-clarify](.agents/skills/product-clarify/SKILL.md) | 记一次澄清、立规则 | "记一次澄清"、返工信号 |
 | [product-requirement](.agents/skills/product-requirement/SKILL.md) | 需求归档与清缓存 | "归档需求"、"汇总澄清账本"、"清缓存" |
 
-`meta-classify`、`language-governance`、`founder-reflect` 三条随 `qtfounder` CLI 发布，正文在 `apps/qtfounder/src/cli/skills/`，装在 `~/.agents/skills/`，不在本仓维护。
+`meta-classify`、`language-govern`、`think-reflect` 三条随 `qtfounder` CLI 发布，正文在 `apps/qtfounder/src/cli/skills/`，装在 `~/.agents/skills/`，不在本仓维护。
 
 每个 Skill 的 `SKILL.md` 包含：触发词、规则、工作流步骤。
 

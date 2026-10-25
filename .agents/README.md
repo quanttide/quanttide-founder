@@ -15,7 +15,7 @@ Agent 会根据用户输入自动匹配 Skill，也可直接调用：
 | [product-clarify](skills/product-clarify/SKILL.md) | "记一次澄清"、返工信号 | 记录需求差、立规则 |
 | [product-requirement](skills/product-requirement/SKILL.md) | "归档需求"、"汇总澄清账本"、"清缓存" | 按主题归入 `product/requirement/`，归档后清本地缓存 |
 
-`meta-classify`、`language-governance`、`founder-reflect` 三条随 `qtfounder` CLI 发布，正文在 `apps/qtfounder/src/cli/skills/`，装在 `~/.agents/skills/`，本目录不再保留。
+`meta-classify`、`language-govern`、`think-reflect` 三条随 `qtfounder` CLI 发布，正文在 `apps/qtfounder/src/cli/skills/`，装在 `~/.agents/skills/`，本目录不再保留。
 
 ## 目录结构
 
