@@ -22,11 +22,11 @@
 | 归档需求 / 清缓存 | Skill: `product-requirement`（写 `data/profile` 的 `product/`，归档后删本地账本） |
 | 归档旧日志 | 手动迁入 `data/journal/<域>/<YYYY-MM>/YYYY-MM-DD.md` |
 | 看文字体检 | `qtfounder audit`（每期只说一处） |
-| 查 Skill 命名 | `qtfounder agent skill <目录>`（范围-动词、触发时机、标题） |
+| 查 Skill 命名 | `qtfounder agent skill lint <目录>`（范围-动词、触发时机、标题） |
 | 判断该放哪 | `qtfounder meta classify <文件>`（Skill: `meta-classify`） |
 | 清一批禁用词 | Skill: `language-govern`（清单见 `data/roadmap/language/governance.md`） |
 | 写一次性脚本 | `examples/quanttide-founder-lab/examples/`，不写临时目录 |
-| 装 Skill 到系统位置 | `qtfounder skill install`（缺省 `~/.agents/skills`；只装某个仓加 `--root`，`skill check` 查差异） |
+| 装 Skill 到系统位置 | `qtfounder agent skill install`（缺省 `~/.agents/skills`；只装某个仓加 `--root`，`check` 查差异） |
 
 `meta-classify`、`language-govern`、`think-reflect` 三条随 `qtfounder` 发布，正文在 `apps/qtfounder/src/cli/skills/`，装在 `~/.agents/skills/`；本仓 `.agents/skills/` 不再保留这三条。
 
