@@ -70,6 +70,7 @@ git submodule update --init --remote
 ```bash
 qtfounder git hook install
 qtfounder git hook status
+qtfounder git submodule check
 ```
 
-`install` 把主仓与各层子模块的 `core.hooksPath` 指到 `.githooks`；`status` 查配置有没有漂移，有就退 1。
+`install` 把主仓与各层子模块的 `core.hooksPath` 指到 `.githooks`；`status` 查配置有没有漂移，有就退 1；`submodule check` 查指针与推送状态。

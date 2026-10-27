@@ -14,6 +14,7 @@
 | 任务 | 操作位置 |
 |------|---------|
 | 装/查 Git 钩子 | `qtfounder git hook install` / `status` |
+| 查子模块指针 | `qtfounder git submodule check` |
 | 提交变更 | Skill: `git-commit`（规范见 CONTRIBUTING） |
 | 发布 Release | Skill: `devops-release` |
 | 修改子模块 | Skill: `git-submodule` |
