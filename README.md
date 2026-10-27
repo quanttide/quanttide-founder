@@ -64,3 +64,12 @@ git submodule update --init --remote
 ```
 
 装过 `.githooks` 后，`git pull` 与切换分支会自动把子模块对齐到父仓指针记录的提交；拉远程最新仍用上面的命令。
+
+### 装与查 Git 钩子
+
+```bash
+qtfounder git hook install
+qtfounder git hook status
+```
+
+`install` 把主仓与各层子模块的 `core.hooksPath` 指到 `.githooks`；`status` 查配置有没有漂移，有就退 1。

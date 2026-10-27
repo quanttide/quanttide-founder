@@ -91,7 +91,8 @@ git commit -m "<type>: <description>"
 
 提交前跑一遍语言审计，只拦这一笔新引入的用词错误；HEAD 里已经有的算存量，放行。
 
-- 装一次：`.githooks/install.sh`，装到主仓与各子模块；卸下用 `git config --unset core.hooksPath`
+- 装一次：`qtfounder git hook install`，装到主仓与各子模块；CLI 还没装时用 `.githooks/install.sh` 兜底，卸下用 `qtfounder git hook uninstall`
+- 查漂移：`qtfounder git hook status`，有就退 1
 - 同步子模块：`post-merge` 与 `post-checkout` 把子模块对齐到父仓指针记录的提交，不拉远程最新；拉最新仍用 `git submodule update --remote`
 - 格式不管：列表、加粗、表格由体检报告定期报，不在提交时挡人；挡多了只会逼人用 `--no-verify`
 - 嫌疑不拦，目录级的体裁要求也不拦，后者归人判
