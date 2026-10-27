@@ -34,7 +34,7 @@
 
 ### Changed
 
-- **`apps/qtfounder` → `cli/v0.0.21`**：新增 `asset` 的 `contract`／`catalog`／`relation` 与 `meta relation`、`agent relation`；用户指南补上实测用途；Agent 契约补齐 `asset`／`git`／`product` 命令组，覆盖统计随之准确
+- **`apps/qtfounder` → `cli/v0.0.22`**：`meta` 补齐四部分——`model` 看两族九宫格，`relation` 看迁移与分辨句，`axiom` 看归位前提，`classify` 看范畴；`asset` 与 `agent relation` 同批发布，用户指南补上实测用途；Agent 契约补齐 `asset`／`git`／`product` 命令组
 - **`data/profile` 新增 `think/`**（原名 `meta/`）：以 `default/` 为来源按**情境**重组，8 组 × 三格式（`md` 条目原文 / `lino` 链接记法 / `ttl` 图谱）＋ `index.*` 概括框架；守恒 40 节点、24 条目、26 条边
 
 
