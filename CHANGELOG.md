@@ -34,7 +34,7 @@
 
 ### Changed
 
-- **`apps/qtfounder` → `cli/v0.0.18`**：洞察不再规定写法——落位卡只说要交代什么，`write` 的 `insight` 体裁不查标题顺序；固定模板归 `docs/` 下的手册与规格
+- **`apps/qtfounder` → `cli/v0.0.19`**：洞察不再规定写法——落位卡只说要交代什么，`write` 的 `insight` 体裁不查标题顺序；`docs` 新增日志模板校验——文件名与日期标题必须对得上，不写标题放行
 - **`data/profile` 新增 `think/`**（原名 `meta/`）：以 `default/` 为来源按**情境**重组，8 组 × 三格式（`md` 条目原文 / `lino` 链接记法 / `ttl` 图谱）＋ `index.*` 概括框架；守恒 40 节点、24 条目、26 条边
 
 
