@@ -34,6 +34,7 @@
 
 ### Changed
 
+- **`apps/qtfounder` → `cli/v0.0.17`**：洞察写法改为成篇体例——落位卡骨架与 `write` 的 `insight` 体裁同步，不再要求按已确认/假说分节
 - **`data/profile` 新增 `think/`**（原名 `meta/`）：以 `default/` 为来源按**情境**重组，8 组 × 三格式（`md` 条目原文 / `lino` 链接记法 / `ttl` 图谱）＋ `index.*` 概括框架；守恒 40 节点、24 条目、26 条边
 
 
