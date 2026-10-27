@@ -1,8 +1,9 @@
-#!/usr/bin/env bash
-# 拉取或合并后，把子模块对齐到父仓指针记录的提交。
-# 参数不用：合并结果已经落在工作区。
+#!/usr/bin/env sh
+# 合并后同步子模块：判定在 qtfounder git hook run post-merge。
+# 找不到 CLI 就跳过，不挡合并。
 
-set -u
+[ "${QT_SUBMODULE_SYNC:-}" = "1" ] && exit 0
+command -v qtfounder >/dev/null 2>&1 || exit 0
 
-hooks=$(cd "$(dirname "$0")" && pwd)
-exec "$hooks/sync-submodules"
+hooks=$(CDPATH= cd "$(dirname "$0")" && pwd)
+exec qtfounder git hook run post-merge --root "$(dirname "$hooks")"

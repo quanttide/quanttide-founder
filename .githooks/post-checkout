@@ -1,10 +1,10 @@
-#!/usr/bin/env bash
-# 切换分支或整树检出后，同步子模块；单文件检出跳过。
-# 参数：$1 旧提交，$2 新提交，$3 是否整树检出（1 是，0 否）。
-
-set -u
+#!/usr/bin/env sh
+# 整树检出后同步子模块：判定在 qtfounder git hook run post-checkout。
+# 第三个参数为 0 是单文件检出，跳过；找不到 CLI 也跳过。
 
 [ "${3:-0}" = "1" ] || exit 0
+[ "${QT_SUBMODULE_SYNC:-}" = "1" ] && exit 0
+command -v qtfounder >/dev/null 2>&1 || exit 0
 
-hooks=$(cd "$(dirname "$0")" && pwd)
-exec "$hooks/sync-submodules"
+hooks=$(CDPATH= cd "$(dirname "$0")" && pwd)
+exec qtfounder git hook run post-checkout --root "$(dirname "$hooks")"

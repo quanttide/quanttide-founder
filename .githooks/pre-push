@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+# 推父仓前查子模块：判定在 qtfounder git hook run pre-push。
+# 找不到 CLI 就跳过，不挡推送。
+
+command -v qtfounder >/dev/null 2>&1 || exit 0
+
+hooks=$(CDPATH= cd "$(dirname "$0")" && pwd)
+exec qtfounder git hook run pre-push --root "$(dirname "$hooks")"

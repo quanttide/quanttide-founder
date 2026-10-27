@@ -1,90 +1,13 @@
-#!/usr/bin/env bash
-# 写入闸门：提交前查暂存的 Markdown。
-#
-# 只拦这一笔新引入的用词错误：同一处问题在 HEAD 里已有，算存量，放行。
-# 放过并记下：嫌疑（机器拿不准）；目录级的体裁要求（line 0）。
-# 不管格式：列表、加粗、表格由体检报告定期报，不在提交时挡人。
-# 关掉一次：git commit --no-verify
+#!/usr/bin/env sh
+# 写入闸门：判定在 qtfounder git hook run pre-commit。
+# 找不到 CLI 时不查，与旧闸门的降级一致。
 
-set -u
-
-main_root=$(cd "$(dirname "$0")/.." && pwd)
-lang_rules="$main_root/apps/qtfounder/src/cli/src/language/default-contract.toml"
-passed_log="$main_root/.githooks/passed.log"
+hooks=$(CDPATH= cd "$(dirname "$0")" && pwd)
+root=$(dirname "$hooks")
 
 if ! command -v qtfounder >/dev/null 2>&1; then
   echo "闸门：找不到 qtfounder，这次不查" >&2
   exit 0
 fi
 
-if [ ! -f "$lang_rules" ]; then
-  echo "闸门：找不到语言契约，这次不查" >&2
-  exit 0
-fi
-
-tmp=$(mktemp)
-trap 'rm -f "$tmp"' EXIT
-
-# 把 JSON 里的错误项压成「kind|advice」一行，便于前后比对。
-keys_of() {
-  sed -n 's/.*"kind":"\([^"]*\)".*"advice":"\([^"]*\)".*/\1|\2/p' \
-    | grep -v '^$'
-}
-
-findings_of() {
-  path=$1
-  rules=$2
-  out=$(qtfounder language "$path" --rules "$rules" --json 2>/dev/null) || true
-  printf '%s\n' "$out" | grep '"severity":"error"' | grep '"verdict":"real"' | grep -v '"line":0,' | keys_of
-}
-
-# 契约里 exclude 的是「不是给人反复读的」：流水、归档、示例、变更日志。
-# 传单个文件路径时契约不过滤，所以这里自己排一遍，免得闸门比契约严。
-skipped() {
-  case "/$1" in
-    */CHANGELOG.md) return 0 ;;
-    */node_modules/* | */_build/* | */target/*) return 0 ;;
-    */archive/* | */journal/* | */report/* | */assets/* | */examples/*) return 0 ;;
-  esac
-  return 1
-}
-
-blocked=0
-
-while IFS= read -r f; do
-  [ -n "$f" ] || continue
-  [ -f "$f" ] || continue
-  skipped "$f" && continue
-
-  findings_of "$f" "$lang_rules" >"$tmp.current"
-  if git cat-file -e "HEAD:$f" 2>/dev/null; then
-    git show "HEAD:$f" >"$tmp.head"
-    findings_of "$tmp.head" "$lang_rules" >"$tmp.base"
-  else
-    : >"$tmp.base"
-  fi
-
-  # 用 FILENAME 分文件，不用 NR==FNR：前者为空时 NR==FNR 会把后一个也当基准。
-  new=$(awk 'FILENAME == ARGV[1] { b[$0]++; next } { c[$0]++ }
-             END { for (k in c) if (c[k] > b[k]) print k }' "$tmp.base" "$tmp.current" | sort)
-
-  if [ -n "$new" ]; then
-    echo "闸门拦下：$f" >&2
-    printf '%s\n' "$new" | while IFS='|' read -r kind advice; do
-      printf '  %s：%s\n' "$kind" "$advice" >&2
-    done
-    blocked=1
-  fi
-
-  soft=$(qtfounder language "$f" --rules "$lang_rules" 2>/dev/null | grep -c '\[嫌疑\]' || true)
-  if [ "${soft:-0}" -gt 0 ]; then
-    printf '%s | %s | language | 嫌疑 %s 处\n' "$(date '+%F %T')" "$f" "$soft" >>"$passed_log"
-  fi
-done < <(git -c core.quotePath=false diff --cached --name-only --diff-filter=ACMR -- '*.md')
-
-if [ "$blocked" -ne 0 ]; then
-  echo "闸门：改到过再提交；确属误判，用 git commit --no-verify。" >&2
-  exit 1
-fi
-
-exit 0
+exec qtfounder git hook run pre-commit --root "$root"
