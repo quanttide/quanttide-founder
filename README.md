@@ -62,3 +62,5 @@ git submodule update --init --recursive
 ```bash
 git submodule update --init --remote
 ```
+
+装过 `.githooks` 后，`git pull` 与切换分支会自动把子模块对齐到父仓指针记录的提交；拉远程最新仍用上面的命令。

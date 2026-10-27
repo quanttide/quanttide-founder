@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# 切换分支或整树检出后，同步子模块；单文件检出跳过。
+# 参数：$1 旧提交，$2 新提交，$3 是否整树检出（1 是，0 否）。
+
+set -u
+
+[ "${3:-0}" = "1" ] || exit 0
+
+hooks=$(cd "$(dirname "$0")" && pwd)
+exec "$hooks/sync-submodules"

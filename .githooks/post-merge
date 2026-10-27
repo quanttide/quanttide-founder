@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# 拉取或合并后，把子模块对齐到父仓指针记录的提交。
+# 参数不用：合并结果已经落在工作区。
+
+set -u
+
+hooks=$(cd "$(dirname "$0")" && pwd)
+exec "$hooks/sync-submodules"

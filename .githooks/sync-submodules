@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# 把子模块工作区对齐到父仓指针记录的提交。
+# 不拉远程新提交：父仓指针指向哪个提交，子模块就停在哪个提交。
+# 拉最新仍用 git submodule update --remote。
+#
+# 子模块检出时会触发同一套 post-checkout；用环境变量挡住递归。
+
+set -u
+
+[ "${QT_SUBMODULE_SYNC:-}" = "1" ] && exit 0
+export QT_SUBMODULE_SYNC=1
+
+main_root=$(cd "$(dirname "$0")/.." && pwd)
+
+git -C "$main_root" submodule sync --recursive >/dev/null
+
+if ! git -C "$main_root" submodule update --init --recursive; then
+  echo "子模块同步失败：先处理子模块里的本地改动，再跑 git submodule update --init --recursive" >&2
+fi
+
+exit 0
