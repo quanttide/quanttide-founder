@@ -30,7 +30,7 @@
 | 评审界面交付物 | Skill: `design-review`（十二条评判原则，先跑 `qtfounder design review <文件>` 数字号与主按钮，`design principles` 看全文） |
 | 查 Skill 命名 | `qtfounder agent skill lint <目录>`（范围-动词、触发时机、标题） |
 | 判断该放哪 | `qtfounder meta classify <文件>`（Skill: `meta-classify`） |
-| 清一批禁用词 | Skill: `language-govern`（清单见 `data/roadmap/language/governance.md`） |
+| 清一批禁用词 | Skill: `language-govern`（清单见 `data/roadmap/qtfounder/language.md`） |
 | 写一次性脚本 | `examples/quanttide-founder-lab/examples/`，不写临时目录 |
 | 装 Skill 到系统位置 | `qtfounder agent skill install`（缺省 `~/.agents/skills`；只装某个仓加 `--root`，`check` 查差异） |
 
