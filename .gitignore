@@ -43,3 +43,6 @@ ENV/
 
 .ruff_cache/
 .githooks/passed.log
+
+# 资产抽查回收目录
+.trash/
