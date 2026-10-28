@@ -18,6 +18,7 @@
 
 ### Added
 
+- **随 CLI 发布的 Skill 增至八条**：新增 `design-review`，交互设计评判十二条（先立问题再做屏幕、减分项、交付纪律与评分标准），原则自 qtcloud 仓抽取；配 `qtfounder design review` 走查 HTML 交付物的字号与主按钮，`qtfounder design principles` 看全文。AGENTS.md、CONTRIBUTING.md 与 `.agents/README.md` 索引同步
 - **文字体检报告**：`qtfounder audit` 汇总文字与文档审计，按术语优先排，每期只报一处并给出改法；缺省看整仓，契约的 exclude 跳过流水、归档与示例
 - **写入闸门**：`.githooks/` 在提交前跑文字与文档审计，只拦这一笔新引入的错误，存量放行；嫌疑与目录级体裁要求不拦，记进 `passed.log`。`.githooks/install.sh` 装到主仓与各子模块，`core.hooksPath` 指向同一份钩子
 - **迁入四个日志蒸馏 Skill**：`journal-to-profile`、`journal-to-roadmap`、`journal-to-insight`、`journal-to-intention` 从 `data/context/.agents/skills/` 移至本仓 `.agents/skills/`，Skill 统一在主仓维护；CONTRIBUTING.md 与 `.agents/README.md` 索引同步
