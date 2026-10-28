@@ -26,13 +26,14 @@
 | 归档旧日志 | 手动迁入 `data/journal/<域>/<YYYY-MM>/YYYY-MM-DD.md` |
 | 看文字体检 | `qtfounder audit`（每期只说一处） |
 | 改写表达 | Skill: `write-express`（先跑 `qtfounder write`，再按定义、步骤、边界、验收重排） |
+| 写/审正式文档 | Skill: `docs-format`（格式克制与排版，先跑 `qtfounder docs format <文件>` 看状态与审计） |
 | 查 Skill 命名 | `qtfounder agent skill lint <目录>`（范围-动词、触发时机、标题） |
 | 判断该放哪 | `qtfounder meta classify <文件>`（Skill: `meta-classify`） |
 | 清一批禁用词 | Skill: `language-govern`（清单见 `data/roadmap/language/governance.md`） |
 | 写一次性脚本 | `examples/quanttide-founder-lab/examples/`，不写临时目录 |
 | 装 Skill 到系统位置 | `qtfounder agent skill install`（缺省 `~/.agents/skills`；只装某个仓加 `--root`，`check` 查差异） |
 
-`meta-classify`、`language-govern`、`think-reflect`、`product-collect`、`product-organize`、`write-express` 六条随 `qtfounder` 发布，正文在 `apps/qtfounder/src/cli/skills/`，装在 `~/.agents/skills/`；本仓 `.agents/skills/` 不再保留这六条。
+`docs-format`、`meta-classify`、`language-govern`、`think-reflect`、`product-collect`、`product-organize`、`write-express` 七条随 `qtfounder` 发布，正文在 `apps/qtfounder/src/cli/skills/`，装在 `~/.agents/skills/`；本仓 `.agents/skills/` 不再保留这七条。
 
 ## 如何维护 AGENTS.md
 
