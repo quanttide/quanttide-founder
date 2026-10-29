@@ -46,3 +46,6 @@ ENV/
 
 # 资产抽查回收目录
 .trash/
+
+# 数据标注输出
+.annotations/
