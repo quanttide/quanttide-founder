@@ -23,6 +23,7 @@
 | 记录日报 | `data/context/default/YYYY-MM-DD.md`（当天放集根，更早日志在 `data/context/default/journal/`） |
 | 记一次澄清 / 立规则 | Skill: `product-collect`（调 `qtfounder product clarify`） |
 | 归档需求 / 清缓存 | Skill: `product-organize`（用 `product organize` 读聚类，写 `data/profile` 的 `product/`，再 `product clear`） |
+| 收待办 / 抽一件开工 | `qtfounder execute collect` 收进池子，`qtfounder execute draw` 按优先级抽（Skill: `execute-collect`） |
 | 归档旧日志 | 手动迁入 `data/journal/<域>/<YYYY-MM>/YYYY-MM-DD.md` |
 | 看文字体检 | `qtfounder audit`（每期只说一处） |
 | 改写表达 | Skill: `write-express`（先跑 `qtfounder write`，再按定义、步骤、边界、验收重排） |
@@ -34,7 +35,7 @@
 | 写一次性脚本 | `examples/quanttide-founder-lab/examples/`，不写临时目录 |
 | 装 Skill 到系统位置 | `qtfounder agent skill install`（缺省 `~/.agents/skills`；只装某个仓加 `--root`，`check` 查差异） |
 
-`design-review`、`docs-format`、`meta-classify`、`language-govern`、`think-reflect`、`product-collect`、`product-organize`、`write-express` 八条随 `qtfounder` 发布，正文在 `apps/qtfounder/src/cli/skills/`，装在 `~/.agents/skills/`；本仓 `.agents/skills/` 不再保留这八条。
+`design-review`、`docs-format`、`execute-collect`、`meta-classify`、`language-govern`、`think-reflect`、`product-collect`、`product-organize`、`write-express` 九条随 `qtfounder` 发布，正文在 `apps/qtfounder/src/cli/skills/`，装在 `~/.agents/skills/`；本仓 `.agents/skills/` 不再保留这九条。
 
 ## 如何维护 AGENTS.md
 
