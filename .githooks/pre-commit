@@ -1,6 +1,10 @@
 #!/usr/bin/env sh
-# 写入闸门：判定在 qtfounder git hook run pre-commit。
-# 找不到 CLI 时不查，与旧闸门的降级一致。
+# 写入闸门：事件经 infra fire 派发，订阅「gate」跑 qtfounder git hook run pre-commit。
+# 本地与云端同一条入口；找不到 CLI 时不查，与旧闸门的降级一致。
+# 先 cd 到主仓根：订阅命令不带 --root，靠 cwd 定位——这是「fire 不带载荷」
+# 在本地的形态，改钩子路径前先想清楚这行。
+# 注意：订阅表在 XDG 数据根，本钩子退 0 也可能只是「没人订 pre-commit」——
+# fire 不报无人听的事件，这是设计立场，不是闸门失灵。
 
 hooks=$(CDPATH= cd "$(dirname "$0")" && pwd)
 root=$(dirname "$hooks")
@@ -10,4 +14,5 @@ if ! command -v qtfounder >/dev/null 2>&1; then
   exit 0
 fi
 
-exec qtfounder git hook run pre-commit --root "$root"
+cd "$root" || exit 0
+exec qtfounder infra fire pre-commit
