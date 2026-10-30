@@ -6,7 +6,7 @@
 
 ```
 quanttide-founder/
-├── apps/            # 应用子模块（qtfounder / qtcloud）
+├── apps/            # 应用子模块（qtfounder）
 ├── assets/          # 创作资产子模块（blog / fiction）
 ├── data/            # 数据子模块（archive / brochure / context / history / insight / intention / journal / library / profile / report / roadmap）
 ├── docs/            # 文档子模块（bylaw / essay / gallery / handbook / specification / tutorial）
@@ -24,7 +24,6 @@ quanttide-founder/
 | 路径 | 仓库 | 版本 |
 |------|------|------|
 | `apps/qtfounder` | qtfounder | site/v0.0.1-4-g51cb1a1 |
-| `apps/qtcloud` | qtcloud | studio/v0.1.0-alpha.1-20-g0645c3e |
 | `assets/blog` | quanttide-blog-of-founder | main |
 | `assets/fiction` | quanttide-fiction-of-founder | v1.0.0 |
 | `data/archive` | quanttide-archive-of-founder | v1.2.0 |

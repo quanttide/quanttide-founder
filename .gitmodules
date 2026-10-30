@@ -65,7 +65,3 @@
 [submodule "docs/tutorial"]
 	path = docs/tutorial
 	url = https://github.com/quanttide/quanttide-tutorial-of-founder
-[submodule "apps/qtcloud"]
-	path = apps/qtcloud
-	url = https://github.com/quanttide/qtcloud.git
-	branch = main
