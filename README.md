@@ -7,7 +7,7 @@
 ```
 quanttide-founder/
 ├── apps/            # 应用子模块（qtfounder / qtcloud）
-├── assets/          # 创作资产子模块（blog / fiction / qtgame-war）
+├── assets/          # 创作资产子模块（blog / fiction）
 ├── data/            # 数据子模块（archive / brochure / context / history / insight / intention / journal / library / profile / report / roadmap）
 ├── docs/            # 文档子模块（bylaw / essay / gallery / handbook / specification / tutorial）
 ├── examples/        # 示例子模块
@@ -27,7 +27,6 @@ quanttide-founder/
 | `apps/qtcloud` | qtcloud | studio/v0.1.0-alpha.1-20-g0645c3e |
 | `assets/blog` | quanttide-blog-of-founder | main |
 | `assets/fiction` | quanttide-fiction-of-founder | v1.0.0 |
-| `assets/qtgame-war` | qtgame-war | main |
 | `data/archive` | quanttide-archive-of-founder | v1.2.0 |
 | `data/brochure` | quanttide-brochure-of-founder | main |
 | `data/context` | quanttide-context-of-founder | v1.4.1 |
