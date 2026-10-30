@@ -27,6 +27,7 @@
 
 ### Removed
 
+- **qtgame-war 内容分拆至 `domains/quanttide-war`**：`data/roadmap`、`data/profile`、`data/insight`、`data/brochure`、`data/intention` 五仓的 `qtgame-war/` 分区与 `docs/tutorial` 的 `war/` 三部曲，分别迁出为独立仓 `quanttide-{类型}-of-war-gaming` 与 `quanttide-tutorial-of-war-gaming`；六子模块指针同步，各仓 index/README/myst 目录同步
 - **移除 `assets/qtgame-war` 子模块**：`quanttide/qtgame-war` 不再挂入本仓；README 的目录树与子模块表同步
 - **`product-clarify` 移出本仓**：随 `qtfounder` CLI 发布，正文搬到 `apps/qtfounder/src/cli/skills/`，装在 `~/.agents/skills/`；正文里两处旧命令 `code clarify` 改为 `product clarify`，与 `qtfounder-lab product` 对齐。AGENTS.md、CONTRIBUTING.md 与 `.agents/README.md` 索引同步
 - **`meta-classify`、`language-govern`、`think-reflect` 移出本仓**：三条都调 `qtfounder` 的命令，正文随之搬进 `apps/qtfounder/src/cli/skills/`，跟二进制一起发布；装到系统位置 `~/.agents/skills/`，本仓 `.agents/skills/` 不再保留。后两条同时改名（原 `language-governance`、`founder-reflect`），叫法与其余 Skill 一致：动词在前。AGENTS.md、CONTRIBUTING.md、`.agents/README.md` 与 `data/context` 索引同步
