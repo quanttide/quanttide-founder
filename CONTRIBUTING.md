@@ -14,7 +14,7 @@
 | [write-express](apps/qtfounder/src/cli/skills/write-express/SKILL.md) | 表达改写 | "改写"、"太密"、"像口号" |
 | [docs-format](apps/qtfounder/src/cli/skills/docs-format/SKILL.md) | 正式文档格式规范 | "格式"、"排版"、"正式文档" |
 
-`design-review`、`docs-format`、`execute-collect`、`meta-classify`、`language-govern`、`think-reflect`、`product-collect`、`product-organize`、`write-express` 九条随 `qtfounder` CLI 发布，正文在 `apps/qtfounder/src/cli/skills/`，装在 `~/.agents/skills/`，不在本仓维护。
+`code-reflect`、`design-review`、`docs-format`、`execute-collect`、`meta-classify`、`language-govern`、`think-reflect`、`product-collect`、`product-organize`、`write-express` 十条随 `qtfounder` CLI 发布，正文在 `apps/qtfounder/src/cli/skills/`，装在 `~/.agents/skills/`，不在本仓维护。
 
 每个 Skill 的 `SKILL.md` 包含：触发词、规则、工作流步骤。
 

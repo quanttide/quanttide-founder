@@ -31,11 +31,12 @@
 | 评审界面交付物 | Skill: `design-review`（十二条评判原则，先跑 `qtfounder design review <文件>` 数字号与主按钮，`design principles` 看全文） |
 | 查 Skill 命名 | `qtfounder agent skill lint <目录>`（范围-动词、触发时机、标题） |
 | 判断该放哪 | `qtfounder meta classify <文件>`（Skill: `meta-classify`） |
+| 任务完成后的架构反思 | `qtfounder code reflect --example` 拿四条清单（Skill: `code-reflect`），发现写回 `data/roadmap/qtfounder/index.md` |
 | 清一批禁用词 | Skill: `language-govern`（清单见 `data/roadmap/qtfounder/language.md`） |
 | 写一次性脚本 | `examples/quanttide-founder-lab/examples/`，不写临时目录 |
 | 装 Skill 到系统位置 | `qtfounder agent skill install`（缺省 `~/.agents/skills`；只装某个仓加 `--root`，`check` 查差异） |
 
-`design-review`、`docs-format`、`execute-collect`、`meta-classify`、`language-govern`、`think-reflect`、`product-collect`、`product-organize`、`write-express` 九条随 `qtfounder` 发布，正文在 `apps/qtfounder/src/cli/skills/`，装在 `~/.agents/skills/`；本仓 `.agents/skills/` 不再保留这九条。
+`code-reflect`、`design-review`、`docs-format`、`execute-collect`、`meta-classify`、`language-govern`、`think-reflect`、`product-collect`、`product-organize`、`write-express` 十条随 `qtfounder` 发布，正文在 `apps/qtfounder/src/cli/skills/`，装在 `~/.agents/skills/`；本仓 `.agents/skills/` 不再保留这十条。
 
 ## 如何维护 AGENTS.md
 
