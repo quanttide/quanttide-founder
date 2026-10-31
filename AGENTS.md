@@ -27,6 +27,7 @@
 | 归档旧日志 | 手动迁入 `data/journal/<域>/<YYYY-MM>/YYYY-MM-DD.md` |
 | 看文字体检 | `qtfounder audit`（每期只说一处） |
 | 改写表达 | Skill: `write-express`（先跑 `qtfounder write`，再按定义、步骤、边界、验收重排） |
+| 从读者角度评审文档 | Skill: `write-review`（先跑 `qtfounder write review <文件>` 拿骨架与卡点，只写「读者读到这会……」，不从作者角度改稿） |
 | 写/审正式文档 | Skill: `docs-format`（格式克制与排版，先跑 `qtfounder docs format <文件>` 看状态与审计） |
 | 评审界面交付物 | Skill: `design-review`（十二条评判原则，先跑 `qtfounder design review <文件>` 数字号与主按钮，`design principles` 看全文） |
 | 查 Skill 命名 | `qtfounder agent skill lint <目录>`（范围-动词、触发时机、标题） |
@@ -37,7 +38,7 @@
 | 写一次性脚本 | `examples/quanttide-founder-lab/examples/`，不写临时目录 |
 | 装 Skill 到系统位置 | `qtfounder agent skill install`（缺省 `~/.agents/skills`；只装某个仓加 `--root`，`check` 查差异） |
 
-`code-reflect`、`code-review`、`design-review`、`docs-format`、`execute-collect`、`meta-classify`、`language-govern`、`think-reflect`、`product-collect`、`product-organize`、`write-express` 十一条随 `qtfounder` 发布，正文在 `apps/qtfounder/src/cli/skills/`，装在 `~/.agents/skills/`；本仓 `.agents/skills/` 不再保留这十一条。
+`code-reflect`、`code-review`、`design-review`、`docs-format`、`execute-collect`、`meta-classify`、`language-govern`、`think-reflect`、`product-collect`、`product-organize`、`write-express`、`write-review` 十二条随 `qtfounder` 发布，正文在 `apps/qtfounder/src/cli/skills/`，装在 `~/.agents/skills/`；本仓 `.agents/skills/` 不再保留这十二条。
 
 ## 如何维护 AGENTS.md
 
