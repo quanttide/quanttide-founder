@@ -8,7 +8,6 @@
 |------|------|
 | [README](README.md) | 项目概述、子模块列表 |
 | [CONTRIBUTING](CONTRIBUTING.md) | 工作原则、输出规范、第二大脑功能与边界、Skill 使用维护、版本契约 |
-| [标准属性](docs/gallery/meta/property.md) | 字段定义（id 用 uuid，name 做机器可读标识） |
 
 ## 快速索引
 
