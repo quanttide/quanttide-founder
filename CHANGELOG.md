@@ -28,6 +28,7 @@
 
 ### Removed
 
+- **`meta-classify` 停发，随 CLI 发布的 Skill 十二条变十一条**：CLI 淘汰 `meta` 子命令（资产图式抽进 `asset` 契约独立成活），Skill 正文随之下线；AGENTS.md、CONTRIBUTING.md 与 `.agents/README.md` 名单同步，后者同时补上此前漏记的 `code-reflect`、`code-review`、`write-review`
 - **qtgame-war 内容分拆至 `domains/quanttide-war`**：`data/roadmap`、`data/profile`、`data/insight`、`data/brochure`、`data/intention` 五仓的 `qtgame-war/` 分区与 `docs/tutorial` 的 `war/` 三部曲，分别迁出为独立仓 `quanttide-{类型}-of-war-gaming` 与 `quanttide-tutorial-of-war-gaming`；六子模块指针同步，各仓 index/README/myst 目录同步
 - **移除 `assets/qtgame-war` 子模块**：`quanttide/qtgame-war` 不再挂入本仓；README 的目录树与子模块表同步
 - **移除 `apps/qtcloud` 子模块**：`quanttide/qtcloud` 不再挂入本仓——这类工具与产品的家在 qtcloud-* 独立仓（qtcloud-devops 先例），infra 的云端归宿改为先 qtcloud-infra、再往 qtcloud 集成；README 目录树与子模块表同步，仓本身不动

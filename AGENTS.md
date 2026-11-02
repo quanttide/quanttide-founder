@@ -36,7 +36,7 @@
 | 写一次性脚本 | `examples/quanttide-founder-lab/examples/`，不写临时目录 |
 | 装 Skill 到系统位置 | `qtfounder agent skill install`（缺省 `~/.agents/skills`；只装某个仓加 `--root`，`check` 查差异） |
 
-`code-reflect`、`code-review`、`design-review`、`docs-format`、`execute-collect`、`meta-classify`、`language-govern`、`think-reflect`、`product-collect`、`product-organize`、`write-express`、`write-review` 十二条随 `qtfounder` 发布，正文在 `apps/qtfounder/src/cli/skills/`，装在 `~/.agents/skills/`；本仓 `.agents/skills/` 不再保留这十二条。
+`code-reflect`、`code-review`、`design-review`、`docs-format`、`execute-collect`、`language-govern`、`think-reflect`、`product-collect`、`product-organize`、`write-express`、`write-review` 十一条随 `qtfounder` 发布，正文在 `apps/qtfounder/src/cli/skills/`，装在 `~/.agents/skills/`；本仓 `.agents/skills/` 不再保留这十一条。
 
 ## 如何维护 AGENTS.md
 

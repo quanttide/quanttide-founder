@@ -15,7 +15,7 @@
 | [write-review](apps/qtfounder/src/cli/skills/write-review/SKILL.md) | 读者视角的文档评审 | "评审"、"读者卡在哪"、"好不好读" |
 | [docs-format](apps/qtfounder/src/cli/skills/docs-format/SKILL.md) | 正式文档格式规范 | "格式"、"排版"、"正式文档" |
 
-`code-reflect`、`code-review`、`design-review`、`docs-format`、`execute-collect`、`meta-classify`、`language-govern`、`think-reflect`、`product-collect`、`product-organize`、`write-express`、`write-review` 十二条随 `qtfounder` CLI 发布，正文在 `apps/qtfounder/src/cli/skills/`，装在 `~/.agents/skills/`，不在本仓维护。
+`code-reflect`、`code-review`、`design-review`、`docs-format`、`execute-collect`、`language-govern`、`think-reflect`、`product-collect`、`product-organize`、`write-express`、`write-review` 十一条随 `qtfounder` CLI 发布，正文在 `apps/qtfounder/src/cli/skills/`，装在 `~/.agents/skills/`，不在本仓维护。
 
 每个 Skill 的 `SKILL.md` 包含：触发词、规则、工作流步骤。
 
