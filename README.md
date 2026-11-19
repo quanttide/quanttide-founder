@@ -6,7 +6,7 @@
 
 ```
 quanttide-founder/
-├── apps/            # 应用子模块（qtfounder）
+├── apps/            # 应用子模块（qtfounder / qtgame-love）
 ├── assets/          # 创作资产子模块（blog / fiction）
 ├── data/            # 数据子模块（archive / brochure / context / history / insight / intention / journal / library / profile / report / roadmap）
 ├── docs/            # 文档子模块（bylaw / essay / gallery / handbook / specification / tutorial）
@@ -24,6 +24,7 @@ quanttide-founder/
 | 路径 | 仓库 | 版本 |
 |------|------|------|
 | `apps/qtfounder` | qtfounder | site/v0.0.1-4-g51cb1a1 |
+| `apps/qtgame-love` | qtgame-love | main |
 | `assets/blog` | quanttide-blog-of-founder | main |
 | `assets/fiction` | quanttide-fiction-of-founder | v1.0.0 |
 | `data/archive` | quanttide-archive-of-founder | v1.2.0 |

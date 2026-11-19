@@ -65,3 +65,6 @@
 [submodule "docs/tutorial"]
 	path = docs/tutorial
 	url = https://github.com/quanttide/quanttide-tutorial-of-founder
+[submodule "apps/qtgame-love"]
+	path = apps/qtgame-love
+	url = https://github.com/quanttide/qtgame-love.git
